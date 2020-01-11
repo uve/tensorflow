@@ -31,7 +31,7 @@ model](https://storage.googleapis.com/download.tensorflow.org/models/tflite/spee
 
 ### Test Bench
 
-[Model tests](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/models/speech_test.cc)
+[Model tests](https://github.com/uve/tensorflow/tree/master/tensorflow/lite/models/speech_test.cc)
 
 Download the ASR AM test models and inputs and output files to the
 models/testdata directory to run the tests.

@@ -22,7 +22,7 @@ import (
 	"testing"
 
 	"github.com/golang/protobuf/proto"
-	pb "github.com/tensorflow/tensorflow/tensorflow/go/genop/internal/proto/github.com/tensorflow/tensorflow/tensorflow/go/core/framework"
+	pb "github.com/uve/tensorflow/tensorflow/go/genop/internal/proto/github.com/uve/tensorflow/tensorflow/go/core/framework"
 )
 
 // Creates an ApiDef based on opdef and applies overrides

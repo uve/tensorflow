@@ -29,7 +29,7 @@ py_library(
         ":saved_model_utils",
         # The following py_library are needed because
         # py_binary may not depend on them when --define=no_tensorflow_py_deps=true
-        # is specified. See https://github.com/tensorflow/tensorflow/issues/22390
+        # is specified. See https://github.com/uve/tensorflow/issues/22390
         ":freeze_graph_lib",
         ":optimize_for_inference_lib",
         ":selective_registration_header_lib",

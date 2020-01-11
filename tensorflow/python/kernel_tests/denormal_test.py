@@ -39,7 +39,7 @@ class DenormalTest(test.TestCase):
     if platform.machine() == "ppc64le" or platform.machine(
     ) == "s390x" or platform.machine() == "aarch64":
       # Disabled denormal_test on power/s390x/aarch64 platform
-      # Check relevant discussion - https://github.com/tensorflow/tensorflow/issues/11902
+      # Check relevant discussion - https://github.com/uve/tensorflow/issues/11902
       return
     with self.cached_session(use_gpu=use_gpu):
       array_ops.identity(7).eval()

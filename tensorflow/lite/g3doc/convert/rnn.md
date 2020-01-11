@@ -69,13 +69,13 @@ when run by the Lite interpreter.
 
 The following drop-in replacements are available:
 
-*   [tf.lite.experimental.nn.dynamic_rnn](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/examples/lstm/rnn.py#L41)
+*   [tf.lite.experimental.nn.dynamic_rnn](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/experimental/examples/lstm/rnn.py#L41)
     *   replacement for tf.nn.dynamic_rnn
-*   [tf.lite.experimental.nn.bidirectional_dynamic_rnn](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/examples/lstm/rnn.py#L279)
+*   [tf.lite.experimental.nn.bidirectional_dynamic_rnn](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/experimental/examples/lstm/rnn.py#L279)
     *   replacement for tf.nn.bidirectional_dynamic_rnn
-*   [tf.lite.experimental.nn.TfLiteRNNCell](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/examples/lstm/rnn_cell.py#L39)
+*   [tf.lite.experimental.nn.TfLiteRNNCell](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/experimental/examples/lstm/rnn_cell.py#L39)
     *   replacement for tf.nn.rnn_cell.RNNCell
-*   [tf.lite.experimental.nn.TfLiteLSTMCell](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/examples/lstm/rnn_cell.py#L159)
+*   [tf.lite.experimental.nn.TfLiteLSTMCell](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/experimental/examples/lstm/rnn_cell.py#L159)
     *   replacement for tf.nn.rnn_cell.LSTMCell
 
 Note: These replacements must be used together. For example, if you are using
@@ -89,10 +89,10 @@ you should use
 [tf.keras.layers.StackedRNNCells](https://www.tensorflow.org/api_docs/python/tf/keras/layers/StackedRNNCells).
 
 For a tutorial on using these replacements, see
-[TensorFlow Lite LSTM ops API](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/examples/lstm/g3doc/README.md).
+[TensorFlow Lite LSTM ops API](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/experimental/examples/lstm/g3doc/README.md).
 
 For a Colab demonstrating these classes, refer to
-[TensorFlowLite_LSTM_Keras_Tutorial](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/examples/lstm/TensorFlowLite_LSTM_Keras_Tutorial.ipynb).
+[TensorFlowLite_LSTM_Keras_Tutorial](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/experimental/examples/lstm/TensorFlowLite_LSTM_Keras_Tutorial.ipynb).
 
 Note: There is no replacement available for
 [tf.nn.rnn_cell.GRUCell](https://www.tensorflow.org/api_docs/python/tf/nn/rnn_cell/GRUCell).

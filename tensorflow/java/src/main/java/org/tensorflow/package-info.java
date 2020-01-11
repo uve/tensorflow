@@ -18,7 +18,7 @@ limitations under the License.
  *
  * <p><b>WARNING</b>: The API is currently experimental and is not covered by TensorFlow <a
  * href="https://www.tensorflow.org/guide/version_compat">API stability guarantees</a>. See <a
- * href="https://github.com/tensorflow/tensorflow/blob/master/tensorflow/java/README.md">README.md</a>
+ * href="https://github.com/uve/tensorflow/blob/master/tensorflow/java/README.md">README.md</a>
  * for installation instructions.
  *
  * <p>The <a
@@ -36,7 +36,7 @@ limitations under the License.
  * </ul>
  *
  * <p>Additional examples can be found in the <a
- * href="https://github.com/tensorflow/models/tree/master/samples/languages/java">tensorflow/models</a>
+ * href="https://github.com/uve/models/tree/master/samples/languages/java">tensorflow/models</a>
  * GitHub repository.
  */
 package org.tensorflow;

@@ -618,7 +618,7 @@ target_include_directories(pywrap_tensorflow_internal PUBLIC
 if(CMAKE_COMPILER_IS_GNUCC AND CMAKE_CXX_COMPILER_VERSION VERSION_GREATER 5.0)
 	# There is a bug in GCC 5 resulting in undefined reference to a __cpu_model function when
 	# linking to the tensorflow library. Adding the following libraries fixes it.
-	# See issue on github: https://github.com/tensorflow/tensorflow/issues/9593
+	# See issue on github: https://github.com/uve/tensorflow/issues/9593
 	target_link_libraries(pywrap_tensorflow_internal PRIVATE
     ${tf_core_gpu_kernels_lib}
     ${tensorflow_EXTERNAL_LIBRARIES}

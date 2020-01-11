@@ -192,7 +192,7 @@ func (t *Tensor) Value() interface{} {
 //
 // WARNING: WriteContentsTo is not comprehensive and will fail
 // if t.DataType() is non-numeric (e.g., String). See
-// https://github.com/tensorflow/tensorflow/issues/6003.
+// https://github.com/uve/tensorflow/issues/6003.
 func (t *Tensor) WriteContentsTo(w io.Writer) (int64, error) {
 	if err := isTensorSerializable(t.DataType()); err != nil {
 		return 0, err
@@ -465,7 +465,7 @@ func (d *stringDecoder) decode(ptr reflect.Value, shape []int64) error {
 }
 
 func bug(format string, args ...interface{}) error {
-	return fmt.Errorf("BUG: Please report at https://github.com/tensorflow/tensorflow/issues with the note: Go TensorFlow %v: %v", Version(), fmt.Sprintf(format, args...))
+	return fmt.Errorf("BUG: Please report at https://github.com/uve/tensorflow/issues with the note: Go TensorFlow %v: %v", Version(), fmt.Sprintf(format, args...))
 }
 
 func isTensorSerializable(dataType DataType) error {
@@ -481,7 +481,7 @@ func isTensorSerializable(dataType DataType) error {
 	case Float, Double, Int32, Uint8, Int16, Int8, Complex, Int64, Bool, Quint8, Qint32, Bfloat16, Qint16, Quint16, Uint16, Complex128, Half:
 		return nil
 	default:
-		return fmt.Errorf("serialization of tensors with the DataType %d is not yet supported, see https://github.com/tensorflow/tensorflow/issues/6003", dataType)
+		return fmt.Errorf("serialization of tensors with the DataType %d is not yet supported, see https://github.com/uve/tensorflow/issues/6003", dataType)
 	}
 }
 

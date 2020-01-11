@@ -129,7 +129,7 @@ func (th *TensorHandle) DeviceName() (string, error) {
 // be updated to return what the documentation says!
 func (th *TensorHandle) BackingDeviceName() (string, error) {
 	// TODO(ashankar): Restore after TensorFlow 1.13 is released.
-	// See https://github.com/tensorflow/tensorflow/issues/23257#issuecomment-433751410
+	// See https://github.com/uve/tensorflow/issues/23257#issuecomment-433751410
 	return th.DeviceName()
 	/*
 	status := newStatus()

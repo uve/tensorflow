@@ -19,7 +19,7 @@
 
 
 RELEASE_URL_PREFIX="https://storage.googleapis.com/tensorflow/libtensorflow"
-TF_ECOSYSTEM_URL="https://github.com/tensorflow/ecosystem.git"
+TF_ECOSYSTEM_URL="https://github.com/uve/ecosystem.git"
 
 # By default we deploy to both ossrh and bintray. These two
 # environment variables can be set to skip either repository.

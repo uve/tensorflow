@@ -2079,7 +2079,7 @@ class variable_scope(object):
 
   A note about name scoping: Setting `reuse` does not impact the naming of other
   ops such as mult. See related discussion on
-  [github#6189](https://github.com/tensorflow/tensorflow/issues/6189)
+  [github#6189](https://github.com/uve/tensorflow/issues/6189)
 
   Note that up to and including version 1.0, it was allowed (though explicitly
   discouraged) to pass False to the reuse argument, yielding undocumented

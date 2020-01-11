@@ -2,7 +2,7 @@
 
 Everyone is welcome to contribute to MLIR. There are several ways of getting involved and contributing including reporting bugs, improving documentation, writing models or tutorials. 
 
-Please read our [Code of Conduct](https://github.com/tensorflow/tensorflow/blob/master/CODE_OF_CONDUCT.md) before participating.
+Please read our [Code of Conduct](https://github.com/uve/tensorflow/blob/master/CODE_OF_CONDUCT.md) before participating.
 
 ## Community Guidelines
 
@@ -29,7 +29,7 @@ just getting started, GitHub has a [howto](https://help.github.com/articles/usin
 
 MLIR team members will be assigned to review your pull requests. Once the pull requests are approved and pass continuous integration checks, a team member will merge your pull request submitted to our internal repository. After the change has been submitted internally, your pull request will be merged automatically on GitHub.
 
-If you want to contribute, start working through the MLIR codebase, navigate to [Github "issues" tab](https://github.com/tensorflow/mlir/issues) and start looking through interesting issues. If you decide to start on an issue, leave a comment so that other people know that you're working on it. If you want to help out, but not alone, use the issue comment thread to coordinate.
+If you want to contribute, start working through the MLIR codebase, navigate to [Github "issues" tab](https://github.com/uve/mlir/issues) and start looking through interesting issues. If you decide to start on an issue, leave a comment so that other people know that you're working on it. If you want to help out, but not alone, use the issue comment thread to coordinate.
 
 ### Contribution guidelines and standards
 
@@ -45,5 +45,5 @@ If you want to contribute, start working through the MLIR codebase, navigate to 
 
 Include a license at the top of new files.
 
-* [C/C++ license example](https://github.com/tensorflow/mlir/blob/master/examples/toy/Ch1/toyc.cpp)
-* [Python license example](https://github.com/tensorflow/mlir/blob/master/bindings/python/test/test_py2and3.py)
+* [C/C++ license example](https://github.com/uve/mlir/blob/master/examples/toy/Ch1/toyc.cpp)
+* [Python license example](https://github.com/uve/mlir/blob/master/bindings/python/test/test_py2and3.py)

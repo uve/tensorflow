@@ -18,7 +18,7 @@ standard Makefile variables like CFLAGS, CC, CXX, and so on.
 ## Project Generation
 
 See
-[tensorflow/lite/experimental/micro](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro)
+[tensorflow/lite/experimental/micro](https://github.com/uve/tensorflow/tree/master/tensorflow/lite/experimental/micro)
 for details on how projects like this can be generated from the main source
 tree.
 

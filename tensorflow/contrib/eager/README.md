@@ -31,9 +31,9 @@ print(m)
 This feature is in early stages and work remains to be done in terms of smooth
 support for distributed and multi-GPU training and performance.
 
-- [Known issues](https://github.com/tensorflow/tensorflow/issues?q=is%3Aissue%20is%3Aopen%20label%3Acomp%3Aeager)
+- [Known issues](https://github.com/uve/tensorflow/issues?q=is%3Aissue%20is%3Aopen%20label%3Acomp%3Aeager)
 - Feedback is welcome, please consider
-  [filing an issue](https://github.com/tensorflow/tensorflow/issues/new) to provide it.
+  [filing an issue](https://github.com/uve/tensorflow/issues/new) to provide it.
 
 ## Installation
 
@@ -44,6 +44,6 @@ Installation instructions at https://www.tensorflow.org/install/
 
 For an introduction to eager execution in TensorFlow, see:
 
-- [User Guide](https://www.tensorflow.org/guide/eager) ([source](https://github.com/tensorflow/docs/blob/master/site/en/tutorials/eager/index.md))
-- Notebook: [Basic Usage](https://github.com/tensorflow/docs/blob/master/site/en/tutorials/eager/eager_basics.ipynb)
-- Notebook: [Automatic differentiation and gradient tape](https://github.com/tensorflow/docs/blob/master/site/en/tutorials/eager/automatic_differentiation.ipynb)
+- [User Guide](https://www.tensorflow.org/guide/eager) ([source](https://github.com/uve/docs/blob/master/site/en/tutorials/eager/index.md))
+- Notebook: [Basic Usage](https://github.com/uve/docs/blob/master/site/en/tutorials/eager/eager_basics.ipynb)
+- Notebook: [Automatic differentiation and gradient tape](https://github.com/uve/docs/blob/master/site/en/tutorials/eager/automatic_differentiation.ipynb)

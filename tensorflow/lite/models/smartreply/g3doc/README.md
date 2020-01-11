@@ -38,7 +38,7 @@ The On-Device Smart Reply model is aimed towards improving the messaging
 experience for day-to-day conversational chat messages. We recommend using this
 model for similar use cases. Some sample messages on which the model does well
 are provided in this [tsv
-file](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/models/testdata/smartreply_samples.tsv)
+file](https://github.com/uve/tensorflow/tree/master/tensorflow/lite/models/testdata/smartreply_samples.tsv)
 for reference. The file format is:
 
 ```
@@ -143,4 +143,4 @@ Following are the ops supported for using On-Device Smart Reply model:
 ## Further Information
 
 *   Open source code
-    [here](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/models/smartreply/).
+    [here](https://github.com/uve/tensorflow/tree/master/tensorflow/lite/models/smartreply/).

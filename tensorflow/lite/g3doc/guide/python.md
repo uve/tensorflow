@@ -76,7 +76,7 @@ import it from `tflite_runtime`.
 
 For example, after you install the package above, copy and run the
 [`label_image.py`](
-https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/examples/python/)
+https://github.com/uve/tensorflow/tree/master/tensorflow/lite/examples/python/)
 file. It will (probably) fail because you don't have the `tensorflow` library
 installed. To fix it, simply edit this line of the file:
 

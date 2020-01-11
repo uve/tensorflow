@@ -834,7 +834,7 @@ class NestedTrackingTest(test.TestCase):
     self.assertEqual([layer.v], layer.variables)
 
   def test_layer_class_not_tracked_as_sublayer(self):
-    # See https://github.com/tensorflow/tensorflow/issues/27431 for details.
+    # See https://github.com/uve/tensorflow/issues/27431 for details.
 
     class LayerWithClassAttribute(keras.layers.Layer):
 

@@ -378,7 +378,7 @@ def _write_dict_to_summary(output_dir, dictionary, current_global_step):
       logging.info(
           'Summary for np.ndarray is not visible in Tensorboard by default. '
           'Consider using a Tensorboard plugin for visualization (see '
-          'https://github.com/tensorflow/tensorboard-plugin-example/blob/master/README.md'
+          'https://github.com/uve/tensorboard-plugin-example/blob/master/README.md'
           ' for more information).')
     else:
       logging.warn(
@@ -1350,7 +1350,7 @@ class Estimator(BaseEstimator):
       strip_default_attrs: Boolean. If `True`, default-valued attributes will be
         removed from the NodeDefs. For a detailed guide, see
         [Stripping Default-Valued
-          Attributes](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/saved_model/README.md#stripping-default-valued-attributes).
+          Attributes](https://github.com/uve/tensorflow/blob/master/tensorflow/python/saved_model/README.md#stripping-default-valued-attributes).
 
     Returns:
       The string path to the exported directory.

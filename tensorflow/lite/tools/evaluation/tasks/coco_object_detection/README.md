@@ -148,14 +148,14 @@ above, and you we still need an output labels file.
 
 To compute mAP in a consistent and interpretable way, we utilize the same 2014
 COCO 'minival' dataset that is mentioned in the
-[Tensorflow detection model zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md).
+[Tensorflow detection model zoo](https://github.com/uve/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md).
 
 The links to download the components of the validation set are:
 
 *   [2014 COCO Validation Images](http://images.cocodataset.org/zips/val2014.zip)
 *   [2014 COCO Train/Val annotations](http://images.cocodataset.org/annotations/annotations_trainval2014.zip):
     Out of the files from this zip, we only require `instances_val2014.json`.
-*   [minival Image IDs](https://github.com/tensorflow/models/blob/master/research/object_detection/data/mscoco_minival_ids.txt) :
+*   [minival Image IDs](https://github.com/uve/models/blob/master/research/object_detection/data/mscoco_minival_ids.txt) :
     Only applies to the 2014 validation set. You would need to copy the contents
     into a text file.
 
@@ -190,7 +190,7 @@ The script generates the following within the output folder:
 ### On Android
 
 (0) Refer to
-https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/android
+https://github.com/uve/tensorflow/tree/master/tensorflow/examples/android
 for configuring NDK and SDK.
 
 (1) Build using the following command:

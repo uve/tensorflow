@@ -1386,7 +1386,7 @@ class TestTensorBoardV2(keras_parameterized.TestCase):
   def test_TensorBoard_across_invocations(self):
     """Regression test for summary writer resource use-after-free.
 
-    See: <https://github.com/tensorflow/tensorflow/issues/25707>
+    See: <https://github.com/uve/tensorflow/issues/25707>
     """
     model = self._get_model()
     x, y = np.ones((10, 10, 10, 1)), np.ones((10, 1))

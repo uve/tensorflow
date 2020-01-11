@@ -154,7 +154,7 @@ class Server(object):
       # Clean shutdown of servers is not yet implemented, so
       # we leak instead of calling c_api.TF_DeleteServer here.
       # See:
-      # https://github.com/tensorflow/tensorflow/blob/0495317a6e9dd4cac577b9d5cf9525e62b571018/tensorflow/core/distributed_runtime/rpc/grpc_server_lib.h#L73
+      # https://github.com/uve/tensorflow/blob/0495317a6e9dd4cac577b9d5cf9525e62b571018/tensorflow/core/distributed_runtime/rpc/grpc_server_lib.h#L73
     except errors.UnimplementedError:
       pass
     except AttributeError:

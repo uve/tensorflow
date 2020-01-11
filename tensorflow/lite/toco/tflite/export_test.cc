@@ -300,12 +300,12 @@ TEST_F(ExportTest, UnsupportedControlFlowErrors) {
             "We are continually in the process of adding support to TensorFlow "
             "Lite for more ops. It would be helpful if you could inform us of "
             "how this conversion went by opening a github issue at "
-            "https://github.com/tensorflow/tensorflow/issues/"
+            "https://github.com/uve/tensorflow/issues/"
             "new?template=40-tflite-op-request.md\n and pasting the "
             "following:\n\nTensorFlow Lite currently doesn't support control "
             "flow ops: Merge, Switch. We are working on supporting control "
             "flow ops, please see github issue at "
-            "https://github.com/tensorflow/tensorflow/issues/28485.");
+            "https://github.com/uve/tensorflow/issues/28485.");
 }
 
 TEST_F(ExportTest, UnsupportedOpsAndNeedEnableFlex) {
@@ -323,7 +323,7 @@ TEST_F(ExportTest, UnsupportedOpsAndNeedEnableFlex) {
       "We are continually in the process of adding support to TensorFlow Lite "
       "for more ops. It would be helpful if you could inform us of how this "
       "conversion went by opening a github issue at "
-      "https://github.com/tensorflow/tensorflow/issues/"
+      "https://github.com/uve/tensorflow/issues/"
       "new?template=40-tflite-op-request.md\n and pasting the "
       "following:\n\nSome of the operators in the model are not supported by "
       "the standard TensorFlow Lite runtime. If those are native TensorFlow "
@@ -353,7 +353,7 @@ TEST_F(ExportTest, UnsupportedOpsNeedCustomImplementation) {
       "We are continually in the process of adding support to TensorFlow Lite "
       "for more ops. It would be helpful if you could inform us of how this "
       "conversion went by opening a github issue at "
-      "https://github.com/tensorflow/tensorflow/issues/"
+      "https://github.com/uve/tensorflow/issues/"
       "new?template=40-tflite-op-request.md\n and pasting the "
       "following:\n\nSome of the operators in the model are not supported by "
       "the standard TensorFlow Lite runtime and are not recognized by "
@@ -383,12 +383,12 @@ TEST_F(ExportTest, UnsupportedControlFlowAndCustomOpsErrors) {
       "We are continually in the process of adding support to TensorFlow Lite "
       "for more ops. It would be helpful if you could inform us of how this "
       "conversion went by opening a github issue at "
-      "https://github.com/tensorflow/tensorflow/issues/"
+      "https://github.com/uve/tensorflow/issues/"
       "new?template=40-tflite-op-request.md\n and pasting the "
       "following:\n\nTensorFlow Lite currently doesn't support control flow "
       "ops: Merge, Switch. We are working on supporting control flow ops, "
       "please see github issue at "
-      "https://github.com/tensorflow/tensorflow/issues/28485. Some of the "
+      "https://github.com/uve/tensorflow/issues/28485. Some of the "
       "operators in the model are not supported by the standard TensorFlow "
       "Lite runtime. If those are native TensorFlow operators, you might be "
       "able to use the extended runtime by passing --enable_select_tf_ops, or "

@@ -18,7 +18,7 @@ Using custom operators consists of three steps.
 *   Testing and profiling your operator correctness and performance,
     respectively. If you wish to test just your custom operator it is best to
     create a model with just your custom operator and using the
-    [benchmark_model](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/tools/benchmark/benchmark_model_test.cc)
+    [benchmark_model](https://github.com/uve/tensorflow/blob/master/tensorflow/tools/benchmark/benchmark_model_test.cc)
     program
 
 Below we describe a complete example of defining Sin and some links to existing
@@ -120,10 +120,10 @@ builtins.AddCustom("Sin", Register_SIN());
 
 If you want to make your custom operators in Java, you would currently need to
 build your own custom JNI layer and compile your own AAR
-[in this jni code](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/java/src/main/native/builtin_ops_jni.cc).
+[in this jni code](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/java/src/main/native/builtin_ops_jni.cc).
 Similarly, if you wish to make these operators available in Python you can place
 your registrations in the
-[Python wrapper code](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/python/interpreter_wrapper/interpreter_wrapper.cc).
+[Python wrapper code](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/python/interpreter_wrapper/interpreter_wrapper.cc).
 
 Note that a similar process as above can be followed for supporting for a set of
 operations instead of a single operator. Just add as many `AddCustom` operators
@@ -144,7 +144,7 @@ implementations of builtins by using the `AddBuiltin`.
     pre-allocating the memory using temporary tensors. You may need to use
     OpData struct to reference the tensor indices in other functions. See
     example in the
-    [kernel for convolution](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/kernels/conv.cc).
+    [kernel for convolution](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/kernels/conv.cc).
     A sample code snippet is below
 
     ```
@@ -191,12 +191,12 @@ operators when you create a TensorFlow graph. This allows you then to extract a
 graph def that has references to those operators. This is currently experimental
 and should only be used by advanced users. There is a full example of how to use
 this in the
-[OpHint code](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/python/op_hint.py).
+[OpHint code](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/python/op_hint.py).
 
 In addition, you can also use a manual graph substitution approach to rewrite
 Tensorflow graphs. There is an example of how this is done in single shot object
 based detection models
-[export script](https://github.com/tensorflow/models/blob/master/research/object_detection/export_tflite_ssd_graph.py).
+[export script](https://github.com/uve/models/blob/master/research/object_detection/export_tflite_ssd_graph.py).
 
 ### TF Graph Attributes
 

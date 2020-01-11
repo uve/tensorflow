@@ -3,7 +3,7 @@
 ## Description
 
 This Android benchmark app is a simple wrapper around the TensorFlow Lite
-[command-line benchmark utility](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/tools/benchmark).
+[command-line benchmark utility](https://github.com/uve/tensorflow/tree/master/tensorflow/lite/tools/benchmark).
 
 Pushing and executing binaries directly on Android is a valid approach to
 benchmarking, but it can result in subtle (but observable) differences in
@@ -20,7 +20,7 @@ application.
 ## To build/install/run
 
 (0) Refer to
-https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/android
+https://github.com/uve/tensorflow/tree/master/tensorflow/examples/android
 to edit the `WORKSPACE` to configure the android NDK/SDK.
 
 (1) Build for your specific platform, e.g.:
@@ -45,7 +45,7 @@ adb push mobilenet_quant_v1_224.tflite /data/local/tmp
 ```
 
 (4) Run the benchmark. Additional command-line flags are documented
-[here](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/tools/benchmark/README.md)
+[here](https://github.com/uve/tensorflow/tree/master/tensorflow/lite/tools/benchmark/README.md)
 and can be appended to the `args` string alongside the required `--graph` flag
 (note that all args must be nested in the single quoted string that follows the
 args key).

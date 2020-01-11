@@ -141,7 +141,7 @@ With the release of TF 1.6 and JetPack for Android 3.2 (currently pending), you 
 First, download and install JetPack for Android version 3.2 or greater from [Nvidia](https://developers.nvidia.com). Note that as of the TF 1.6 release the JetPack for Android 3.2 release is still pending, and regular JetPack for L4T will not work.
 
 ```bash
-git clone https://github.com/tensorflow/tensorflow.git
+git clone https://github.com/uve/tensorflow.git
 cd tensorflow
 JETPACK=$HOME/JetPack_Android_3.2
 TEGRA_LIBS="$JETPACK/cuDNN/aarch64/cuda/lib64/libcudnn.so  $JETPACK/cuda/extras/CUPTI/lib64/libcupti.so $JETPACK/cuda/targets/aarch64-linux-androideabi/lib64/libcufft.so"
@@ -423,7 +423,7 @@ is why the examples above specify `CXX=g++-4.8` explicitly, and why we install
 it using apt-get. If you have partially built using the default gcc 4.9, hit the
 error and switch to 4.8, you need to do a
 `make -f tensorflow/contrib/makefile/Makefile clean` before you build. If you
-don't, the build will appear to succeed but you'll encounter [malloc(): memory corruption errors](https://github.com/tensorflow/tensorflow/issues/3442)
+don't, the build will appear to succeed but you'll encounter [malloc(): memory corruption errors](https://github.com/uve/tensorflow/issues/3442)
 when you try to run any programs using the library.
 
 For more examples, look at the tensorflow/contrib/pi_examples folder in the
@@ -497,5 +497,5 @@ These are the most common reasons for makefile breakages, but it's also
 possible you may hit something unusual, like a platform incompatibility. For
 those, you'll need to see if you can reproduce the issue on that particular
 platform and debug it there. You can also reach out to the broader TensorFlow
-team by [filing a Github issue](https://github.com/tensorflow/tensorflow/issues)
+team by [filing a Github issue](https://github.com/uve/tensorflow/issues)
 to ask for help.

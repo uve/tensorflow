@@ -58,7 +58,7 @@ class ImageNetInput(object):
   The validation data is in the same format but sharded in 128 files.
 
   The format of the data required is created by the script at:
-      https://github.com/tensorflow/tpu/blob/master/tools/datasets/imagenet_to_gcs.py
+      https://github.com/uve/tpu/blob/master/tools/datasets/imagenet_to_gcs.py
 
   Args:
     is_training: `bool` for whether the input is for training

@@ -1286,7 +1286,7 @@ def set_windows_build_flags(environ_cp):
       'Eigen strong inline overridden.', 'Not overriding eigen strong inline, '
       'some compilations could take more than 20 mins.'):
     # Due to a known MSVC compiler issue
-    # https://github.com/tensorflow/tensorflow/issues/10521
+    # https://github.com/uve/tensorflow/issues/10521
     # Overriding eigen strong inline speeds up the compiling of
     # conv_grad_ops_3d.cc and conv_ops_3d.cc by 20 minutes,
     # but this also hurts the performance. Let users decide what they want.

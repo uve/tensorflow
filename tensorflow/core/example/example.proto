@@ -7,7 +7,7 @@ option cc_enable_arenas = true;
 option java_outer_classname = "ExampleProtos";
 option java_multiple_files = true;
 option java_package = "org.tensorflow.example";
-option go_package = "github.com/tensorflow/tensorflow/tensorflow/go/core/example";
+option go_package = "github.com/uve/tensorflow/tensorflow/go/core/example";
 package tensorflow;
 
 // An Example is a mostly-normalized data format for storing data for
@@ -201,7 +201,7 @@ message Example {
 //     examples.
 //   - For sequence modeling, e.g.:
 //        http://colah.github.io/posts/2015-08-Understanding-LSTMs/
-//        https://github.com/tensorflow/nmt
+//        https://github.com/uve/nmt
 //     the feature lists represent a sequence of frames.
 //     In this scenario, all FeatureLists in a SequenceExample have the same
 //     number of Feature messages, so that the ith element in each FeatureList

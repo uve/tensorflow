@@ -6,7 +6,7 @@ If you open a GitHub issue, here is our policy:
 
 1. It must be a bug, a feature request, or a significant problem with documentation (for small docs fixes please send a PR instead).
 2. The form below must be filled out.
-3. It shouldn't be a TensorBoard issue. Those go [here](https://github.com/tensorflow/tensorboard/issues).
+3. It shouldn't be a TensorBoard issue. Those go [here](https://github.com/uve/tensorboard/issues).
 
 **Here's why we have that policy**: TensorFlow developers respond to issues. We want to focus on work that benefits the whole community, e.g., fixing bugs and adding features. Support only helps individuals. GitHub also notifies thousands of people when issues are filed. We want them to see you communicating an interesting problem, rather than being redirected to Stack Overflow.
 
@@ -27,7 +27,7 @@ If you open a GitHub issue, here is our policy:
 
 You can collect some of this information using our environment capture script:
 
-https://github.com/tensorflow/tensorflow/tree/master/tools/tf_env_collect.sh
+https://github.com/uve/tensorflow/tree/master/tools/tf_env_collect.sh
 
 You can obtain the TensorFlow version with:
 

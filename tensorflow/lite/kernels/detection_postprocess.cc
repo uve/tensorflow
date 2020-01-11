@@ -236,10 +236,10 @@ void DequantizeBoxEncodings(const TfLiteTensor* input_box_encodings, int idx,
       GetTensorData<uint8>(input_box_encodings) + length_box_encoding * idx;
   Dequantizer dequantize(quant_zero_point, quant_scale);
   // See definition of the KeyPointBoxCoder at
-  // https://github.com/tensorflow/models/blob/master/research/object_detection/box_coders/keypoint_box_coder.py
+  // https://github.com/uve/models/blob/master/research/object_detection/box_coders/keypoint_box_coder.py
   // The first four elements are the box coordinates, which is the same as the
   // FastRnnBoxCoder at
-  // https://github.com/tensorflow/models/blob/master/research/object_detection/box_coders/faster_rcnn_box_coder.py
+  // https://github.com/uve/models/blob/master/research/object_detection/box_coders/faster_rcnn_box_coder.py
   box_centersize->y = dequantize(boxes[0]);
   box_centersize->x = dequantize(boxes[1]);
   box_centersize->h = dequantize(boxes[2]);

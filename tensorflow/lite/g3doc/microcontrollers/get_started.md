@@ -29,19 +29,19 @@ In the example, a model is trained to replicate a sine function. When deployed
 to a microcontroller, its predictions are used to either blink LEDs or control
 an animation.
 
-<a class="button button-primary" href="https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro/examples/hello_world">Hello
+<a class="button button-primary" href="https://github.com/uve/tensorflow/tree/master/tensorflow/lite/experimental/micro/examples/hello_world">Hello
 World example</a>
 
 The example code includes a Jupyter notebook that demonstrates how the model is
 trained and converted:
 
-<a class="button button-primary" href="https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro/examples/hello_world/create_sine_model.ipynb">create_sine_model.ipynb</a>
+<a class="button button-primary" href="https://github.com/uve/tensorflow/tree/master/tensorflow/lite/experimental/micro/examples/hello_world/create_sine_model.ipynb">create_sine_model.ipynb</a>
 
 The process of building and converting a model is also covered in the guide
 [Build and convert models](build_convert.md).
 
 To see how inference is performed, take a look at
-[hello_world_test.cc](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/examples/hello_world/hello_world_test.cc).
+[hello_world_test.cc](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/experimental/micro/examples/hello_world/hello_world_test.cc).
 
 The example is tested on the following platforms:
 
@@ -58,7 +58,7 @@ to identify keywords in speech. The sample code captures audio from a device's
 microphones. The model classifies this audio in real time, determining whether
 the word "yes" or "no" has been spoken.
 
-<a class="button button-primary" href="https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro/examples/micro_speech">Micro
+<a class="button button-primary" href="https://github.com/uve/tensorflow/tree/master/tensorflow/lite/experimental/micro/examples/micro_speech">Micro
 Speech example</a>
 
 The [Run inference](#run_inference) section walks through the code of the Micro
@@ -81,7 +81,7 @@ This example shows how you can use TensorFlow Lite to run a 250 kilobyte neural
 network to recognize people in images captured by a camera. It is designed to
 run on systems with small amounts of memory such as microcontrollers and DSPs.
 
-<a class="button button-primary" href="https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro/examples/micro_vision">Micro
+<a class="button button-primary" href="https://github.com/uve/tensorflow/tree/master/tensorflow/lite/experimental/micro/examples/micro_vision">Micro
 Vision example</a>
 
 The example is tested on the following platforms:
@@ -93,7 +93,7 @@ The example is tested on the following platforms:
 ## Run inference
 
 The following section walks through the [Micro Speech](#micro_speech) sample's
-[main.cc](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/examples/micro_speech/main.cc)
+[main.cc](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/experimental/micro/examples/micro_speech/main.cc)
 and explains how it used TensorFlow Lite for Microcontrollers to run inference.
 
 ### Includes
@@ -108,16 +108,16 @@ To use the library, we must include the following header files:
 #include "tensorflow/lite/version.h"
 ```
 
--   [`all_ops_resolver.h`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/kernels/all_ops_resolver.h)
+-   [`all_ops_resolver.h`](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/experimental/micro/kernels/all_ops_resolver.h)
     provides the operations used by the interpreter to run the model.
--   [`micro_error_reporter.h`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/micro_error_reporter.h)
+-   [`micro_error_reporter.h`](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/experimental/micro/micro_error_reporter.h)
     outputs debug information.
--   [`micro_interpreter.h`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/micro_interpreter.h)
+-   [`micro_interpreter.h`](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/experimental/micro/micro_interpreter.h)
     contains code to handle and run models.
--   [`schema_generated.h`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/schema/schema_generated.h)
+-   [`schema_generated.h`](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/schema/schema_generated.h)
     contains the schema for the TensorFlow Lite
     [`FlatBuffer`](https://google.github.io/flatbuffers/) model file format.
--   [`version.h`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/version.h)
+-   [`version.h`](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/version.h)
     provides versioning information for the TensorFlow Lite schema.
 
 The sample also includes some other files. These are the most significant:
@@ -128,14 +128,14 @@ The sample also includes some other files. These are the most significant:
 #include "tensorflow/lite/experimental/micro/examples/micro_speech/micro_features/tiny_conv_micro_features_model_data.h"
 ```
 
--   [`feature_provider.h`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/examples/micro_speech/micro_features/feature_provider.h)
+-   [`feature_provider.h`](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/experimental/micro/examples/micro_speech/micro_features/feature_provider.h)
     contains code to extract features from the audio stream to input to the
     model.
--   [`tiny_conv_micro_features_model_data.h`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/examples/micro_speech/micro_features/tiny_conv_micro_features_model_data.h)
+-   [`tiny_conv_micro_features_model_data.h`](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/experimental/micro/examples/micro_speech/micro_features/tiny_conv_micro_features_model_data.h)
     contains the model stored as a `char` array. Read
     [Build and convert models](build_convert.md) to learn how to convert a
     TensorFlow Lite model into this format.
--   [`micro_model_settings.h`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/examples/micro_speech/micro_features/micro_model_settings.h)
+-   [`micro_model_settings.h`](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/experimental/micro/examples/micro_speech/micro_features/micro_model_settings.h)
     defines various constants related to the model.
 
 ### Set up logging
@@ -175,7 +175,7 @@ if (model->version() != TFLITE_SCHEMA_VERSION) {
 ### Instantiate operations resolver
 
 An
-[`AllOpsResolver`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/kernels/all_ops_resolver.h)
+[`AllOpsResolver`](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/experimental/micro/kernels/all_ops_resolver.h)
 instance is required by the interpreter to access TensorFlow operations. This
 class can be extended to add custom operations to your project:
 
@@ -230,16 +230,16 @@ if ((model_input->dims->size != 4) || (model_input->dims->data[0] != 1) ||
 
 In this snippet, the variables `kFeatureSliceCount` and `kFeatureSliceSize`
 relate to properties of the input and are defined in
-[`micro_model_settings.h`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/examples/micro_speech/micro_features/micro_model_settings.h).
+[`micro_model_settings.h`](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/experimental/micro/examples/micro_speech/micro_features/micro_model_settings.h).
 The enum value `kTfLiteUInt8` is a reference to one of the TensorFlow Lite data
 types, and is defined in
-[`c_api_internal.h`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/c/c_api_internal.h).
+[`c_api_internal.h`](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/c/c_api_internal.h).
 
 ### Generate features
 
 The data we input to our model must be generated from the microcontroller's
 audio input. The `FeatureProvider` class defined in
-[`feature_provider.h`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/examples/micro_speech/micro_features/feature_provider.h)
+[`feature_provider.h`](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/experimental/micro/examples/micro_speech/micro_features/feature_provider.h)
 captures audio and converts it into a set of features that will be passed into
 the model. When it is instantiated, we use the `TfLiteTensor` obtained earlier
 to pass in a pointer to the input array. This is used by the `FeatureProvider`
@@ -280,7 +280,7 @@ if (invoke_status != kTfLiteOk) {
 
 We can check the return value, a `TfLiteStatus`, to determine if the run was
 successful. The possible values of `TfLiteStatus`, defined in
-[`c_api_internal.h`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/c/c_api_internal.h),
+[`c_api_internal.h`](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/c/c_api_internal.h),
 are `kTfLiteOk` and `kTfLiteError`.
 
 ### Obtain the output
@@ -310,7 +310,7 @@ which class has the highest probability:
 
 Elsewhere in the sample, a more sophisticated algorithm is used to smooth
 recognition results across a number of frames. This is defined in
-[recognize_commands.h](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/examples/micro_speech/recognize_commands.h).
+[recognize_commands.h](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/experimental/micro/examples/micro_speech/recognize_commands.h).
 The same technique can be used to improve reliability when processing any
 continuous stream of data.
 

@@ -262,7 +262,7 @@ string GetTempFilename(const string& extension) {
     struct stat statbuf;
     if (!stat(dir, &statbuf) && S_ISDIR(statbuf.st_mode)) {
       // UniqueId is added here because mkstemps is not as thread safe as it
-      // looks. https://github.com/tensorflow/tensorflow/issues/5804 shows
+      // looks. https://github.com/uve/tensorflow/issues/5804 shows
       // the problem.
       string tmp_filepath;
       int fd;

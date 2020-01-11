@@ -4,17 +4,17 @@ This document lists TensorFlow Lite performance benchmarks when running well
 known models on some Android and iOS devices.
 
 These performance benchmark numbers were generated with the
-[Android TFLite benchmark binary](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/tools/benchmark)
-and the [iOS benchmark app](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/tools/benchmark/ios).
+[Android TFLite benchmark binary](https://github.com/uve/tensorflow/tree/master/tensorflow/lite/tools/benchmark)
+and the [iOS benchmark app](https://github.com/uve/tensorflow/tree/master/tensorflow/lite/tools/benchmark/ios).
 
 # Android performance benchmarks
 
 For Android benchmarks, the CPU affinity is set to use big cores on the device to
-reduce variance (see [details](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/tools/benchmark#reducing-variance-between-runs-on-android)).
+reduce variance (see [details](https://github.com/uve/tensorflow/tree/master/tensorflow/lite/tools/benchmark#reducing-variance-between-runs-on-android)).
 
 It assumes that models were download and unzipped to the
 `/data/local/tmp/tflite_models` directory. The benchmark binary is built
-using [these instructions](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/tools/benchmark#on-android)
+using [these instructions](https://github.com/uve/tensorflow/tree/master/tensorflow/lite/tools/benchmark#on-android)
 and assumed in the `/data/local/tmp` directory.
 
 To run the benchmark:
@@ -116,7 +116,7 @@ Pixel xl | 0c |
 # iOS benchmarks
 
 To run iOS benchmarks, the [benchmark
-app](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/tools/benchmark/ios)
+app](https://github.com/uve/tensorflow/tree/master/tensorflow/lite/tools/benchmark/ios)
 was modified to include the appropriate model and `benchmark_params.json` was
 modified  to set `num_threads` to 1.
 

@@ -19,7 +19,7 @@ natively on your system.
     https://hub.docker.com/r/tensorflow/tensorflow/tags/.
 
 3.  Based on your choice of the image, pick one of the scripts under
-    https://github.com/tensorflow/tensorflow/tree/master/tensorflow/tools/ci_build/linux
+    https://github.com/uve/tensorflow/tree/master/tensorflow/tools/ci_build/linux
     and run them from the TensorFlow repository root.
 
 ### Run TensorFlow CI Scripts Natively on your Machine

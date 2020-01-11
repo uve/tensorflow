@@ -37,7 +37,7 @@ from each of the supported data formats into a TensorFlow Lite FlatBuffers.
 ### Convert a TensorFlow GraphDef <a name="graphdef"></a>
 
 The follow example converts a basic TensorFlow GraphDef (frozen by
-[freeze_graph.py](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/tools/freeze_graph.py))
+[freeze_graph.py](https://github.com/uve/tensorflow/blob/master/tensorflow/python/tools/freeze_graph.py))
 into a TensorFlow Lite FlatBuffer to perform floating-point inference. Frozen
 graphs contain the variables stored in Checkpoint files as Const ops.
 
@@ -95,7 +95,7 @@ tflite_convert \
 
 The TensorFlow Lite Converter is compatible with fixed point quantization models
 described
-[here](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/quantize/README.md).
+[here](https://github.com/uve/tensorflow/blob/master/tensorflow/contrib/quantize/README.md).
 These are float models with `FakeQuant*` ops inserted at the boundaries of fused
 layers to record min-max range information. This generates a quantized inference
 workload that reproduces the quantization behavior that was used during

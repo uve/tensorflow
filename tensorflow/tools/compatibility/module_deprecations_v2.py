@@ -58,7 +58,7 @@ _CONTRIB_SEQ2SEQ_WARNING = (
     ast_edits.WARNING,
     "(Manual edit required) tf.contrib.seq2seq.* have been migrated to "
     "`tfa.seq2seq.*` in TensorFlow Addons. Please see "
-    "https://github.com/tensorflow/addons for more info.")
+    "https://github.com/uve/addons for more info.")
 
 MODULE_DEPRECATIONS = {
     "tf.contrib": _CONTRIB_WARNING,

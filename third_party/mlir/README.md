@@ -28,7 +28,7 @@ For more information on MLIR, please see:
 
 Join the [MLIR mailing list](https://groups.google.com/a/tensorflow.org/forum/#!forum/mlir)
 to hear about announcements and discussions.
-Please be mindful of the [TensorFlow Code of Conduct](https://github.com/tensorflow/tensorflow/blob/master/CODE_OF_CONDUCT.md),
+Please be mindful of the [TensorFlow Code of Conduct](https://github.com/uve/tensorflow/blob/master/CODE_OF_CONDUCT.md),
 which pledges to foster an open and welcoming environment.
 
 ## What is MLIR for?
@@ -93,7 +93,7 @@ gcc 7.
 
 ```sh
 git clone https://github.com/llvm/llvm-project.git
-git clone https://github.com/tensorflow/mlir llvm-project/llvm/projects/mlir
+git clone https://github.com/uve/mlir llvm-project/llvm/projects/mlir
 mkdir llvm-project/build
 cd llvm-project/build
 cmake -G Ninja ../llvm -DLLVM_BUILD_EXAMPLES=ON -DLLVM_ENABLE_CXX1Y=Y -DLLVM_TARGETS_TO_BUILD="host"
@@ -107,7 +107,7 @@ REM In shell with Visual Studio environment set up, e.g., with command such as
 REM   <visual-studio-install>\Auxiliary\Build\vcvarsall.bat" x64
 REM invoked.
 git clone https://github.com/llvm/llvm-project.git
-git clone https://github.com/tensorflow/mlir llvm-project\llvm\projects\mlir
+git clone https://github.com/uve/mlir llvm-project\llvm\projects\mlir
 mkdir llvm-project\build
 cd llvm-project\build
 cmake ..\llvm -G "Visual Studio 15 2017 Win64" -DLLVM_BUILD_EXAMPLES=ON -DLLVM_ENABLE_CXX1Y=Y -DLLVM_TARGETS_TO_BUILD="host" -DCMAKE_BUILD_TYPE=Release -Thost=x64

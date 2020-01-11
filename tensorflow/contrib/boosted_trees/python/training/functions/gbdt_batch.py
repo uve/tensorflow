@@ -1226,7 +1226,7 @@ class GradientBoostedDecisionTreeModel(object):
   def _full_hessian(self, grads, predictions):
     """Prepares hessians for full-hessian multiclass strategy."""
     # Because of
-    # https://github.com/tensorflow/tensorflow/issues/675, we can't just
+    # https://github.com/uve/tensorflow/issues/675, we can't just
     # compute the full hessian with a single call to gradients, but instead
     # must compute it row-by-row.
     gradients_list = array_ops.unstack(

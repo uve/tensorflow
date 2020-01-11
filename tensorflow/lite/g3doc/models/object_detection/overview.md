@@ -11,9 +11,9 @@ If you are new to TensorFlow Lite and are working with Android or iOS, we
 recommend exploring the following example applications that can help you get
 started.
 
-<a class="button button-primary" href="https://github.com/tensorflow/examples/tree/master/lite/examples/object_detection/android">Android
+<a class="button button-primary" href="https://github.com/uve/examples/tree/master/lite/examples/object_detection/android">Android
 example</a>
-<a class="button button-primary" href="https://github.com/tensorflow/examples/tree/master/lite/examples/object_detection/ios">iOS
+<a class="button button-primary" href="https://github.com/uve/examples/tree/master/lite/examples/object_detection/ios">iOS
 example</a>
 
 If you are using a platform other than Android or iOS, or you are already

@@ -47,7 +47,7 @@ import (
 	"unsafe"
 
 	"github.com/golang/protobuf/proto"
-	pb "github.com/tensorflow/tensorflow/tensorflow/go/genop/internal/proto/github.com/tensorflow/tensorflow/tensorflow/go/core/framework"
+	pb "github.com/uve/tensorflow/tensorflow/go/genop/internal/proto/github.com/uve/tensorflow/tensorflow/go/core/framework"
 )
 
 // GenerateFunctionsForRegisteredOps writes a Go source code file to w
@@ -181,7 +181,7 @@ var (
 
 package op
 
-import tf "github.com/tensorflow/tensorflow/tensorflow/go"
+import tf "github.com/uve/tensorflow/tensorflow/go"
 
 // optionalAttr is an intentionally un-exported type to hide
 // details of how optional attributes to operations are implemented.

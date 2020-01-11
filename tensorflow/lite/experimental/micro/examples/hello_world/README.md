@@ -10,7 +10,7 @@ contains implementations for several platforms. In each case, the model is used
 to generate a pattern of data that is used to either blink LEDs or control an
 animation.
 
-![Animation of example running on STM32F746](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/examples/hello_world/images/STM32F746.gif)
+![Animation of example running on STM32F746](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/experimental/micro/examples/hello_world/images/STM32F746.gif)
 
 ## Table of contents
 
@@ -24,7 +24,7 @@ animation.
 ### Understand the model
 
 The sample comes with a pre-trained model. The code used to train and convert
-the model is available as a tutorial in [create_sine_model.ipynb](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro/examples/hello_world/create_sine_model.ipynb).
+the model is available as a tutorial in [create_sine_model.ipynb](https://github.com/uve/tensorflow/tree/master/tensorflow/lite/experimental/micro/examples/hello_world/create_sine_model.ipynb).
 
 Walk through this tutorial to understand what the model does,
 how it works, and how it was converted for use with TensorFlow Lite for
@@ -36,7 +36,7 @@ To compile and test this example on a desktop Linux or macOS machine, first
 clone the TensorFlow repository from GitHub to a convenient place:
 
 ```bash
-git clone --depth 1 https://github.com/tensorflow/tensorflow.git
+git clone --depth 1 https://github.com/uve/tensorflow.git
 ```
 
 Next, `cd` into the source directory from a terminal, and then run the following
@@ -57,7 +57,7 @@ the trained TensorFlow model, runs some example inputs through it, and got the
 expected outputs.
 
 To understand how TensorFlow Lite does this, you can look at the source in
-[hello_world_test.cc](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro/examples/hello_world/hello_world_test.cc).
+[hello_world_test.cc](https://github.com/uve/tensorflow/tree/master/tensorflow/lite/experimental/micro/examples/hello_world/hello_world_test.cc).
 It's a fairly small amount of code that creates an interpreter, gets a handle to
 a model that's been compiled into the program, and then invokes the interpreter
 with the model and sample inputs.
@@ -67,7 +67,7 @@ with the model and sample inputs.
 The following instructions will help you build and deploy this sample
 to [Arduino](https://www.arduino.cc/) devices.
 
-![Animation of example running on Arduino MKRZERO](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/examples/hello_world/images/arduino_mkrzero.gif)
+![Animation of example running on Arduino MKRZERO](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/experimental/micro/examples/hello_world/images/arduino_mkrzero.gif)
 
 The sample has been tested with the following devices:
 
@@ -127,7 +127,7 @@ and 255.
 The following instructions will help you build and deploy this sample on the
 [SparkFun Edge development board](https://sparkfun.com/products/15170).
 
-![Animation of example running on SparkFun Edge](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/examples/hello_world/images/sparkfun_edge.gif)
+![Animation of example running on SparkFun Edge](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/experimental/micro/examples/hello_world/images/sparkfun_edge.gif)
 
 If you're new to using this board, we recommend walking through the
 [AI on a microcontroller with TensorFlow Lite and SparkFun Edge](https://codelabs.developers.google.com/codelabs/sparkfun-tensorflow)
@@ -267,7 +267,7 @@ The following instructions will help you build and deploy the sample to the
 [STM32F7 discovery kit](https://os.mbed.com/platforms/ST-Discovery-F746NG/)
 using [ARM Mbed](https://github.com/ARMmbed/mbed-cli).
 
-![Animation of example running on STM32F746](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/examples/hello_world/images/STM32F746.gif)
+![Animation of example running on STM32F746](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/experimental/micro/examples/hello_world/images/STM32F746.gif)
 
 Before we begin, you'll need the following:
 

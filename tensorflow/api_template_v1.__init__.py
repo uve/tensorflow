@@ -85,9 +85,9 @@ from tensorflow.python.util.lazy_loader import LazyLoader  # pylint: disable=g-i
 _CONTRIB_WARNING = """
 The TensorFlow contrib module will not be included in TensorFlow 2.0.
 For more information, please see:
-  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
-  * https://github.com/tensorflow/addons
-  * https://github.com/tensorflow/io (for I/O related ops)
+  * https://github.com/uve/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/uve/addons
+  * https://github.com/uve/io (for I/O related ops)
 If you depend on functionality not listed there, please file an issue.
 """
 contrib = LazyLoader('contrib', globals(), 'tensorflow.contrib',

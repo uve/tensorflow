@@ -34,7 +34,7 @@ namespace toco {
   //
   // If len(params) to the tf.nn.embedding_lookup == 1, the whole op becomes
   // simply a gather:
-  // https://github.com/tensorflow/tensorflow/blob/r1.5/tensorflow/python/ops/embedding_ops.py#L150
+  // https://github.com/uve/tensorflow/blob/r1.5/tensorflow/python/ops/embedding_ops.py#L150
   //
   // Notes on this implementation:
   // - only supports partition_strategy='mod'

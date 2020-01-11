@@ -3,7 +3,7 @@
 To get started with TensorFlow Lite on Android, we recommend exploring the
 following example.
 
-<a class="button button-primary" href="https://github.com/tensorflow/examples/tree/master/lite/examples/image_classification/android">Android
+<a class="button button-primary" href="https://github.com/uve/examples/tree/master/lite/examples/image_classification/android">Android
 image classification example</a>
 
 For an explanation of the source code, you should also read
@@ -28,12 +28,12 @@ of use cases are available in
 ## Build in Android Studio
 
 To build the example in Android Studio, follow the instructions in
-[README.md](https://github.com/tensorflow/examples/blob/master/lite/examples/image_classification/android/README.md).
+[README.md](https://github.com/uve/examples/blob/master/lite/examples/image_classification/android/README.md).
 
 ## Create your own Android app
 
 To get started quickly writing your own Android code, we recommend using our
-[Android image classification example](https://github.com/tensorflow/examples/tree/master/lite/examples/image_classification/android)
+[Android image classification example](https://github.com/uve/examples/tree/master/lite/examples/image_classification/android)
 as a starting point.
 
 The following sections contain some useful information for working with

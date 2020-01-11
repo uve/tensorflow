@@ -39,7 +39,7 @@ data has to leave the device.
 *   Pre-generated project files for popular embedded development platforms, such
     as Arduino, Keil, and Mbed
 *   Optimizations for several embedded platforms
-*   [Sample code](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro/examples/micro_speech)
+*   [Sample code](https://github.com/uve/tensorflow/tree/master/tensorflow/lite/experimental/micro/examples/micro_speech)
     demonstrating spoken hotword detection
 
 ## Developer workflow
@@ -89,14 +89,14 @@ project files that you can download for the following platforms:
 Device                                                                                         | Mbed                                                                           | Keil                                                                           | Make/GCC
 ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------ | --------
 [STM32F746G Discovery Board](https://www.st.com/en/evaluation-tools/32f746gdiscovery.html)     | [Download](https://drive.google.com/open?id=1OtgVkytQBrEYIpJPsE8F6GUKHPBS3Xeb) | -                                                                              | [Download](https://drive.google.com/open?id=1u46mTtAMZ7Y1aD-He1u3R8AE4ZyEpnOl)
-["Blue Pill" STM32F103-compatible development board](https://github.com/google/stm32_bare_lib) | -                                                                              | -                                                                              | [Instructions](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/README.md#building-for-the-blue-pill-stm32f103-using-make)
-[Ambiq Micro Apollo3Blue EVB using Make](https://ambiqmicro.com/apollo-ultra-low-power-mcus/)  | -                                                                              | -                                                                              | [Instructions](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/README.md#building-for-ambiq-micro-apollo3blue-evb-using-make)
+["Blue Pill" STM32F103-compatible development board](https://github.com/google/stm32_bare_lib) | -                                                                              | -                                                                              | [Instructions](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/experimental/micro/README.md#building-for-the-blue-pill-stm32f103-using-make)
+[Ambiq Micro Apollo3Blue EVB using Make](https://ambiqmicro.com/apollo-ultra-low-power-mcus/)  | -                                                                              | -                                                                              | [Instructions](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/experimental/micro/README.md#building-for-ambiq-micro-apollo3blue-evb-using-make)
 [Generic Keil uVision Projects](http://www2.keil.com/mdk5/uvision/)                            | -                                                                              | [Download](https://drive.google.com/open?id=1Lw9rsdquNKObozClLPoE5CTJLuhfh5mV) | -
-[Eta Compute ECM3531 EVB](https://etacompute.com/)                                             | -                                                                              | -                                                                              | [Instructions](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/README.md#Building-for-the-Eta-Compute-ECM3531-EVB-using-Make)
+[Eta Compute ECM3531 EVB](https://etacompute.com/)                                             | -                                                                              | -                                                                              | [Instructions](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/experimental/micro/README.md#Building-for-the-Eta-Compute-ECM3531-EVB-using-Make)
 
 If your device is not yet supported, it may not be difficult add support. You
 can learn about that process in
-[README.md](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/README.md#how-to-port-tensorflow-lite-micro-to-a-new-platform).
+[README.md](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/experimental/micro/README.md#how-to-port-tensorflow-lite-micro-to-a-new-platform).
 
 ### Portable reference code
 
@@ -119,7 +119,7 @@ well-tested, easy to integrate, and fully compatible with TensorFlow Lite via a
 consistent file schema, interpreter, API, and kernel interface.
 
 You can read more about the design in
-[goals and tradeoffs](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro#goals).
+[goals and tradeoffs](https://github.com/uve/tensorflow/tree/master/tensorflow/lite/experimental/micro#goals).
 
 ## Limitations
 

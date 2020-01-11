@@ -4,7 +4,7 @@ about: Use this template for build/installation issues
 
 ---
 
-<em>Please make sure that this is a build/installation issue. As per our [GitHub Policy](https://github.com/tensorflow/tensorflow/blob/master/ISSUES.md), we only address code/doc bugs, performance issues, feature requests and build/installation issues on GitHub. tag:build_template</em>
+<em>Please make sure that this is a build/installation issue. As per our [GitHub Policy](https://github.com/uve/tensorflow/blob/master/ISSUES.md), we only address code/doc bugs, performance issues, feature requests and build/installation issues on GitHub. tag:build_template</em>
 
 **System information**
 - OS Platform and Distribution (e.g., Linux Ubuntu 16.04):

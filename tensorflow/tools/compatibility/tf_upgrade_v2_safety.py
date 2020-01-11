@@ -41,7 +41,7 @@ class TFAPIChangeSpec(ast_edits.APIChangeSpec):
           ast_edits.WARNING, (
               "(Manual edit required) `{}` has been migrated to `{}` in "
               "TensorFlow Addons. The API spec may have changed during the "
-              "migration. Please see https://github.com/tensorflow/addons "
+              "migration. Please see https://github.com/uve/addons "
               "for more info.").format(symbol, replacement))
       self.function_warnings[symbol] = warning
 

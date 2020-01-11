@@ -135,7 +135,7 @@ python tensorflow/lite/tools/accuracy/ilsvrc/generate_validation_labels.py \
 ### On Android
 
 (0) Refer to
-https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/android
+https://github.com/uve/tensorflow/tree/master/tensorflow/examples/android
 for configuring NDK and SDK.
 
 (1) Build using the following command:

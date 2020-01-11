@@ -994,7 +994,7 @@ class FromSessionTest(TestModels, parameterized.TestCase):
   def testResizingIntermediateDynamicTensor(self):
     # This is a regression test for the case where shape of dynamic output
     # tensors changes between invocations.
-    # See also https://github.com/tensorflow/tensorflow/issues/26549
+    # See also https://github.com/uve/tensorflow/issues/26549
     with ops.Graph().as_default():
       input_tensor = array_ops.placeholder(shape=[1, 1], dtype=dtypes.float32)
       input2_tensor = array_ops.placeholder(shape=[1], dtype=dtypes.float32)

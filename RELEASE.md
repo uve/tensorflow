@@ -39,7 +39,7 @@ For information on upgrading your existing TensorFlow 1.x models, please refer t
   Removed the `freeze_graph` command line tool; `SavedModel` should be used in place of frozen graphs.
   
 * `tf.contrib`:
-  * `tf.contrib` has been deprecated, and functionality has been either migrated to the core TensorFlow API, to an ecosystem project such as [tensorflow/addons](https://www.github.com/tensorflow/addons) or [tensorflow/io](https://www.github.com/tensorflow/io), or removed entirely.
+  * `tf.contrib` has been deprecated, and functionality has been either migrated to the core TensorFlow API, to an ecosystem project such as [tensorflow/addons](https://www.github.com/uve/addons) or [tensorflow/io](https://www.github.com/uve/io), or removed entirely.
   * Remove `tf.contrib.timeseries` dependency on TF distributions.
   * Replace contrib references with `tf.estimator.experimental.*` for apis in `early_stopping.py`.
   
@@ -66,7 +66,7 @@ For information on upgrading your existing TensorFlow 1.x models, please refer t
 * Add `UnifiedGRU` as the new GRU implementation for tf2.0. Change the default recurrent activation function for GRU from `hard_sigmoid` to `sigmoid`, and `reset_after` to True in 2.0. Historically recurrent activation is `hard_sigmoid` since it is fast than 'sigmoid'. With new unified backend between CPU and GPU mode, since the CuDNN kernel is using sigmoid, we change the default for CPU mode to sigmoid as well. With that, the default GRU will be compatible with both CPU and GPU kernel. This will enable user with GPU to use CuDNN kernel by default and get a 10x performance boost in training. Note that this is checkpoint breaking change. If user want to use their 1.x pre-trained checkpoint, please construct the layer with GRU(recurrent_activation='hard_sigmoid', reset_after=False) to fallback to 1.x behavior.
 * `CUDNN_INSTALL_PATH`, `TENSORRT_INSTALL_PATH`, `NCCL_INSTALL_PATH`, `NCCL_HDR_PATH` are deprecated. Use `TF_CUDA_PATHS` instead which supports a comma-separated list of base paths that are searched to find CUDA libraries and headers.
 
-Refer to our [public project status tracker](https://github.com/orgs/tensorflow/projects/4) and [issues tagged with `2.0`](https://github.com/tensorflow/tensorflow/issues?q=is%3Aopen+is%3Aissue+label%3A2.0) on GitHub for insight into recent issues and development progress.
+Refer to our [public project status tracker](https://github.com/orgs/tensorflow/projects/4) and [issues tagged with `2.0`](https://github.com/uve/tensorflow/issues?q=is%3Aopen+is%3Aissue+label%3A2.0) on GitHub for insight into recent issues and development progress.
 
 If you experience any snags when using TF 2.0, please let us know at the [TF 2.0 Testing User Group](https://groups.google.com/a/tensorflow.org/forum/?utm_medium=email&utm_source=footer#!forum/testing). We have a support mailing list as well as weekly testing meetings, and would love to hear your migration feedback and questions.
 
@@ -595,7 +595,7 @@ Weweler, Zantares, zjjott, 卜居, 王振华 (Wang Zhenhua), 黄鑫
 
 Tensorflow 2.0.0-beta1 is a minor update to 2.0.0-beta0 with a few important bug
 fixes. Please refer to [2.0.0-beta0 release
-notes](https://github.com/tensorflow/tensorflow/releases/tag/v2.0.0-beta0) for a
+notes](https://github.com/uve/tensorflow/releases/tag/v2.0.0-beta0) for a
 complete list of changes in 2.0.0-beta0.
 
 ## Bug Fixes and Other Changes
@@ -615,23 +615,23 @@ TensorFlow 2.0 focuses on **simplicity** and **ease of use**, featuring updates 
 * Powerful experimentation for research
 * API simplification by reducing duplication and removing deprecated endpoints
 
-The feature improvements, fixes noted here are post TF 2.0 Alpha release. Please refer to [Alpha release notes](https://github.com/tensorflow/tensorflow/releases/tag/v2.0.0-alpha0) in case you missed it.
+The feature improvements, fixes noted here are post TF 2.0 Alpha release. Please refer to [Alpha release notes](https://github.com/uve/tensorflow/releases/tag/v2.0.0-alpha0) in case you missed it.
 
-For information on upgrading your existing TensorFlow 1.x models, please refer to our [Upgrade](https://medium.com/tensorflow/upgrading-your-code-to-tensorflow-2-0-f72c3a4d83b5) and [Migration](https://github.com/tensorflow/docs/blob/master/site/en/r2/guide/migration_guide.ipynb) guides.
-We have also released a collection of [tutorials and getting started guides](https://www.tensorflow.org/beta), and an [Effective Style Guide for TF 2.0](https://github.com/tensorflow/docs/blob/master/site/en/r2/guide/effective_tf2.md)
-For more information on these community-driven changes, be sure to check out the [RFCs](https://github.com/tensorflow/community/tree/master/rfcs) we have on Github. If you care about details, all of the RFCs are important.
+For information on upgrading your existing TensorFlow 1.x models, please refer to our [Upgrade](https://medium.com/tensorflow/upgrading-your-code-to-tensorflow-2-0-f72c3a4d83b5) and [Migration](https://github.com/uve/docs/blob/master/site/en/r2/guide/migration_guide.ipynb) guides.
+We have also released a collection of [tutorials and getting started guides](https://www.tensorflow.org/beta), and an [Effective Style Guide for TF 2.0](https://github.com/uve/docs/blob/master/site/en/r2/guide/effective_tf2.md)
+For more information on these community-driven changes, be sure to check out the [RFCs](https://github.com/uve/community/tree/master/rfcs) we have on Github. If you care about details, all of the RFCs are important.
 
 ## Highlights
 
 * Distribution Strategy: TF 2.0 users will be able to use the new [`tf.distribute.Strategy`](https://www.tensorflow.org/beta/guide/distribute_strategy) API to distribute training with minimal code changes, yielding good out-of-the-box performance. We have more strategies supported in the beta release, as well as improved support for custom training loops and Keras subclassed models. Check out the [guide](https://www.tensorflow.org/beta/guide/distribute_strategy) to see what’s supported now.
-* API Freeze: Symbol renaming/deprecation and 2.0 API changes are complete. 2.0 API is final and is also available as part of the (TensorFlow 1.14 release)[https://github.com/tensorflow/tensorflow/releases/tag/v1.14.0-rc0] in compat.v2 module. A list of all symbol changes can be found [here](https://docs.google.com/spreadsheets/d/1FLFJLzg7WNP6JHODX5q8BDgptKafq_slHpnHVbJIteQ/edit#gid=0)
+* API Freeze: Symbol renaming/deprecation and 2.0 API changes are complete. 2.0 API is final and is also available as part of the (TensorFlow 1.14 release)[https://github.com/uve/tensorflow/releases/tag/v1.14.0-rc0] in compat.v2 module. A list of all symbol changes can be found [here](https://docs.google.com/spreadsheets/d/1FLFJLzg7WNP6JHODX5q8BDgptKafq_slHpnHVbJIteQ/edit#gid=0)
 
 ## Breaking Changes
 
-* `tf.contrib` has been deprecated, and functionality has been either migrated to the core TensorFlow API, to [tensorflow/addons](https://www.github.com/tensorflow/addons), or removed entirely.
+* `tf.contrib` has been deprecated, and functionality has been either migrated to the core TensorFlow API, to [tensorflow/addons](https://www.github.com/uve/addons), or removed entirely.
 * Premade estimators in the tf.estimator.DNN/Linear/DNNLinearCombined family have been updated to use `tf.keras.optimizers` instead of the `tf.compat.v1.train.Optimizer`s. If you do not pass in an `optimizer=` arg or if you use a string, the premade estimator will use the keras optimizer. This is checkpoint breaking, as the optimizers have separate variables. A checkpoint converter tool for converting optimizers is included with the release,  but if you want to avoid any change, switch to the v1 version of the estimator:  `tf.compat.v1.estimator.DNN/Linear/DNNLinearCombined*`.
 
-Refer to our [public project status tracker](https://github.com/orgs/tensorflow/projects/4) and [issues tagged with `2.0`](https://github.com/tensorflow/tensorflow/issues?q=is%3Aopen+is%3Aissue+label%3A2.0) on GitHub for insight into recent issues and development progress.
+Refer to our [public project status tracker](https://github.com/orgs/tensorflow/projects/4) and [issues tagged with `2.0`](https://github.com/uve/tensorflow/issues?q=is%3Aopen+is%3Aissue+label%3A2.0) on GitHub for insight into recent issues and development progress.
 
 If you experience any snags when using TF 2.0, please let us know at the [TF 2.0 Testing User Group](https://groups.google.com/a/tensorflow.org/forum/?utm_medium=email&utm_source=footer#!forum/testing). We have a support mailing list as well as weekly testing meetings, and would love to hear your migration feedback and questions.
 
@@ -757,11 +757,11 @@ TensorFlow 2.0 focuses on **simplicity** and **ease of use**, featuring updates 
 * Powerful experimentation for research.
 * API simplification by reducing duplication removing deprecated endpoints.
 
-For information on upgrading your existing TensorFlow 1.x models, please refer to our [Upgrade](https://medium.com/tensorflow/upgrading-your-code-to-tensorflow-2-0-f72c3a4d83b5) and [Migration](https://github.com/tensorflow/docs/blob/master/site/en/r2/guide/migration_guide.ipynb) guides.
-We have also released a collection of [tutorials and getting started guides](https://github.com/tensorflow/docs/tree/master/site/en/r2), and an [Effective Style Guide for TF 2.0](https://github.com/tensorflow/docs/blob/master/site/en/r2/guide/effective_tf2.md).
+For information on upgrading your existing TensorFlow 1.x models, please refer to our [Upgrade](https://medium.com/tensorflow/upgrading-your-code-to-tensorflow-2-0-f72c3a4d83b5) and [Migration](https://github.com/uve/docs/blob/master/site/en/r2/guide/migration_guide.ipynb) guides.
+We have also released a collection of [tutorials and getting started guides](https://github.com/uve/docs/tree/master/site/en/r2), and an [Effective Style Guide for TF 2.0](https://github.com/uve/docs/blob/master/site/en/r2/guide/effective_tf2.md).
 
-For more information on these community-driven changes, be sure to check out the [RFCs](https://github.com/tensorflow/community/tree/master/rfcs) we have on Github. If you care about details, all of the RFCs are important.
-Refer to our [public project status tracker](https://github.com/orgs/tensorflow/projects/4) and [issues tagged with `2.0`](https://github.com/tensorflow/tensorflow/issues?q=is%3Aopen+is%3Aissue+label%3A2.0) on GitHub for insight into recent issues and development progress.
+For more information on these community-driven changes, be sure to check out the [RFCs](https://github.com/uve/community/tree/master/rfcs) we have on Github. If you care about details, all of the RFCs are important.
+Refer to our [public project status tracker](https://github.com/orgs/tensorflow/projects/4) and [issues tagged with `2.0`](https://github.com/uve/tensorflow/issues?q=is%3Aopen+is%3Aissue+label%3A2.0) on GitHub for insight into recent issues and development progress.
 
 And, of course: we would love to have your feedback! If you experience any snags when using TF 2.0, be sure to let us know at the [TF 2.0 Testing User Group](https://groups.google.com/a/tensorflow.org/forum/?utm_medium=email&utm_source=footer#!forum/testing). We have a support mailing list as well as weekly testing meetings, and would love to hear your migration feedback and questions.
 
@@ -774,8 +774,8 @@ And, of course: we would love to have your feedback! If you experience any snags
 
 ## Breaking Changes
 
-  * `tf.contrib` has been deprecated, and functionality has been either migrated to the core TensorFlow API, to [`tensorflow/addons`](https://www.github.com/tensorflow/addons), or removed entirely.
-  * Checkpoint breakage for [RNNs](https://github.com/tensorflow/tensorflow/issues/26350) and for [Optimizers](https://github.com/tensorflow/tensorflow/issues/26349).
+  * `tf.contrib` has been deprecated, and functionality has been either migrated to the core TensorFlow API, to [`tensorflow/addons`](https://www.github.com/uve/addons), or removed entirely.
+  * Checkpoint breakage for [RNNs](https://github.com/uve/tensorflow/issues/26350) and for [Optimizers](https://github.com/uve/tensorflow/issues/26349).
 
 ## Bug Fixes and Other Changes
 
@@ -1162,7 +1162,7 @@ Facai (颜发才), Yanbo Liang, Yash Katariya, Yong Tang, 在原佐为
         multiple GPUs.
     *   Add multi-worker DistributionStrategy and standalone client support in
         Estimator. See
-        [README](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/distribute)
+        [README](https://github.com/uve/tensorflow/tree/master/tensorflow/contrib/distribute)
         for more details.
 *   Add C, C++, and Python functions for querying kernels.
 
@@ -1273,10 +1273,10 @@ Ricardo Perez-Lopez, 张天启, 张晓飞
 ## Major Features And Improvements
 
 * The `tf.lite` runtime now supports `complex64`.
-* Initial [Google Cloud Bigtable integration](https://github.com/tensorflow/tensorflow/tree/r1.10/tensorflow/contrib/bigtable) for `tf.data`.
+* Initial [Google Cloud Bigtable integration](https://github.com/uve/tensorflow/tree/r1.10/tensorflow/contrib/bigtable) for `tf.data`.
 * Improved local run behavior in `tf.estimator.train_and_evaluate` which does not reload checkpoints for evaluation.
 * `RunConfig` now sets device_filters to restrict how workers and PS can communicate. This can speed up training and ensure clean shutdowns in some situations. But if you have jobs that require communication between workers, you will have to set custom session_options in your `RunConfig`.
-* Moved Distributions and Bijectors from `tf.contrib.distributions` to [Tensorflow Probability (TFP)](https://github.com/tensorflow/probability). `tf.contrib.distributions` is now deprecated and will be removed by the end of 2018.
+* Moved Distributions and Bijectors from `tf.contrib.distributions` to [Tensorflow Probability (TFP)](https://github.com/uve/probability). `tf.contrib.distributions` is now deprecated and will be removed by the end of 2018.
 * Adding new endpoints for existing tensorflow symbols. These endpoints are going to be the preferred endpoints going forward and may replace some of the existing endpoints in the future. See below for the complete list. New symbols have been added to the following modules: [`tf.debugging`](https://www.tensorflow.org/versions/master/api_docs/python/tf/debugging), [`tf.dtypes`](https://www.tensorflow.org/versions/master/api_docs/python/tf/dtypes), [`tf.image`](https://www.tensorflow.org/versions/master/api_docs/python/tf/image), [`tf.io`](https://www.tensorflow.org/versions/master/api_docs/python/tf/io), [`tf.linalg`](https://www.tensorflow.org/versions/master/api_docs/python/tf/linalg), [`tf.manip`](https://www.tensorflow.org/versions/master/api_docs/python/tf/manip), [`tf.math`](https://www.tensorflow.org/versions/master/api_docs/python/tf/math), [`tf.quantization`](https://www.tensorflow.org/versions/master/api_docs/python/tf/quantization), [`tf.strings`](https://www.tensorflow.org/versions/master/api_docs/python/tf/strings)
 
 ## Breaking Changes
@@ -1340,9 +1340,9 @@ Ag Ramesh, Alex Wiltschko, Alexander Pantyukhin, Amogh Mannekote, An Jiaoyang, A
   and [programmers guide page](http://tensorflow.org/versions/r1.9/programmers_guide/keras).
 * Update `tf.keras` to the Keras 2.1.6 API.
 * Added [`tf.keras.layers.CuDNNGRU`](https://www.tensorflow.org/versions/r1.9/api_docs/python/tf/keras/layers/CuDNNGRU) and [`tf.keras.layers.CuDNNLSTM`](https://www.tensorflow.org/versions/r1.9/api_docs/python/tf/keras/layers/CuDNNLSTM) layers. [Try it](https://colab.sandbox.google.com/github/tensorflow/tensorflow/blob/master/tensorflow/contrib/eager/python/examples/nmt_with_attention/nmt_with_attention.ipynb?linkId=53292082).
-* Adding support of core [feature columns](https://www.tensorflow.org/get_started/feature_columns) and [losses](https://www.tensorflow.org/api_docs/python/tf/losses) to [gradient boosted trees estimators](https://github.com/tensorflow/models/tree/master/official/boosted_trees).
+* Adding support of core [feature columns](https://www.tensorflow.org/get_started/feature_columns) and [losses](https://www.tensorflow.org/api_docs/python/tf/losses) to [gradient boosted trees estimators](https://github.com/uve/models/tree/master/official/boosted_trees).
 * The [python interface](https://www.tensorflow.org/versions/r1.9/api_docs/python/tf/lite)
-  for the [TFLite Optimizing Converter](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/toco/README.md)
+  for the [TFLite Optimizing Converter](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/toco/README.md)
   has been expanded, and the command line interface (AKA: `toco`, `tflite_convert`) is once again
   included in the standard `pip` installation.
 * Improved data-loading and text processing with:
@@ -1475,7 +1475,7 @@ Abdullah Alrasheed, Achal Shah, Ad-530, ADiegoCAlonso, Aditya Yogi, Ag Ramesh, a
   * Add non-linear image warping ops: `tf.contrib.image.sparse_image_warp`, `tf.contrib.image.dense_image_warp`, and `tf.contrib.image.interpolate_spline`.
   * Fix bug in `tf.contrib.opt.MultitaskOptimizerWrapper` where types of tensors were mismatched.
 * Other:
-  * Low-level graph construction now calls the TensorFlow C API. This change should be invisible to most users, but can be disabled by setting the environment variable `TF_C_API_GRAPH_CONSTRUCTION=0` in this release. Future releases will remove the ability to disable this change. Please [file a bug](https://github.com/tensorflow/tensorflow/issues/new) if you find yourself using this escape hatch.
+  * Low-level graph construction now calls the TensorFlow C API. This change should be invisible to most users, but can be disabled by setting the environment variable `TF_C_API_GRAPH_CONSTRUCTION=0` in this release. Future releases will remove the ability to disable this change. Please [file a bug](https://github.com/uve/tensorflow/issues/new) if you find yourself using this escape hatch.
   * Add description of shapes and a pointer to tutorial notebook in `tf.distributions.Distribution`.
   * Update scatter operations:
     * Add `tf.scatter_min` and `tf.scatter_max`
@@ -1505,7 +1505,7 @@ This release contains contributions from many people at Google, as well as:
 * Eager mode is moving out of contrib, try `tf.enable_eager_execution()`.
 * Graph rewrites emulating fixed-point quantization compatible with TensorFlow Lite, supported by new `tf.contrib.quantize` package.
 * Easily customize gradient computation with `tf.custom_gradient`.
-* [TensorBoard Debugger Plugin](https://github.com/tensorflow/tensorboard/blob/master/tensorboard/plugins/debugger/README.md), the graphical user interface (GUI) of TensorFlow Debugger (tfdbg), is now in alpha.
+* [TensorBoard Debugger Plugin](https://github.com/uve/tensorboard/blob/master/tensorboard/plugins/debugger/README.md), the graphical user interface (GUI) of TensorFlow Debugger (tfdbg), is now in alpha.
 * Experimental support for reading a sqlite database as a `Dataset` with new `tf.contrib.data.SqlDataset`.
 * Distributed Mutex / CriticalSection added to `tf.contrib.framework.CriticalSection`.
 * Better text processing with `tf.regex_replace`.
@@ -1669,9 +1669,9 @@ Yoni Tsafir, yordun, Yuan (Terry) Tang, Yuxin Wu, zhengdi, Zhengsheng Wei, 田�
   This may break TF on older CPUs.
 
 ## Major Features And Improvements
-* [Eager execution](https://github.com/tensorflow/tensorflow/tree/r1.5/tensorflow/contrib/eager)
+* [Eager execution](https://github.com/uve/tensorflow/tree/r1.5/tensorflow/contrib/eager)
   preview version is now available.
-* [TensorFlow Lite](https://github.com/tensorflow/tensorflow/tree/r1.5/tensorflow/lite)
+* [TensorFlow Lite](https://github.com/uve/tensorflow/tree/r1.5/tensorflow/lite)
   dev preview is now available.
 * CUDA 9.0 and cuDNN 7 support.
 * Accelerated Linear Algebra (XLA):
@@ -1852,7 +1852,7 @@ answered questions, and were part of inspiring discussions.
   the core TensorFlow API.
   * The API is now subject to backwards compatibility guarantees.
   * For a guide to migrating from the `tf.contrib.data` API, see the
-    [README](https://github.com/tensorflow/tensorflow/blob/r1.4/tensorflow/contrib/data/README.md).
+    [README](https://github.com/uve/tensorflow/blob/r1.4/tensorflow/contrib/data/README.md).
   * Major new features include `Dataset.from_generator()` (for building an input
     pipeline from a Python generator), and the `Dataset.apply()` method for
     applying custom transformation functions.
@@ -1974,7 +1974,7 @@ answered questions, and were part of inspiring discussions.
 
 # Release 1.3.0
 
-See also [TensorBoard 0.1.4](https://github.com/tensorflow/tensorboard/releases/tag/0.1.4) release notes.
+See also [TensorBoard 0.1.4](https://github.com/uve/tensorboard/releases/tag/0.1.4) release notes.
 
 ## Major Features and Improvements
 * Added canned estimators to Tensorflow library. List of added estimators:
@@ -2055,7 +2055,7 @@ See also [TensorBoard 0.1.4](https://github.com/tensorflow/tensorboard/releases/
 * TensorForest multi-regression bug fix.
 * Framework now supports armv7, cocoapods.org now displays correct page.
 * Script to create iOS framework for CocoaPods.
-* Android releases of TensorFlow are now pushed to jcenter for easier integration into apps. See https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/android/README.md for more details.
+* Android releases of TensorFlow are now pushed to jcenter for easier integration into apps. See https://github.com/uve/tensorflow/blob/master/tensorflow/contrib/android/README.md for more details.
 * TensorFlow Debugger (tfdbg):
   * Fixed a bug that prevented tfdbg from functioning with multi-GPU setups.
   * Fixed a bug that prevented tfdbg from working with `tf.Session.make_callable`.
@@ -2125,7 +2125,7 @@ answered questions, and were part of inspiring discussions.
   been changed to "kernel" and "bias", respectively.
   This may cause backward incompatibility with regard to your old
   checkpoints containing such RNN cells, in which case you can use the tool
-  [checkpoint_convert script](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/rnn/python/tools/checkpoint_convert.py)
+  [checkpoint_convert script](https://github.com/uve/tensorflow/blob/master/tensorflow/contrib/rnn/python/tools/checkpoint_convert.py)
   to convert the variable names in your old checkpoints.
 * Many of the RNN functions and classes that were in the `tf.nn` namespace
   before the 1.0 release and which were moved to `tf.contrib.rnn` have now
@@ -2158,7 +2158,7 @@ answered questions, and were part of inspiring discussions.
 * [`SavedModel CLI`](https://www.tensorflow.org/versions/master/guide/saved_model_cli) tool available to inspect and execute MetaGraph in SavedModel
 * Android releases of TensorFlow are now pushed to jcenter for easier
   integration into apps. See
-  https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/android/README.md
+  https://github.com/uve/tensorflow/blob/master/tensorflow/contrib/android/README.md
   for more details.
 
 ## Deprecations
@@ -2181,7 +2181,7 @@ answered questions, and were part of inspiring discussions.
   "weights" and "biases" are changed to "kernel" and "bias", respectively.
   This may cause backward incompatibility with regard to your old
   checkpoints containing such RNN cells, in which case you can use the
-  [checkpoint_convert script](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/rnn/python/tools/checkpoint_convert.py)
+  [checkpoint_convert script](https://github.com/uve/tensorflow/blob/master/tensorflow/contrib/rnn/python/tools/checkpoint_convert.py)
   to convert the variable names in your old checkpoints.
 * Added `tf.contrib.kernel_methods` module with Ops and estimators for primal
   (explicit) kernel methods in TensorFlow.
@@ -2388,11 +2388,11 @@ answered questions, and were part of inspiring discussions.
 * Several python API calls have been changed to resemble NumPy more closely.
 * Android: person detection + tracking demo implementing Scalable Object
   Detection using Deep Neural Networks.
-* New (experimental) [Java API](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/java).
+* New (experimental) [Java API](https://github.com/uve/tensorflow/tree/master/tensorflow/java).
 * Add new Android image stylization demo based on "A Learned Representation For Artistic Style", and add YOLO object detector support.
 
 ## Breaking Changes to the API
-To help you upgrade your existing TensorFlow Python code to match the API changes below, we have prepared a [conversion script](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/tools/compatibility).
+To help you upgrade your existing TensorFlow Python code to match the API changes below, we have prepared a [conversion script](https://github.com/uve/tensorflow/tree/master/tensorflow/tools/compatibility).
 * TensorFlow/models have been moved to a separate github repository.
 * Division and modulus operators (/, //, %) now match Python (flooring)
   semantics. This applies to `tf.div` and `tf.mod` as well. To obtain forced
@@ -2552,7 +2552,7 @@ answered questions, and were part of inspiring discussions.
   QuantizeDownAndShrinkRange, QuantizedRelu, QuantizedRelu6, QuantizedReshape,
   QuantizeV2, RequantizationRange, and Requantize.
 * Go: Experimental API in Go to create and execute graphs
-  (https://godoc.org/github.com/tensorflow/tensorflow/tensorflow/go)
+  (https://godoc.org/github.com/uve/tensorflow/tensorflow/go)
 * New checkpoint format becomes the default in `tf.train.Saver`. Old V1
   checkpoints continue to be readable; controlled by the `write_version`
   argument, `tf.train.Saver` now by default writes out in the new V2

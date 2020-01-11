@@ -1919,7 +1919,7 @@ TF_WhileParams TF_NewWhile(TF_Graph* g, TF_Output* inputs, int ninputs,
 #if defined(IS_MOBILE_PLATFORM) || defined(IS_SLIM_BUILD)
   status->status = tensorflow::errors::Unimplemented(
       "Creating while loops is not supported on mobile. File a bug at "
-      "https://github.com/tensorflow/tensorflow/issues if this feature is "
+      "https://github.com/uve/tensorflow/issues if this feature is "
       "important to you");
   return EmptyWhileParams();
 #else
@@ -2048,7 +2048,7 @@ void TF_FinishWhile(const TF_WhileParams* params, TF_Status* status,
 #if defined(IS_MOBILE_PLATFORM) || defined(IS_SLIM_BUILD)
   status->status = tensorflow::errors::Unimplemented(
       "Creating while loops is not supported on mobile. File a bug at "
-      "https://github.com/tensorflow/tensorflow/issues if this feature is "
+      "https://github.com/uve/tensorflow/issues if this feature is "
       "important to you");
 #else
   // If it appears the caller created or modified `params`, don't free resources
@@ -2071,7 +2071,7 @@ void TF_AddGradientsWithPrefix(TF_Graph* g, const char* prefix, TF_Output* y,
 #if defined(IS_MOBILE_PLATFORM) || defined(IS_SLIM_BUILD)
   status->status = tensorflow::errors::Unimplemented(
       "Adding gradients is not supported on mobile. File a bug at "
-      "https://github.com/tensorflow/tensorflow/issues if this feature is "
+      "https://github.com/uve/tensorflow/issues if this feature is "
       "important to you");
 #else
   std::vector<tensorflow::Output> y_arg = OutputsFromTFOutputs(y, ny);
@@ -2128,7 +2128,7 @@ void TF_AddGradientsWithPrefix(TF_Graph* g, const char* prefix, TF_Output* y,
         status->status = tensorflow::errors::Internal(
             "BUG: The gradients prefix have been unexpectedly altered when "
             "adding the nodes to the graph. This is a bug. Please file an "
-            "issue at https://github.com/tensorflow/tensorflow/issues.");
+            "issue at https://github.com/uve/tensorflow/issues.");
         return;
       }
       // We have a convoluted scheme here: Using the C++ graph construction API
@@ -2141,7 +2141,7 @@ void TF_AddGradientsWithPrefix(TF_Graph* g, const char* prefix, TF_Output* y,
             "names (",
             n->name(),
             "). This is a bug. Please file an issue at "
-            "https://github.com/tensorflow/tensorflow/issues.");
+            "https://github.com/uve/tensorflow/issues.");
       }
     }
   }
@@ -2182,7 +2182,7 @@ TF_Session* TF_LoadSessionFromSavedModel(
 #if defined(IS_MOBILE_PLATFORM) || defined(IS_SLIM_BUILD)
   status->status = tensorflow::errors::Unimplemented(
       "Loading a SavedModel is not supported on mobile. File a bug at "
-      "https://github.com/tensorflow/tensorflow/issues if this feature is "
+      "https://github.com/uve/tensorflow/issues if this feature is "
       "important to you");
   return nullptr;
 #else

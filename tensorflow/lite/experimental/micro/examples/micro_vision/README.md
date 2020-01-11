@@ -12,7 +12,7 @@ run on systems with small amounts of memory such as microcontrollers and DSPs.
 ## Getting Started
 
 To compile and test this example on a desktop Linux or MacOS machine, download
-[the TensorFlow source code](https://github.com/tensorflow/tensorflow), `cd`
+[the TensorFlow source code](https://github.com/uve/tensorflow), `cd`
 into the source directory from a terminal, and then run the following command:
 
 ```
@@ -37,7 +37,7 @@ and checks that the network correctly identifies them.
 
 To understand how TensorFlow Lite does this, you can look at the `TestInvoke()`
 function in
-[micro_vision_test.cc](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro/examples/micro_vision/micro_vision_test.cc).
+[micro_vision_test.cc](https://github.com/uve/tensorflow/tree/master/tensorflow/lite/experimental/micro/examples/micro_vision/micro_vision_test.cc).
 It's a fairly small amount of code, creating an interpreter, getting a handle to
 a model that's been compiled into the program, and then invoking the interpreter
 with the model and sample inputs.

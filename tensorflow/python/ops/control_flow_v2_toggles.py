@@ -86,7 +86,7 @@ def output_all_intermediates(state):  # pylint: disable=invalid-name
   If with the default behavior you are still seeing errors of the form
   "Connecting to invalid output X of source node Y which has Z outputs" try
   setting `tf.compat.v1.experimental.output_all_intermediates(True)` and
-  please file an issue at https://github.com/tensorflow/tensorflow/issues.
+  please file an issue at https://github.com/uve/tensorflow/issues.
 
   Args:
     state: True, False or None. None restores the default behavior.

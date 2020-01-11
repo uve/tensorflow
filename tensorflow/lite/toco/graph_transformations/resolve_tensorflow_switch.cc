@@ -67,7 +67,7 @@ namespace toco {
   //    Otherwise, the data goes to the second output.
   //
   // Note that this comment used to say the opposite and was recently fixed:
-  // https://github.com/tensorflow/tensorflow/commit/bc456e361d49d1d89a74b80060c70efb51fd7d87#diff-76ab9dafbe12c20ddc3769c6b108986c
+  // https://github.com/uve/tensorflow/commit/bc456e361d49d1d89a74b80060c70efb51fd7d87#diff-76ab9dafbe12c20ddc3769c6b108986c
   const int selected_output_index = predicate_value ? 1 : 0;
   const int nonselected_output_index = predicate_value ? 0 : 1;
 
@@ -105,7 +105,7 @@ namespace toco {
                   "Merge supported. Control flow ops like Switch and Merge are "
                   "not generally supported. We are working on fixing this, "
                   "please see the Github issue at "
-                  "https://github.com/tensorflow/tensorflow/issues/28485."));
+                  "https://github.com/uve/tensorflow/issues/28485."));
         }
         input_it = other_op->inputs.erase(input_it);
       } else {

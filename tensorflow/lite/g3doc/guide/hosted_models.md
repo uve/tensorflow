@@ -50,7 +50,7 @@ Graph.
 
 Note: Performance numbers were benchmarked on Pixel-2 using single thread large
 core. Accuracy numbers were computed using the
-[TFLite accuracy tool](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/tools/accuracy/ilsvrc).
+[TFLite accuracy tool](https://github.com/uve/tensorflow/tree/master/tensorflow/lite/tools/accuracy/ilsvrc).
 
 ### Floating point models
 

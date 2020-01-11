@@ -2690,7 +2690,7 @@ struct FftTilingForward {
 // A helper struct to decide whether to enable the WINOGRAD_NONFUSED algorithms.
 // By default it is turned on, users can explicitly disable them through an
 // env-var "TF_ENABLE_WINOGRAD_NONFUSED=0".
-// https://github.com/tensorflow/tensorflow/pull/4901
+// https://github.com/uve/tensorflow/pull/4901
 struct WinogradNonfused {
   static constexpr const char* kName = "TF_ENABLE_WINOGRAD_NONFUSED";
   // NVIDIA has fixed winograd nonfused bug for cudnn v>=7. For older versions,

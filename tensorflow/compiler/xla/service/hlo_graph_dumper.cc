@@ -1471,7 +1471,7 @@ string WrapDotInHtml(absl::string_view dot) {
     var cssregex = new RegExp('stylesheet=<([^]*)\n>\n', 'gm');
     var results = cssregex.exec(data)
     // graphviz has problem dealing with large stylesheets.
-    // https://github.com/tensorflow/tensorflow/issues/17220#issuecomment-369228492
+    // https://github.com/uve/tensorflow/issues/17220#issuecomment-369228492
     // In order to avoid the problem, remove the stylesheet from the dot and
     // insert it directly info the rendered SVG.
     var dot_data = data;

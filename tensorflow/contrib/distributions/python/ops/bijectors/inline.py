@@ -48,7 +48,7 @@ class Inline(bijector.Bijector):
       "2018-10-01",
       "The TensorFlow Distributions library has moved to "
       "TensorFlow Probability "
-      "(https://github.com/tensorflow/probability). You "
+      "(https://github.com/uve/probability). You "
       "should update all references to use `tfp.distributions` "
       "instead of `tf.contrib.distributions`.",
       warn_once=True)

@@ -332,7 +332,7 @@ class _SavedModelBuilder(object):
         a SignatureDef accessible through the exported MetaGraph.
       strip_default_attrs: Boolean. If `True`, default-valued attributes will be
         removed from the NodeDefs. For a detailed guide, see
-        [Stripping Default-Valued Attributes](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/saved_model/README.md#stripping-default-valued-attributes).
+        [Stripping Default-Valued Attributes](https://github.com/uve/tensorflow/blob/master/tensorflow/python/saved_model/README.md#stripping-default-valued-attributes).
       saver: An instance of tf.compat.v1.train.Saver that will be used to export the
         metagraph and save variables. If None, a sharded Saver that restores
         all variables will be used.

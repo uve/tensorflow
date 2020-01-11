@@ -129,10 +129,10 @@ provided for specific networks in the
 [TensorFlow Lite model repository](../models/). It is important to check the
 accuracy of the quantized model to verify that any degradation in accuracy is
 within acceptable limits. There is a tool to evaluate
-[TensorFlow Lite model accuracy](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/tools/accuracy/README.md){:.external}.
+[TensorFlow Lite model accuracy](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/tools/accuracy/README.md){:.external}.
 
 If the accuracy drop is too high, consider using
-[quantization aware training](https://github.com/tensorflow/tensorflow/tree/r1.13/tensorflow/contrib/quantize){:.external}.
+[quantization aware training](https://github.com/uve/tensorflow/tree/r1.13/tensorflow/contrib/quantize){:.external}.
 
 ### Representation for quantized tensors
 

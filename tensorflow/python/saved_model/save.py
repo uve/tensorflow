@@ -704,7 +704,7 @@ def _write_object_proto(obj, proto, asset_file_def_index):
            v1=["saved_model.save", "saved_model.experimental.save"])
 def save(obj, export_dir, signatures=None, options=None):
   # pylint: disable=line-too-long
-  """Exports the Trackable object `obj` to [SavedModel format](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/saved_model/README.md).
+  """Exports the Trackable object `obj` to [SavedModel format](https://github.com/uve/tensorflow/blob/master/tensorflow/python/saved_model/README.md).
 
   Example usage:
 
@@ -819,7 +819,7 @@ def save(obj, export_dir, signatures=None, options=None):
   supported, but may be in the future.
 
   SavedModels exported with `tf.saved_model.save` [strip default-valued
-  attributes](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/saved_model/README.md#stripping-default-valued-attributes)
+  attributes](https://github.com/uve/tensorflow/blob/master/tensorflow/python/saved_model/README.md#stripping-default-valued-attributes)
   automatically, which removes one source of incompatibilities when the consumer
   of a SavedModel is running an older TensorFlow version than the
   producer. There are however other sources of incompatibilities which are not

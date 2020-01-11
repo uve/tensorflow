@@ -1,5 +1,5 @@
 **NOTE: This code has moved to**
-https://github.com/tensorflow/hub/tree/master/examples/image_retraining
+https://github.com/uve/hub/tree/master/examples/image_retraining
 
 retrain.py is an example script that shows how one can adapt a pretrained
 network for other classification problems (including use with TFLite and

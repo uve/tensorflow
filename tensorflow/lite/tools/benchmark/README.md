@@ -9,12 +9,12 @@ of runs. Aggregate latency statistics are reported after running the benchmark.
 
 The instructions below are for running the binary on Desktop and Android,
 for iOS please use the
-[iOS benchmark app](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/tools/benchmark/ios).
+[iOS benchmark app](https://github.com/uve/tensorflow/tree/master/tensorflow/lite/tools/benchmark/ios).
 
 An experimental Android APK wrapper for the benchmark model utility offers more
 faithful execution behavior on Android (via a foreground Activity). It is
 located
-[here](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/tools/benchmark/android).
+[here](https://github.com/uve/tensorflow/tree/master/tensorflow/lite/tools/benchmark/android).
 
 ## Parameters
 
@@ -47,7 +47,7 @@ and the following optional parameters:
     devices will fail to use NNAPI for models in `/data/local/tmp/` and this
     benchmark tool will not correctly use NNAPI.
 *   `use_gpu`: `bool` (default=false) \
-    Whether to use the [GPU accelerator delegate](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/delegates/gpu).
+    Whether to use the [GPU accelerator delegate](https://github.com/uve/tensorflow/tree/master/tensorflow/lite/delegates/gpu).
     This option is currently only available on Android devices.
 *   `enable_op_profiling`: `bool` (default=false) \
     Whether to enable per-operator profiling measurement.
@@ -56,7 +56,7 @@ and the following optional parameters:
 
 ### On Android:
 
-(0) Refer to https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/android to edit the `WORKSPACE` to configure the android NDK/SDK.
+(0) Refer to https://github.com/uve/tensorflow/tree/master/tensorflow/examples/android to edit the `WORKSPACE` to configure the android NDK/SDK.
 
 (1) Build for your specific platform, e.g.:
 

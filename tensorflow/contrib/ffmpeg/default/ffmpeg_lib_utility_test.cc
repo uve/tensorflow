@@ -33,7 +33,7 @@ namespace {
 TEST(FfmpegLibTest, TestTempDirectoryThreading) {
   // Testing a fix for a bug that allowed different threads to create
   // conflicting temp files.
-  // See github.com/tensorflow/tensorflow/issues/5804 for details.
+  // See github.com/uve/tensorflow/issues/5804 for details.
   const int32 kNumThreads = 10;
   const int32 kNumWorkItems = 10000;
   static constexpr size_t kStringsPerItem = 100;

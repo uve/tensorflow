@@ -100,7 +100,7 @@ filegroup(
 * For classification models, modify `OvicClassifierTest.java`:
   * change `TEST_IMAGE_PATH` to `my_test_image.jpg`.
 
-  * change either `FLOAT_MODEL_PATH` or `QUANTIZED_MODEL_PATH` to `my_model.lite` depending on whether your model runs inference in float or [8-bit](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/quantize).
+  * change either `FLOAT_MODEL_PATH` or `QUANTIZED_MODEL_PATH` to `my_model.lite` depending on whether your model runs inference in float or [8-bit](https://github.com/uve/tensorflow/tree/master/tensorflow/contrib/quantize).
 
   * change `TEST_IMAGE_GROUNDTRUTH` (ImageNet class ID) to be consistent with your test image.
 
@@ -188,7 +188,7 @@ Note: the benchmarking results can be quite different depending on the backgroun
 | quantized_fpnlite.lite | 119   |
 
 
-Since Pixel 2 has excellent support for 8-bit quantized models, we strongly recommend you to check out the [quantization training tutorial](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/quantize).
+Since Pixel 2 has excellent support for 8-bit quantized models, we strongly recommend you to check out the [quantization training tutorial](https://github.com/uve/tensorflow/tree/master/tensorflow/contrib/quantize).
 
 The detection models above are both single-shot models (i.e. no object proposal generation) using TfLite's *fast* version of Non-Max-Suppression (NMS). The fast NMS is significant faster than the regular NMS (used by the ObjectDetectionAPI in training) at the expense of about 1% mAP for the listed models.
 

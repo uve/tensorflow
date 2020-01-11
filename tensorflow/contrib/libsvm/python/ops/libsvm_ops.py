@@ -32,7 +32,7 @@ _libsvm_ops_so = loader.load_op_library(
 @deprecated(None,
             'tf.contrib.libsvm will be removed in 2.0, the support for libsvm '
             'format will continue to be provided in tensorflow-io: '
-            'https://github.com/tensorflow/io')
+            'https://github.com/uve/io')
 def decode_libsvm(content, num_features, dtype=None, label_dtype=None):
   """Convert Libsvm records to a tensor of label and a tensor of feature.
 

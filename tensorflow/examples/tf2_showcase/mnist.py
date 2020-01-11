@@ -70,9 +70,9 @@ def create_model():
   """Model to recognize digits in the MNIST dataset.
 
   Network structure is equivalent to:
-  https://github.com/tensorflow/tensorflow/blob/r1.5/tensorflow/examples/tutorials/mnist/mnist_deep.py
+  https://github.com/uve/tensorflow/blob/r1.5/tensorflow/examples/tutorials/mnist/mnist_deep.py
   and
-  https://github.com/tensorflow/models/blob/master/tutorials/image/mnist/convolutional.py
+  https://github.com/uve/models/blob/master/tutorials/image/mnist/convolutional.py
   But uses the tf.keras API.
   Returns:
     A tf.keras.Model.

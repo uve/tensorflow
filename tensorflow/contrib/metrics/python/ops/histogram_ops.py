@@ -219,7 +219,7 @@ def _auc_convert_hist_to_auc(hist_true_acc, hist_false_acc, nbins):
 
 # TODO(langmore) Remove once a faster cumsum (accumulate_sum) Op is available.
 # Also see if cast to float32 above can be removed with new cumsum.
-# See:  https://github.com/tensorflow/tensorflow/issues/813
+# See:  https://github.com/uve/tensorflow/issues/813
 def _strict_1d_cumsum(tensor, len_tensor):
   """Cumsum of a 1D tensor with defined shape by padding and convolving."""
   # Assumes tensor shape is fully defined.
@@ -233,7 +233,7 @@ def _strict_1d_cumsum(tensor, len_tensor):
 
 
 # TODO(langmore) Remove once a faster cumsum (accumulate_sum) Op is available.
-# See:  https://github.com/tensorflow/tensorflow/issues/813
+# See:  https://github.com/uve/tensorflow/issues/813
 def _strict_conv1d(x, h):
   """Return x * h for rank 1 tensors x and h."""
   with ops.name_scope('strict_conv1d', values=[x, h]):

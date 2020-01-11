@@ -258,7 +258,7 @@ class StatefulRandomOpsTest(test.TestCase, parameterized.TestCase):
     """Tests that op-seed selection is reset after reseting global generator.
 
     Fixing GitHub issue 9171:
-    https://github.com/tensorflow/tensorflow/issues/9171
+    https://github.com/uve/tensorflow/issues/9171
     """
     shape = (3,)
     random.get_global_generator().reset_from_seed(1)

@@ -46,7 +46,7 @@ class SyncReplicasOptimizer(optimizer.Optimizer):
   """Class to synchronize, aggregate gradients and pass them to the optimizer.
 
   This class is deprecated. For synchrononous training, please use [Distribution
-  Strategies](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/distribute).
+  Strategies](https://github.com/uve/tensorflow/tree/master/tensorflow/contrib/distribute).
 
   In a typical asynchronous training environment, it's common to have some
   stale gradients. For example, with a N-replica asynchronous training,

@@ -745,7 +745,7 @@ cc_library(
 # there can be more than one match, e.g., when building for android and MKL-DNN
 # contraction kernel is disabled. Bazel doesn't allow multiple matches.
 # See more details in
-#   https://github.com/tensorflow/tensorflow/issues/24414
+#   https://github.com/uve/tensorflow/issues/24414
 cc_library(
     name = "eigen_contraction_kernel",
     hdrs = ["eigen_contraction_kernel.h"],

@@ -19,7 +19,7 @@ python generate2.py --output_dir=/tmp/out
 ```
 
 Requires a local installation of:
-  https://github.com/tensorflow/docs/tree/master/tools
+  https://github.com/uve/docs/tree/master/tools
   tf-nightly-2.0-preview
 """
 
@@ -144,7 +144,7 @@ else:
 
 _raw_ops_doc = textwrap.dedent("""\n
   Note: `tf.raw_ops` provides direct/low level access to all TensorFlow ops. See \
-  [the RFC](https://github.com/tensorflow/community/blob/master/rfcs/20181225-tf-raw-ops.md)
+  [the RFC](https://github.com/uve/community/blob/master/rfcs/20181225-tf-raw-ops.md)
   for details. Unless you are library writer, you likely do not need to use these
   ops directly.""")
 
@@ -155,8 +155,8 @@ if LooseVersion(tf.__version__) < LooseVersion('2'):
 
     Warning: The `tf.contrib` module will not be included in TensorFlow 2.0. Many
     of its submodules have been integrated into TensorFlow core, or spun-off into
-    other projects like [`tensorflow_io`](https://github.com/tensorflow/io), or
-    [`tensorflow_addons`](https://github.com/tensorflow/addons). For instructions
+    other projects like [`tensorflow_io`](https://github.com/uve/io), or
+    [`tensorflow_addons`](https://github.com/uve/addons). For instructions
     on how to upgrade see the
     [Migration guide](https://www.tensorflow.org/beta/guide/migration_guide).
     """
@@ -246,8 +246,8 @@ def build_docs(output_dir, code_url_prefix, search_hints=True):
   code_url_prefixes = (
       code_url_prefix,
       # External packages source repositories,
-      "https://github.com/tensorflow/tensorboard/tree/master/tensorboard",
-      "https://github.com/tensorflow/estimator/tree/master/tensorflow_estimator",
+      "https://github.com/uve/tensorboard/tree/master/tensorboard",
+      "https://github.com/uve/estimator/tree/master/tensorflow_estimator",
   )
 
   doc_generator = generate_lib.DocGenerator(

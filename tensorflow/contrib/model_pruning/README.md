@@ -19,7 +19,7 @@ need to undergo pruning. The variable mask is the same shape as the layer's
 weight tensor and determines which of the weights participate in the forward
 execution of the graph. This can be achieved by wrapping the weight tensor of
 the layer with the `apply_mask` function provided in
-[pruning.py](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/model_pruning/python/pruning.py).
+[pruning.py](https://github.com/uve/tensorflow/tree/master/tensorflow/contrib/model_pruning/python/pruning.py).
 For example:
 
 ```python
@@ -32,14 +32,14 @@ threshold](https://storage.googleapis.com/download.tensorflow.org/example_images
 
 Alternatively, the API also provides variant of tensorflow layers with these
 auxiliary variables built-in (see
-[layers](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/model_pruning/python/layers))
+[layers](https://github.com/uve/tensorflow/tree/master/tensorflow/contrib/model_pruning/python/layers))
 . Layers currently supported:
 
-*   [layers.masked_conv2d](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/model_pruning/python/layers/layers.py?l=83)
+*   [layers.masked_conv2d](https://github.com/uve/tensorflow/tree/master/tensorflow/contrib/model_pruning/python/layers/layers.py?l=83)
 
-*   [layers.masked_fully_connected](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/model_pruning/python/layers/layers.py?l=241)
+*   [layers.masked_fully_connected](https://github.com/uve/tensorflow/tree/master/tensorflow/contrib/model_pruning/python/layers/layers.py?l=241)
 
-*   [rnn_cells.MaskedLSTMCell](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/model_pruning/python/layers/rnn_cells.py?l=154)
+*   [rnn_cells.MaskedLSTMCell](https://github.com/uve/tensorflow/tree/master/tensorflow/contrib/model_pruning/python/layers/rnn_cells.py?l=154)
 
 ### Pruning-related hyperparameters <a name="hyperparameters"></a>
 
@@ -139,12 +139,12 @@ Please see
 for details on neural network architecture, setting up inputs etc. The
 additional changes needed to incorporate pruning are captured in the following:
 
-*   [cifar10_pruning.py](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/model_pruning/examples/cifar10/cifar10_pruning.py)
+*   [cifar10_pruning.py](https://github.com/uve/tensorflow/tree/master/tensorflow/contrib/model_pruning/examples/cifar10/cifar10_pruning.py)
     creates a deep CNN with the same architecture, but adds mask and threshold
     variables for each of the weight tensors in the convolutional and
     locally-connected layers.
 
-*   [cifar10_train.py](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/model_pruning/examples/cifar10/cifar10_train.py)
+*   [cifar10_train.py](https://github.com/uve/tensorflow/tree/master/tensorflow/contrib/model_pruning/examples/cifar10/cifar10_train.py)
     add pruning ops to the training graph as described above.
 
 To train the pruned version of cifar10:
@@ -168,7 +168,7 @@ $ bazel build -c opt contrib/model_pruning:strip_pruning_vars
 $ bazel-bin/contrib/model_pruning/strip_pruning_vars --checkpoint_path=/tmp/cifar10_train --output_node_names=softmax_linear/softmax_linear_2 --filename=cifar_pruned.pb
 ```
 
-The generated GraphDef (cifar_pruned.pb) may be visualized using the [`import_pb_to_tensorboard`](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/python/tools/import_pb_to_tensorboard.py) utility
+The generated GraphDef (cifar_pruned.pb) may be visualized using the [`import_pb_to_tensorboard`](https://github.com/uve/tensorflow/tree/master/tensorflow/python/tools/import_pb_to_tensorboard.py) utility
 
 ## References
 

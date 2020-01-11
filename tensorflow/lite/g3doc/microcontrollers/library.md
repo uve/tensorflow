@@ -1,7 +1,7 @@
 # Understand the C++ library
 
 The TensorFlow Lite for Microcontrollers C++ library is part of the
-[TensorFlow repository](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro).
+[TensorFlow repository](https://github.com/uve/tensorflow/tree/master/tensorflow/lite/experimental/micro).
 It is designed to be readable, easy to modify, well-tested, easy to integrate,
 and compatible with regular TensorFlow Lite.
 
@@ -10,13 +10,13 @@ provide the commands required for compilation, and give an overview of how to
 port to new devices.
 
 The
-[README.md](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/README.md#how-to-port-tensorflow-lite-micro-to-a-new-platform)
+[README.md](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/experimental/micro/README.md#how-to-port-tensorflow-lite-micro-to-a-new-platform)
 contains more in-depth information on all of these topics.
 
 ## File structure
 
 The
-[`micro`](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro)
+[`micro`](https://github.com/uve/tensorflow/tree/master/tensorflow/lite/experimental/micro)
 root directory has a relatively simple structure. However, since it is located
 inside of the extensive TensorFlow repository, we have created scripts and
 pre-generated project files that provide the relevant source files in isolation
@@ -28,11 +28,11 @@ and Mbed.
 The most important files for using the TensorFlow Lite for Microcontrollers
 interpreter are located in the root of the project, accompanied by tests:
 
--   [`all_ops_resolver.h`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/kernels/all_ops_resolver.h)
+-   [`all_ops_resolver.h`](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/experimental/micro/kernels/all_ops_resolver.h)
     provides the operations used by the interpreter to run the model.
--   [`micro_error_reporter.h`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/micro_error_reporter.h)
+-   [`micro_error_reporter.h`](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/experimental/micro/micro_error_reporter.h)
     outputs debug information.
--   [`micro_interpreter.h`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/micro/micro_interpreter.h)
+-   [`micro_interpreter.h`](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/experimental/micro/micro_interpreter.h)
     contains code to handle and run models.
 
 See [Get started with microcontrollers](get_started.md) for a walkthrough of
@@ -40,15 +40,15 @@ typical usage.
 
 The build system provides for platform-specific implementations of certain
 files. These are located in a directory with the platform name, for example
-[`sparkfun_edge`](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro/sparkfun_edge).
+[`sparkfun_edge`](https://github.com/uve/tensorflow/tree/master/tensorflow/lite/experimental/micro/sparkfun_edge).
 
 Several other directories exist, including:
 
--   [`kernel`](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro/kernels),
+-   [`kernel`](https://github.com/uve/tensorflow/tree/master/tensorflow/lite/experimental/micro/kernels),
     which contains operation implementations and the associated code.
--   [`tools`](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro/tools),
+-   [`tools`](https://github.com/uve/tensorflow/tree/master/tensorflow/lite/experimental/micro/tools),
     which contains build tools and their output.
--   [`examples`](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro/examples),
+-   [`examples`](https://github.com/uve/tensorflow/tree/master/tensorflow/lite/experimental/micro/examples),
     which contains sample code.
 
 ### Generate project files
@@ -87,7 +87,7 @@ following commands:
 1.  Clone the TensorFlow repository from GitHub to a convenient place.
 
     ```bash
-    git clone --depth 1 https://github.com/tensorflow/tensorflow.git
+    git clone --depth 1 https://github.com/uve/tensorflow.git
     ```
 
 1.  Enter the directory that was created in the previous step.
@@ -107,4 +107,4 @@ following commands:
 
 Guidance on porting TensorFlow Lite for Microcontrollers to new platforms and
 devices can be found in
-[README.md](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/micro#how-to-port-tensorflow-lite-micro-to-a-new-platform).
+[README.md](https://github.com/uve/tensorflow/tree/master/tensorflow/lite/experimental/micro#how-to-port-tensorflow-lite-micro-to-a-new-platform).

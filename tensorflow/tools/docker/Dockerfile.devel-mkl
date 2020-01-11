@@ -92,11 +92,11 @@ WORKDIR /tensorflow
 RUN export TAG_PREFIX="v" && \
     echo ${TF_BUILD_VERSION} | grep -q ^${TAG_PREFIX}; \
     if [ $? -eq 0 ]; then \
-        git clone --depth=1 https://github.com/tensorflow/tensorflow.git . && \
+        git clone --depth=1 https://github.com/uve/tensorflow.git . && \
         git fetch --tags && \
         git checkout ${TF_BUILD_VERSION}; \
    else \
-        git clone --depth=1 --branch=${TF_BUILD_VERSION} https://github.com/tensorflow/tensorflow.git . ; \
+        git clone --depth=1 --branch=${TF_BUILD_VERSION} https://github.com/uve/tensorflow.git . ; \
     fi
 
 RUN yes "" | ${PYTHON} configure.py

@@ -198,7 +198,7 @@ class TransformGraphTest : public ::testing::Test {
   void TestParseEscapedNewline() {
     // This sequence of characters caused an infinite loop in the parser, which
     // is responsible for the hang mentioned in
-    // https://github.com/tensorflow/tensorflow/issues/7150
+    // https://github.com/uve/tensorflow/issues/7150
     TransformParameters params_list;
     ParseTransformParameters("\\\n", &params_list).IgnoreError();
     EXPECT_EQ(0, params_list.size());

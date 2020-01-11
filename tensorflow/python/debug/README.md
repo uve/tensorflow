@@ -39,13 +39,13 @@ models:
 (Omitted internal-only feature)
 * A [gRPC](https://grpc.io/)-based remote debugging protocol, which allows us to
   build a browser-based graphical user interface (GUI) for TFDBG: the
-  [TensorBoard Debugger Plugin](https://github.com/tensorflow/tensorboard/blob/master/tensorboard/plugins/debugger/README.md).
+  [TensorBoard Debugger Plugin](https://github.com/uve/tensorboard/blob/master/tensorboard/plugins/debugger/README.md).
 
 ## How to use TFDBG?
 
 * For a walkthrough of TFDBG command-line interface, see https://www.tensorflow.org/guide/debugger.
 * For information on the web GUI of TFDBG (TensorBoard Debugger Plugin), see
-  [this README](https://github.com/tensorflow/tensorboard/blob/master/tensorboard/plugins/debugger/README.md).
+  [this README](https://github.com/uve/tensorboard/blob/master/tensorboard/plugins/debugger/README.md).
 * For programmatic use of the API of TFDBG, see https://www.tensorflow.org/api_docs/python/tfdbg.
 
 

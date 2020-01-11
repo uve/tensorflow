@@ -29,7 +29,7 @@ landing_page:
         path: https://www.youtube.com/watch?v=kAOanJczHA0
     - heading: XLA on GitHub
       image_path: /resources/images/github-card-16x9.png
-      path: https://github.com/tensorflow/tensorflow/tree/master/tensorflow/compiler/xla
+      path: https://github.com/uve/tensorflow/tree/master/tensorflow/compiler/xla
       buttons:
       - label: View on GitHub
-        path: https://github.com/tensorflow/tensorflow/tree/master/tensorflow/compiler/xla
+        path: https://github.com/uve/tensorflow/tree/master/tensorflow/compiler/xla

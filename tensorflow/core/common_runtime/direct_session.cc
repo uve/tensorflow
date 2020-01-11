@@ -1071,7 +1071,7 @@ Status DirectSession::ResourceHandleToInputTensor(const Tensor& resource_tensor,
         " type: ", resource_handle.maybe_type_name(),
         "). Perhaps a resource tensor was being provided as a feed? That is "
         "not currently allowed. Please file an issue at "
-        "https://github.com/tensorflow/tensorflow/issues/new, ideally with a "
+        "https://github.com/uve/tensorflow/issues/new, ideally with a "
         "short code snippet that leads to this error message."));
   }
 }

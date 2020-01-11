@@ -64,7 +64,7 @@ public final class Server implements AutoCloseable {
    * Constructs a new instance of server.
    *
    * @param serverDef Server definition specified as a serialized <a
-   *     href="https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/protobuf/tensorflow_server.proto">ServerDef</a>
+   *     href="https://github.com/uve/tensorflow/blob/master/tensorflow/core/protobuf/tensorflow_server.proto">ServerDef</a>
    *     protocol buffer.
    */
   public Server(byte[] serverDef) {

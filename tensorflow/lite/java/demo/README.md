@@ -13,9 +13,9 @@ code to merge.
 
 ## Building from Source with Bazel
 
-1. Follow the [Bazel steps for the TF Demo App](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/android#bazel):
+1. Follow the [Bazel steps for the TF Demo App](https://github.com/uve/tensorflow/tree/master/tensorflow/examples/android#bazel):
 
-  1. [Install Bazel and Android Prerequisites](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/android#install-bazel-and-android-prerequisites).
+  1. [Install Bazel and Android Prerequisites](https://github.com/uve/tensorflow/tree/master/tensorflow/examples/android#install-bazel-and-android-prerequisites).
      It's easiest with Android Studio.
 
       - You'll need at least SDK version 23.
@@ -26,7 +26,7 @@ code to merge.
         through Android Studio under `Android SDK Manager -> SDK Tools ->
         Android Support Repository`.
 
-  2. [Edit your `WORKSPACE`](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/android#edit-workspace)
+  2. [Edit your `WORKSPACE`](https://github.com/uve/tensorflow/tree/master/tensorflow/examples/android#edit-workspace)
      to add SDK and NDK targets.
 
      NOTE: As long as you have the SDK and NDK installed, the `./configure`
@@ -46,7 +46,7 @@ code to merge.
   ```
 
 3. Install the demo on a
-   [debug-enabled device](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/android#install):
+   [debug-enabled device](https://github.com/uve/tensorflow/tree/master/tensorflow/examples/android#install):
 
   ```shell
   adb install bazel-bin/tensorflow/lite/java/demo/app/src/main/TfLiteCameraDemo.apk

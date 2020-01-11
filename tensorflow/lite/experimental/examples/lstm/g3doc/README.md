@@ -86,7 +86,7 @@ tflite_model = converter.convert()  # You got a tflite model!
 Bridging TensorFlow LSTM and TensorFlow Lite is not easy, and the use of
 `dynamic_rnn` adds additional complexity (as the while loop is introduced).
 With the help of
-[OpHint](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/python/op_hint.py)
+[OpHint](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/python/op_hint.py)
 (also see the next section), we create special wrappers around `rnn_cell` and
 `rnn` to help us identify the inputs and outputs of the LSTM ops, and these
 ops are converted to a single fused LSTM op when converting TensorFlow models

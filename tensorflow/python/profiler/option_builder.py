@@ -29,7 +29,7 @@ class ProfileOptionBuilder(object):
   """Option Builder for Profiling API.
 
   For tutorial on the options, see
-  https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core/profiler/g3doc/options.md
+  https://github.com/uve/tensorflow/tree/master/tensorflow/core/profiler/g3doc/options.md
 
   ```python
   # Users can use pre-built options:
@@ -116,7 +116,7 @@ class ProfileOptionBuilder(object):
     # pylint: disable=line-too-long
     """Options used to profile float operations.
 
-    Please see https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core/profiler/g3doc/profile_model_architecture.md
+    Please see https://github.com/uve/tensorflow/tree/master/tensorflow/core/profiler/g3doc/profile_model_architecture.md
     on the caveats of calculating float operations.
 
     Returns:
@@ -300,7 +300,7 @@ class ProfileOptionBuilder(object):
     # pylint: disable=line-too-long
     """Only show profiler nodes consuming no less than 'min_float_ops'.
 
-    Please see https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core/profiler/g3doc/profile_model_architecture.md
+    Please see https://github.com/uve/tensorflow/tree/master/tensorflow/core/profiler/g3doc/profile_model_architecture.md
     on the caveats of calculating float operations.
 
     Args:
@@ -423,7 +423,7 @@ class ProfileOptionBuilder(object):
     """Order the displayed profiler nodes based on a attribute.
 
     Supported attribute includes micros, bytes, occurrence, params, etc.
-    https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core/profiler/g3doc/options.md
+    https://github.com/uve/tensorflow/tree/master/tensorflow/core/profiler/g3doc/options.md
 
     Args:
       attribute: An attribute the profiler node has.
@@ -438,7 +438,7 @@ class ProfileOptionBuilder(object):
     # pylint: disable=line-too-long
     """Select the attributes to display.
 
-    See https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core/profiler/g3doc/options.md
+    See https://github.com/uve/tensorflow/tree/master/tensorflow/core/profiler/g3doc/options.md
     for supported attributes.
 
     Args:

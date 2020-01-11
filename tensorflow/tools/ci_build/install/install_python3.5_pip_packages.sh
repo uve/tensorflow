@@ -60,7 +60,7 @@ rm -rf /usr/lib/python3/dist-packages/six*
 # Install numpy, scipy and scikit-learn required by the builds
 
 # numpy needs to be installed from source to fix segfaults. See:
-# https://github.com/tensorflow/tensorflow/issues/6968
+# https://github.com/uve/tensorflow/issues/6968
 # This workaround isn't needed for Ubuntu 16.04 or later.
 pip3.5 install --no-binary=:all: --upgrade numpy==1.14.5
 

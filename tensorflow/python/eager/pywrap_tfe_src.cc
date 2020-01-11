@@ -397,7 +397,7 @@ bool SetOpAttrList(
                   py_value.get()->ob_type->tp_name,
                   " object. If you think this is an error, please file an "
                   "issue at "
-                  "https://github.com/tensorflow/tensorflow/issues/new")
+                  "https://github.com/uve/tensorflow/issues/new")
                   .c_str());
           return false;
         }
@@ -604,7 +604,7 @@ bool SetOpAttrScalar(
                 "unable to set function value attribute from a ",
                 py_value->ob_type->tp_name,
                 " object. If you think this is an error, please file an issue "
-                "at https://github.com/tensorflow/tensorflow/issues/new")
+                "at https://github.com/uve/tensorflow/issues/new")
                 .c_str());
         return false;
       }

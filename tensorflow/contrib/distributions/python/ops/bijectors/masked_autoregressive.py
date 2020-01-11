@@ -191,7 +191,7 @@ class MaskedAutoregressiveFlow(bijector.Bijector):
   @deprecation.deprecated(
       "2018-10-01", "The TensorFlow Distributions library has moved to "
       "TensorFlow Probability "
-      "(https://github.com/tensorflow/probability). You "
+      "(https://github.com/uve/probability). You "
       "should update all references to use `tfp.distributions` "
       "instead of `tf.contrib.distributions`.",
       warn_once=True)
@@ -313,7 +313,7 @@ MASK_EXCLUSIVE = "exclusive"
 @deprecation.deprecated(
     "2018-10-01", "The TensorFlow Distributions library has moved to "
     "TensorFlow Probability "
-    "(https://github.com/tensorflow/probability). You "
+    "(https://github.com/uve/probability). You "
     "should update all references to use `tfp.distributions` "
     "instead of `tf.contrib.distributions`.",
     warn_once=True)
@@ -337,7 +337,7 @@ def _gen_slices(num_blocks, n_in, n_out, mask_type=MASK_EXCLUSIVE):
 @deprecation.deprecated(
     "2018-10-01", "The TensorFlow Distributions library has moved to "
     "TensorFlow Probability "
-    "(https://github.com/tensorflow/probability). You "
+    "(https://github.com/uve/probability). You "
     "should update all references to use `tfp.distributions` "
     "instead of `tf.contrib.distributions`.",
     warn_once=True)
@@ -358,7 +358,7 @@ def _gen_mask(num_blocks,
 @deprecation.deprecated(
     "2018-10-01", "The TensorFlow Distributions library has moved to "
     "TensorFlow Probability "
-    "(https://github.com/tensorflow/probability). You "
+    "(https://github.com/uve/probability). You "
     "should update all references to use `tfp.distributions` "
     "instead of `tf.contrib.distributions`.",
     warn_once=True)
@@ -440,7 +440,7 @@ def masked_dense(inputs,
 @deprecation.deprecated(
     "2018-10-01", "The TensorFlow Distributions library has moved to "
     "TensorFlow Probability "
-    "(https://github.com/tensorflow/probability). You "
+    "(https://github.com/uve/probability). You "
     "should update all references to use `tfp.distributions` "
     "instead of `tf.contrib.distributions`.",
     warn_once=True)
@@ -566,7 +566,7 @@ def masked_autoregressive_default_template(
 @deprecation.deprecated(
     "2018-10-01", "The TensorFlow Distributions library has moved to "
     "TensorFlow Probability "
-    "(https://github.com/tensorflow/probability). You "
+    "(https://github.com/uve/probability). You "
     "should update all references to use `tfp.distributions` "
     "instead of `tf.contrib.distributions`.",
     warn_once=True)

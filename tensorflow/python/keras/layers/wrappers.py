@@ -473,7 +473,7 @@ class Bidirectional(Wrapper):
     # is a RNN layer that contains custom cells. In this case we inspect the
     # layer and pass the custom cell class as part of the `custom_objects`
     # argument when calling `from_config`.
-    # See https://github.com/tensorflow/tensorflow/issues/26581 for more detail.
+    # See https://github.com/uve/tensorflow/issues/26581 for more detail.
     config = layer.get_config()
     if go_backwards:
       config['go_backwards'] = not config['go_backwards']

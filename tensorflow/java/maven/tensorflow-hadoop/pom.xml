@@ -27,9 +27,9 @@
     </licenses>
 
     <scm>
-        <url>https://github.com/tensorflow/ecosystem.git</url>
+        <url>https://github.com/uve/ecosystem.git</url>
         <connection>git@github.com:tensorflow/ecosystem.git</connection>
-        <developerConnection>scm:git:https://github.com/tensorflow/ecosystem.git</developerConnection>
+        <developerConnection>scm:git:https://github.com/uve/ecosystem.git</developerConnection>
     </scm>
 
     <build>

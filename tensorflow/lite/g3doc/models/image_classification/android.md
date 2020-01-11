@@ -4,10 +4,10 @@ This document walks through the code of a simple Android mobile application that
 demonstrates [image classification](overview.md) using the device camera.
 
 The application code is located in the
-[Tensorflow examples](https://github.com/tensorflow/examples) repository, along
+[Tensorflow examples](https://github.com/uve/examples) repository, along
 with instructions for building and deploying the app.
 
-<a class="button button-primary" href="https://github.com/tensorflow/examples/tree/master/lite/examples/image_classification/android">Example
+<a class="button button-primary" href="https://github.com/uve/examples/tree/master/lite/examples/image_classification/android">Example
 application</a>
 
 ## Explore the code
@@ -18,9 +18,9 @@ We're now going to walk through the most important parts of the sample code.
 
 This mobile application gets the camera input using the functions defined in the
 file
-[`CameraActivity.java`](https://github.com/tensorflow/examples/tree/master/lite/examples/image_classification/android/app/src/main/java/org/tensorflow/lite/examples/classification/CameraActivity.java).
+[`CameraActivity.java`](https://github.com/uve/examples/tree/master/lite/examples/image_classification/android/app/src/main/java/org/tensorflow/lite/examples/classification/CameraActivity.java).
 This file depends on
-[`AndroidManifest.xml`](https://github.com/tensorflow/examples/tree/master/lite/examples/image_classification/android/app/src/main/AndroidManifest.xml)
+[`AndroidManifest.xml`](https://github.com/uve/examples/tree/master/lite/examples/image_classification/android/app/src/main/AndroidManifest.xml)
 to set the camera orientation.
 
 `CameraActivity` also contains code to capture user preferences from the UI and
@@ -35,14 +35,14 @@ numThreads = Integer.parseInt(threadsTextView.getText().toString().trim());
 ### Classifier
 
 The file
-[`Classifier.java`](https://github.com/tensorflow/examples/tree/master/lite/examples/image_classification/android/app/src/main/java/org/tensorflow/lite/examples/classification/tflite/Classifier.java)
+[`Classifier.java`](https://github.com/uve/examples/tree/master/lite/examples/image_classification/android/app/src/main/java/org/tensorflow/lite/examples/classification/tflite/Classifier.java)
 contains most of the complex logic for processing the camera input and running
 inference.
 
 Two subclasses of the file exist, in
-[`ClassifierFloatMobileNet.java`](https://github.com/tensorflow/examples/tree/master/lite/examples/image_classification/android/app/src/main/java/org/tensorflow/lite/examples/classification/tflite/ClassifierFloatMobileNet.java)
+[`ClassifierFloatMobileNet.java`](https://github.com/uve/examples/tree/master/lite/examples/image_classification/android/app/src/main/java/org/tensorflow/lite/examples/classification/tflite/ClassifierFloatMobileNet.java)
 and
-[`ClassifierQuantizedMobileNet.java`](https://github.com/tensorflow/examples/tree/master/lite/examples/image_classification/android/app/src/main/java/org/tensorflow/lite/examples/classification/tflite/ClassifierQuantizedMobileNet.java),
+[`ClassifierQuantizedMobileNet.java`](https://github.com/uve/examples/tree/master/lite/examples/image_classification/android/app/src/main/java/org/tensorflow/lite/examples/classification/tflite/ClassifierQuantizedMobileNet.java),
 to demonstrate the use of both floating point and
 [quantized](https://www.tensorflow.org/lite/performance/post_training_quantization)
 models.
@@ -230,7 +230,7 @@ for (int i = 0; i < labels.size(); ++i) {
 
 The classifier is invoked and inference results are displayed by the
 `processImage()` function in
-[`ClassifierActivity.java`](https://github.com/tensorflow/examples/tree/master/lite/examples/image_classification/android/app/src/main/java/org/tensorflow/lite/examples/classification/ClassifierActivity.java).
+[`ClassifierActivity.java`](https://github.com/uve/examples/tree/master/lite/examples/image_classification/android/app/src/main/java/org/tensorflow/lite/examples/classification/ClassifierActivity.java).
 
 `ClassifierActivity` is a subclass of `CameraActivity` that contains method
 implementations that render the camera image, run classification, and display

@@ -126,7 +126,7 @@ def _build_advisor_options(options):
 class Profiler(object):
   """TensorFlow multi-step profiler.
 
-  https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core/profiler/README.md
+  https://github.com/uve/tensorflow/tree/master/tensorflow/core/profiler/README.md
 
   ```python
   Typical use case:
@@ -315,7 +315,7 @@ def profile(graph=None,
   """Profile model.
 
     Tutorials and examples can be found in:
-    https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core/profiler/README.md
+    https://github.com/uve/tensorflow/tree/master/tensorflow/core/profiler/README.md
 
   Args:
     graph: tf.Graph. If None and eager execution is not enabled, use
@@ -387,7 +387,7 @@ def advise(graph=None, run_meta=None, options=_DEFAULT_ADVISE_OPTIONS):
 
     Builds profiles and automatically check anomalies of various
     aspects. For more details:
-    https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core/profiler/README.md
+    https://github.com/uve/tensorflow/tree/master/tensorflow/core/profiler/README.md
 
   Args:
     graph: tf.Graph. If None and eager execution is not enabled, use

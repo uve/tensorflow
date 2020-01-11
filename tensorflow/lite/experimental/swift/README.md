@@ -9,7 +9,7 @@ hardware acceleration.
 
 To build the Swift TensorFlow Lite library on Apple platforms,
 [install from source](https://www.tensorflow.org/install/source#setup_for_linux_and_macos)
-or [clone the GitHub repo](https://github.com/tensorflow/tensorflow).
+or [clone the GitHub repo](https://github.com/uve/tensorflow).
 Then, configure TensorFlow by navigating to the root directory and executing the
 `configure.py` script:
 

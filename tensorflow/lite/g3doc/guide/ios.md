@@ -3,7 +3,7 @@
 To get started with TensorFlow Lite on iOS, we recommend exploring the following
 example:
 
-<a class="button button-primary" href="https://github.com/tensorflow/examples/tree/master/lite/examples/image_classification/ios">iOS
+<a class="button button-primary" href="https://github.com/uve/examples/tree/master/lite/examples/image_classification/ios">iOS
 image classification example</a>
 
 For an explanation of the source code, you should also read
@@ -23,11 +23,11 @@ use cases are available in [Examples](https://www.tensorflow.org/lite/examples).
 ## Add TensorFlow Lite to your Swift or Objective-C project
 
 TensorFlow Lite offers native iOS libraries written in
-[Swift](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/swift)
+[Swift](https://github.com/uve/tensorflow/tree/master/tensorflow/lite/experimental/swift)
 and
-[Objective-C](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/objc).
+[Objective-C](https://github.com/uve/tensorflow/tree/master/tensorflow/lite/experimental/objc).
 To get started quickly writing your own iOS code, we recommend using our
-[Swift image classification example](https://github.com/tensorflow/examples/tree/master/lite/examples/image_classification/ios)
+[Swift image classification example](https://github.com/uve/examples/tree/master/lite/examples/image_classification/ios)
 as a starting point.
 
 The sections below demonstrate how to add TensorFlow Lite Swift or Objective-C

@@ -28,7 +28,7 @@ sudo apt-get install crossbuild-essential-armhf
 If you are using Docker, you may not use `sudo`.
 
 Now git-clone the TensorFlow repository
-(`https://github.com/tensorflow/tensorflow`)—if you're using the TensorFlow
+(`https://github.com/uve/tensorflow`)—if you're using the TensorFlow
 Docker image, the repo is already provided in `/tensorflow_src/`—and then run
 this script at the root of the TensorFlow repository to download all the
 build dependencies:
@@ -60,7 +60,7 @@ sudo apt-get install build-essential
 ```
 
 Now git-clone the TensorFlow repository
-(`https://github.com/tensorflow/tensorflow`) and run this at the root of
+(`https://github.com/uve/tensorflow`) and run this at the root of
 the repository:
 
 ```bash

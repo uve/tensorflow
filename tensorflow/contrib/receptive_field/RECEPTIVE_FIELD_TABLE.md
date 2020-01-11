@@ -6,9 +6,9 @@ The table below presents the receptive field parameters and cost (in terms of
 floating point operations &mdash; FLOPs) for several popular convolutional
 neural networks and their end-points. These are computed using the models from
 the
-[TF-Slim repository](https://github.com/tensorflow/models/tree/master/research/slim),
+[TF-Slim repository](https://github.com/uve/models/tree/master/research/slim),
 by using the
-[rf_benchmark script](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/receptive_field/python/util/examples/rf_benchmark.py).
+[rf_benchmark script](https://github.com/uve/tensorflow/blob/master/tensorflow/contrib/receptive_field/python/util/examples/rf_benchmark.py).
 
 Questions? See the [FAQ](#faq).
 
@@ -609,7 +609,7 @@ has no way of checking it when the padding cannot be determined.
 
 First, note that the results presented here are based on the tensorflow
 implementations from the
-[TF-Slim model library](https://github.com/tensorflow/models/tree/master/research/slim).
+[TF-Slim model library](https://github.com/uve/models/tree/master/research/slim).
 So, it is possible that due to some implementation details the RF parameters are
 different.
 
@@ -617,23 +617,23 @@ One common case of confusion is the TF-Slim Resnet implementation, which applies
 stride in the last residual unit of each block, instead of at the input
 activations in the first residual unit of each block (which is what is described
 in the Resnet paper) -- see
-[this comment](https://github.com/tensorflow/models/blob/master/research/slim/nets/resnet_utils.py#L30).
+[this comment](https://github.com/uve/models/blob/master/research/slim/nets/resnet_utils.py#L30).
 This makes the stride with respect to each convolution block potentially
 different. In this case, though, note that a
-[flag](https://github.com/tensorflow/models/blob/master/research/slim/nets/resnet_v1.py#L150)
+[flag](https://github.com/uve/models/blob/master/research/slim/nets/resnet_v1.py#L150)
 may be used to recover the original striding convention.
 
 Second, it could be that we have a bug somewhere. While we include
-[many tests](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/receptive_field/python/util/receptive_field_test.py)
+[many tests](https://github.com/uve/tensorflow/blob/master/tensorflow/contrib/receptive_field/python/util/receptive_field_test.py)
 in our library, it is always possible that we missed something. If you suspect
 this is the case, please file a GitHub issue
-[here](https://github.com/tensorflow/tensorflow/issues).
+[here](https://github.com/uve/tensorflow/issues).
 
 ### The number of FLOPs for network X seem different from what I expected... maybe your calculation is incorrect?
 
 First, note that the results presented here are based on the tensorflow
 implementations from the
-[TF-Slim model library](https://github.com/tensorflow/models/tree/master/research/slim).
+[TF-Slim model library](https://github.com/uve/models/tree/master/research/slim).
 So, it is possible that due to some implementation details the number of FLOPs
 is different.
 
@@ -651,4 +651,4 @@ Finally, we rely on `tensorflow.profiler` for estimating the number of floating
 point operations. It could be that they have a bug somewhere, or that we are
 using their library incorrectly, or that we simply have a bug somewhere else. If
 you suspect this is the case, please file a GitHub issue
-[here](https://github.com/tensorflow/tensorflow/issues).
+[here](https://github.com/uve/tensorflow/issues).

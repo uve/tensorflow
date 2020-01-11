@@ -228,7 +228,7 @@ class Dimension(object):
     return self._value
 
   # This is needed for Windows.
-  # See https://github.com/tensorflow/tensorflow/pull/9780
+  # See https://github.com/uve/tensorflow/pull/9780
   def __long__(self):
     return self._value
 

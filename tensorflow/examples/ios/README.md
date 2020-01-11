@@ -80,7 +80,7 @@ target 'YourProjectName'
  - You'll need Xcode 7.3 or later, with the command-line tools installed.
 
  - Follow the instructions at
-   [tensorflow/contrib/makefile](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/makefile)
+   [tensorflow/contrib/makefile](https://github.com/uve/tensorflow/tree/master/tensorflow/contrib/makefile)
    under "iOS" to compile a static library containing the core TensorFlow code.
 
  - You should see a single-screen app with a "Run Model" button. Tap that, and
@@ -190,5 +190,5 @@ increase you see in your own app is similar, and if it's larger, look at the
 "Other Linker Flags" used in the Simple Xcode project settings to strip the
 executable.
 
-For further optimization, please refer to the ["Optimization" section](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/makefile#optimization)
+For further optimization, please refer to the ["Optimization" section](https://github.com/uve/tensorflow/tree/master/tensorflow/contrib/makefile#optimization)
 of the makefile instructions.

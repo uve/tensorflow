@@ -2,7 +2,7 @@
 
 This example shows how you can load a pre-trained TensorFlow network and use it
 to detect objects in images in C++. For an alternate implementation see the
-[Android TensorFlow demo](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/android)
+[Android TensorFlow demo](https://github.com/uve/tensorflow/tree/master/tensorflow/examples/android)
 
 ## Description
 
@@ -68,4 +68,4 @@ $ bazel-bin/tensorflow/examples/multibox_detector/detect_objects --image=my_imag
 ```
 
 For another implementation of this work, you can check out the [Android
-TensorFlow demo](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/examples/android).
+TensorFlow demo](https://github.com/uve/tensorflow/tree/master/tensorflow/examples/android).

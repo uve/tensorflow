@@ -4,7 +4,7 @@ about: Use this template for reporting a bug or a performance issue.
 
 ---
 
-<em>Please make sure that this is a bug. As per our [GitHub Policy](https://github.com/tensorflow/tensorflow/blob/master/ISSUES.md), we only address code/doc bugs, performance issues, feature requests and build/installation issues on GitHub. tag:bug_template</em>
+<em>Please make sure that this is a bug. As per our [GitHub Policy](https://github.com/uve/tensorflow/blob/master/ISSUES.md), we only address code/doc bugs, performance issues, feature requests and build/installation issues on GitHub. tag:bug_template</em>
 
 **System information**
 - Have I written custom code (as opposed to using a stock example script provided in TensorFlow):
@@ -19,7 +19,7 @@ about: Use this template for reporting a bug or a performance issue.
 - GPU model and memory:
 
 You can collect some of this information using our environment capture
-[script](https://github.com/tensorflow/tensorflow/tree/master/tools/tf_env_collect.sh)
+[script](https://github.com/uve/tensorflow/tree/master/tools/tf_env_collect.sh)
 You can also obtain the TensorFlow version with: 1. TF 1.0: `python -c "import
 tensorflow as tf; print(tf.GIT_VERSION, tf.VERSION)"` 2. TF 2.0: `python -c
 "import tensorflow as tf; print(tf.version.GIT_VERSION, tf.version.VERSION)"`

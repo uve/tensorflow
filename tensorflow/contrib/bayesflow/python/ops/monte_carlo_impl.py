@@ -192,7 +192,7 @@ def _logspace_mean(log_values):
 @deprecation.deprecated(
     '2018-10-01',
     'The tf.contrib.bayesflow library has moved to '
-    'TensorFlow Probability (https://github.com/tensorflow/probability). '
+    'TensorFlow Probability (https://github.com/uve/probability). '
     'Use `tfp.monte_carlo.expectation` instead.',
     warn_once=True)
 def expectation(f, samples, log_prob=None, use_reparametrization=True,

@@ -20,22 +20,22 @@ on API >= 14 devices.
 
 ## Current samples:
 
-1. [TF Classify](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/ClassifierActivity.java):
+1. [TF Classify](https://github.com/uve/tensorflow/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/ClassifierActivity.java):
         Uses the [Google Inception](https://arxiv.org/abs/1409.4842)
         model to classify camera frames in real-time, displaying the top results
         in an overlay on the camera image.
-2. [TF Detect](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/DetectorActivity.java):
+2. [TF Detect](https://github.com/uve/tensorflow/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/DetectorActivity.java):
         Demonstrates an SSD-Mobilenet model trained using the
-        [Tensorflow Object Detection API](https://github.com/tensorflow/models/tree/master/research/object_detection/)
+        [Tensorflow Object Detection API](https://github.com/uve/models/tree/master/research/object_detection/)
         introduced in [Speed/accuracy trade-offs for modern convolutional object detectors](https://arxiv.org/abs/1611.10012) to
         localize and track objects (from 80 categories) in the camera preview
         in real-time.
-3. [TF Stylize](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/StylizeActivity.java):
+3. [TF Stylize](https://github.com/uve/tensorflow/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/StylizeActivity.java):
         Uses a model based on [A Learned Representation For Artistic
         Style](https://arxiv.org/abs/1610.07629) to restyle the camera preview
         image to that of a number of different artists.
 4.  [TF
-    Speech](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/SpeechActivity.java):
+    Speech](https://github.com/uve/tensorflow/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/SpeechActivity.java):
     Runs a simple speech recognition model built by the [audio training
     tutorial](https://www.tensorflow.org/versions/master/tutorials/audio_recognition). Listens
     for a small set of words, and highlights them in the UI when they are
@@ -99,7 +99,7 @@ Bazel, and partial support for gradle, cmake, make, and Android Studio.
 As a first step for all build types, clone the TensorFlow repo with:
 
 ```
-git clone --recurse-submodules https://github.com/tensorflow/tensorflow.git
+git clone --recurse-submodules https://github.com/uve/tensorflow.git
 ```
 
 Note that `--recurse-submodules` is necessary to prevent some issues with

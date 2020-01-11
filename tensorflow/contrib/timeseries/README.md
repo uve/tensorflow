@@ -22,5 +22,5 @@ period, vector autoregression, moving averages; see the
 `StructuralEnsembleRegressor` in `estimators.py`). Both model classes support
 heuristics for ignoring un-labeled anomalies in training data. Trained models
 can be exported for inference/serving in
-[SavedModel format](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/saved_model/README.md)
+[SavedModel format](https://github.com/uve/tensorflow/blob/master/tensorflow/python/saved_model/README.md)
 (see `examples/multivariate.py`).

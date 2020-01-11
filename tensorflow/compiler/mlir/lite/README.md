@@ -3,7 +3,7 @@
 This directory contains:
 
 1. Experimental code for the new TF-Lite convertor.
-2. Code for the TF-lite dialect [MLIR](https://github.com/tensorflow/mlir).
+2. Code for the TF-lite dialect [MLIR](https://github.com/uve/mlir).
 
 ## API:
 

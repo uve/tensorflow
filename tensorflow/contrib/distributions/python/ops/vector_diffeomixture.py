@@ -54,7 +54,7 @@ __all__ = [
     "2018-10-01",
     "The TensorFlow Distributions library has moved to "
     "TensorFlow Probability "
-    "(https://github.com/tensorflow/probability). You "
+    "(https://github.com/uve/probability). You "
     "should update all references to use `tfp.distributions` "
     "instead of `tf.contrib.distributions`.",
     warn_once=True)
@@ -124,7 +124,7 @@ def quadrature_scheme_softmaxnormal_gauss_hermite(
     "2018-10-01",
     "The TensorFlow Distributions library has moved to "
     "TensorFlow Probability "
-    "(https://github.com/tensorflow/probability). You "
+    "(https://github.com/uve/probability). You "
     "should update all references to use `tfp.distributions` "
     "instead of `tf.contrib.distributions`.",
     warn_once=True)
@@ -340,7 +340,7 @@ class VectorDiffeomixture(distribution_lib.Distribution):
       "2018-10-01",
       "The TensorFlow Distributions library has moved to "
       "TensorFlow Probability "
-      "(https://github.com/tensorflow/probability). You "
+      "(https://github.com/uve/probability). You "
       "should update all references to use `tfp.distributions` "
       "instead of `tf.contrib.distributions`.",
       warn_once=True)
@@ -809,7 +809,7 @@ class VectorDiffeomixture(distribution_lib.Distribution):
     "2018-10-01",
     "The TensorFlow Distributions library has moved to "
     "TensorFlow Probability "
-    "(https://github.com/tensorflow/probability). You "
+    "(https://github.com/uve/probability). You "
     "should update all references to use `tfp.distributions` "
     "instead of `tf.contrib.distributions`.",
     warn_once=True)
@@ -852,7 +852,7 @@ def maybe_check_quadrature_param(param, name, validate_args):
     "2018-10-01",
     "The TensorFlow Distributions library has moved to "
     "TensorFlow Probability "
-    "(https://github.com/tensorflow/probability). You "
+    "(https://github.com/uve/probability). You "
     "should update all references to use `tfp.distributions` "
     "instead of `tf.contrib.distributions`.",
     warn_once=True)
@@ -898,7 +898,7 @@ def determine_batch_event_shapes(grid, endpoint_affine):
     "2018-10-01",
     "The TensorFlow Distributions library has moved to "
     "TensorFlow Probability "
-    "(https://github.com/tensorflow/probability). You "
+    "(https://github.com/uve/probability). You "
     "should update all references to use `tfp.distributions` "
     "instead of `tf.contrib.distributions`.",
     warn_once=True)
@@ -932,7 +932,7 @@ def interpolate_loc(grid, loc):
     "2018-10-01",
     "The TensorFlow Distributions library has moved to "
     "TensorFlow Probability "
-    "(https://github.com/tensorflow/probability). You "
+    "(https://github.com/uve/probability). You "
     "should update all references to use `tfp.distributions` "
     "instead of `tf.contrib.distributions`.",
     warn_once=True)
@@ -956,7 +956,7 @@ def interpolate_scale(grid, scale):
     "2018-10-01",
     "The TensorFlow Distributions library has moved to "
     "TensorFlow Probability "
-    "(https://github.com/tensorflow/probability). You "
+    "(https://github.com/uve/probability). You "
     "should update all references to use `tfp.distributions` "
     "instead of `tf.contrib.distributions`.",
     warn_once=True)
@@ -999,7 +999,7 @@ def linop_scale(w, op):
     "2018-10-01",
     "The TensorFlow Distributions library has moved to "
     "TensorFlow Probability "
-    "(https://github.com/tensorflow/probability). You "
+    "(https://github.com/uve/probability). You "
     "should update all references to use `tfp.distributions` "
     "instead of `tf.contrib.distributions`.",
     warn_once=True)
@@ -1015,7 +1015,7 @@ def concat_vectors(*args):
     "2018-10-01",
     "The TensorFlow Distributions library has moved to "
     "TensorFlow Probability "
-    "(https://github.com/tensorflow/probability). You "
+    "(https://github.com/uve/probability). You "
     "should update all references to use `tfp.distributions` "
     "instead of `tf.contrib.distributions`.",
     warn_once=True)
@@ -1032,7 +1032,7 @@ def add(x, y):
     "2018-10-01",
     "The TensorFlow Distributions library has moved to "
     "TensorFlow Probability "
-    "(https://github.com/tensorflow/probability). You "
+    "(https://github.com/uve/probability). You "
     "should update all references to use `tfp.distributions` "
     "instead of `tf.contrib.distributions`.",
     warn_once=True)
@@ -1045,7 +1045,7 @@ def vec_osquare(x):
     "2018-10-01",
     "The TensorFlow Distributions library has moved to "
     "TensorFlow Probability "
-    "(https://github.com/tensorflow/probability). You "
+    "(https://github.com/uve/probability). You "
     "should update all references to use `tfp.distributions` "
     "instead of `tf.contrib.distributions`.",
     warn_once=True)

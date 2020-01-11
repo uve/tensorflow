@@ -36,7 +36,7 @@ Note: This requires OpenGL ES 3.1 or higher.
 #### Step 1. Clone the TensorFlow source code and open it in Android Studio
 
 ```
-git clone https://github.com/tensorflow/tensorflow
+git clone https://github.com/uve/tensorflow
 ```
 
 #### Step 2. Edit `app/build.gradle` to use the nightly GPU AAR
@@ -189,7 +189,7 @@ be run on the backend:
 <br /><i>(image segmentation model that assigns semantic labels (e.g., dog, cat, car) to every pixel in the input image)</i>
 * [MobileNet SSD object detection](https://ai.googleblog.com/2018/07/accelerated-training-and-inference-with.html) [[download]](https://storage.googleapis.com/download.tensorflow.org/models/tflite/gpu/mobile_ssd_v2_float_coco.tflite)
 <br /><i>(image classification model that detects multiple objects with bounding boxes)</i>
-* [PoseNet for pose estimation](https://github.com/tensorflow/tfjs-models/tree/master/posenet) [[download]](https://storage.googleapis.com/download.tensorflow.org/models/tflite/gpu/multi_person_mobilenet_v1_075_float.tflite)
+* [PoseNet for pose estimation](https://github.com/uve/tfjs-models/tree/master/posenet) [[download]](https://storage.googleapis.com/download.tensorflow.org/models/tflite/gpu/multi_person_mobilenet_v1_075_float.tflite)
 <br /><i>(vision model that estimates the poses of a person(s) in image or video)</i>
 
 To see a full list of supported ops, please see the [advanced documentation](gpu_advanced.md).

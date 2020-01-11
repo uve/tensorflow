@@ -249,7 +249,7 @@ class StringTensorWriter {
       TF_SetStatus(status, TF_OUT_OF_RANGE,
                    "TF_STRING tensor encoding ran out of space for offsets, "
                    "this is likely a bug, please file an issue at "
-                   "https://github.com/tensorflow/tensorflow/issues/new");
+                   "https://github.com/uve/tensorflow/issues/new");
       return;
     }
     memcpy(poffsets_, &offset_, sizeof(offset_));

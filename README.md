@@ -15,7 +15,7 @@ the graph edges represent the multidimensional data arrays (tensors) that flow
 between them. This flexible architecture enables you to deploy computation to
 one or more CPUs or GPUs in a desktop, server, or mobile device without
 rewriting code. TensorFlow also includes
-[TensorBoard](https://github.com/tensorflow/tensorboard), a data visualization
+[TensorBoard](https://github.com/uve/tensorboard), a data visualization
 toolkit.
 
 TensorFlow was originally developed by researchers and engineers
@@ -84,7 +84,7 @@ guidelines](CONTRIBUTING.md). This project adheres to TensorFlow's
 [code of conduct](CODE_OF_CONDUCT.md). By participating, you are expected to
 uphold this code.**
 
-**We use [GitHub issues](https://github.com/tensorflow/tensorflow/issues) for
+**We use [GitHub issues](https://github.com/uve/tensorflow/issues) for
 tracking requests and bugs, please see
 [TensorFlow Discuss](https://groups.google.com/a/tensorflow.org/forum/#!forum/discuss)
 for general questions and discussion, and please direct specific questions to
@@ -132,14 +132,14 @@ Build Type                                                                      
 
 *   [TensorFlow Website](https://www.tensorflow.org)
 *   [TensorFlow Tutorials](https://www.tensorflow.org/tutorials/)
-*   [TensorFlow Model Zoo](https://github.com/tensorflow/models)
+*   [TensorFlow Model Zoo](https://github.com/uve/models)
 *   [TensorFlow Twitter](https://twitter.com/tensorflow)
 *   [TensorFlow Blog](https://blog.tensorflow.org)
 *   [TensorFlow Course at Stanford](https://web.stanford.edu/class/cs20si)
 *   [TensorFlow Roadmap](https://www.tensorflow.org/community/roadmap)
 *   [TensorFlow White Papers](https://www.tensorflow.org/about/bib)
 *   [TensorFlow YouTube Channel](https://www.youtube.com/channel/UC0rqucBdTuFTjJiefW5t-IQ)
-*   [TensorFlow Visualization Toolkit](https://github.com/tensorflow/tensorboard)
+*   [TensorFlow Visualization Toolkit](https://github.com/uve/tensorboard)
 
 Learn more about the TensorFlow community at the [community page of tensorflow.org](https://www.tensorflow.org/community) for a few ways to participate.
 

@@ -67,7 +67,7 @@ TensorFlow Lite FlatBuffer when the GraphDef is stored in a file. Both `.pb` and
 The example uses
 [Mobilenet_1.0_224](https://storage.googleapis.com/download.tensorflow.org/models/mobilenet_v1_1.0_224_frozen.tgz).
 The function only supports GraphDefs frozen using
-[freeze_graph.py](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/tools/freeze_graph.py).
+[freeze_graph.py](https://github.com/uve/tensorflow/blob/master/tensorflow/python/tools/freeze_graph.py).
 
 ```python
 import tensorflow as tf

@@ -1228,7 +1228,7 @@ def _parse_kwargs_as_attrs(func_name, **kwargs):
     if key.startswith("experimental_"):
       attrs[key] = _get_experimental_kwarg_as_attr(key, kwargs[key])
       del kwargs[key]
-    # Support for https://github.com/tensorflow/community/pull/113/files.
+    # Support for https://github.com/uve/community/pull/113/files.
     elif key == "_implements" or key == "_reference":
       attrs[key] = _get_kwarg_as_str_attr(key, kwargs[key])
       del kwargs[key]

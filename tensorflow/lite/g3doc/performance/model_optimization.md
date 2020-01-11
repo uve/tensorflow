@@ -24,7 +24,7 @@ TensorFlow Lite provides several levels of support for quantization.
 
 *   Tensorflow Lite [post-training quantization](post_training_quantization.md)
     quantizes weights and activations post training easily.
-*   [Quantization-aware training](https://github.com/tensorflow/tensorflow/tree/r1.13/tensorflow/contrib/quantize){:.external}
+*   [Quantization-aware training](https://github.com/uve/tensorflow/tree/r1.13/tensorflow/contrib/quantize){:.external}
     allows for training of networks that can be quantized with minimal accuracy
     drop; this is only available for a subset of convolutional neural network
     architectures.
@@ -71,7 +71,7 @@ broadly applicable and does not require training data.
 
 For cases where the accuracy and latency targets are not met, or hardware
 accelerator support is important,
-[quantization-aware training](https://github.com/tensorflow/tensorflow/tree/r1.13/tensorflow/contrib/quantize){:.external}
+[quantization-aware training](https://github.com/uve/tensorflow/tree/r1.13/tensorflow/contrib/quantize){:.external}
 is the better option. See additional optimization techniques under the
 [Tensorflow Model Optimization Toolkit](https://www.tensorflow.org/model_optimization).
 

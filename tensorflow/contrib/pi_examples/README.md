@@ -4,7 +4,7 @@ This folder contains examples of how to build applications for the Raspberry Pi 
 
 ## Building the Examples
 
- - Follow the Raspberry Pi section of the instructions at [tensorflow/contrib/makefile](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/makefile) to compile a static library containing the core TensorFlow code.
+ - Follow the Raspberry Pi section of the instructions at [tensorflow/contrib/makefile](https://github.com/uve/tensorflow/tree/master/tensorflow/contrib/makefile) to compile a static library containing the core TensorFlow code.
 
  - Install libjpeg, so we can load image files:
 

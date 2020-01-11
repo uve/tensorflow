@@ -1327,7 +1327,7 @@ class RNNTest(keras_parameterized.TestCase):
       layer(x)
 
   def test_full_input_spec(self):
-    # See https://github.com/tensorflow/tensorflow/issues/25985
+    # See https://github.com/uve/tensorflow/issues/25985
     inputs = keras.layers.Input(batch_shape=(1, 1, 1))
     state_h = keras.layers.Input(batch_shape=(1, 1))
     state_c = keras.layers.Input(batch_shape=(1, 1))
@@ -1340,7 +1340,7 @@ class RNNTest(keras_parameterized.TestCase):
     model.reset_states()
 
   def test_reset_states(self):
-    # See https://github.com/tensorflow/tensorflow/issues/25852
+    # See https://github.com/uve/tensorflow/issues/25852
     with self.assertRaisesRegexp(ValueError, 'it needs to know its batch size'):
       simple_rnn = keras.layers.SimpleRNN(1, stateful=True)
       simple_rnn.reset_states()
@@ -1353,7 +1353,7 @@ class RNNTest(keras_parameterized.TestCase):
   @parameterized.parameters(
       [keras.layers.SimpleRNNCell, keras.layers.GRUCell, keras.layers.LSTMCell])
   def test_stateful_rnn_with_stacking(self, cell):
-    # See https://github.com/tensorflow/tensorflow/issues/28614.
+    # See https://github.com/uve/tensorflow/issues/28614.
     batch = 12
     timesteps = 10
     input_dim = 8
@@ -1395,7 +1395,7 @@ class RNNTest(keras_parameterized.TestCase):
   @parameterized.parameters(
       [keras.layers.SimpleRNNCell, keras.layers.GRUCell, keras.layers.LSTMCell])
   def test_state_spec_with_stack_cell(self, cell):
-    # See https://github.com/tensorflow/tensorflow/issues/27817 for more detail.
+    # See https://github.com/uve/tensorflow/issues/27817 for more detail.
     batch = 12
     timesteps = 10
     input_dim = 8

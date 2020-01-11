@@ -21,7 +21,7 @@
 # This script acts as a brige between bazel and go so that:
 #   bazel test :test
 # succeeds iff
-#   go test github.com/tensorflow/tensorflow/tensorflow/go
+#   go test github.com/uve/tensorflow/tensorflow/go
 # succeeds.
 
 set -ex
@@ -41,8 +41,8 @@ fi
 # Setup a GOPATH that includes just the TensorFlow Go API.
 export GOPATH="${TEST_TMPDIR}/go"
 export GOCACHE="${TEST_TMPDIR}/cache"
-mkdir -p "${GOPATH}/src/github.com/tensorflow"
-ln -s -f "${PWD}" "${GOPATH}/src/github.com/tensorflow/tensorflow"
+mkdir -p "${GOPATH}/src/github.com/uve"
+ln -s -f "${PWD}" "${GOPATH}/src/github.com/uve/tensorflow"
 
 # Ensure that the TensorFlow C library is accessible to the
 # linker at build and run time.
@@ -72,5 +72,5 @@ fi
 # Document the Go version and run tests
 echo "Go version: $(go version)"
 go test \
-  github.com/tensorflow/tensorflow/tensorflow/go  \
-  github.com/tensorflow/tensorflow/tensorflow/go/op
+  github.com/uve/tensorflow/tensorflow/go  \
+  github.com/uve/tensorflow/tensorflow/go/op

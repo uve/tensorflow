@@ -4,27 +4,27 @@ This document walks through the code of a simple iOS mobile application that
 demonstrates [image classification](overview.md) using the device camera.
 
 The application code is located in the
-[Tensorflow examples](https://github.com/tensorflow/examples) repository, along
+[Tensorflow examples](https://github.com/uve/examples) repository, along
 with instructions for building and deploying the app.
 
-<a class="button button-primary" href="https://github.com/tensorflow/examples/tree/master/lite/examples/image_classification/ios">Example
+<a class="button button-primary" href="https://github.com/uve/examples/tree/master/lite/examples/image_classification/ios">Example
 application</a>
 
 ## Explore the code
 
 The app is written entirely in Swift and uses the TensorFlow Lite
-[Swift library](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/swift)
+[Swift library](https://github.com/uve/tensorflow/tree/master/tensorflow/lite/experimental/swift)
 for performing image classification.
 
 Note: Objective-C developers should use the TensorFlow Lite
-[Objective-C library](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/lite/experimental/objc).
+[Objective-C library](https://github.com/uve/tensorflow/tree/master/tensorflow/lite/experimental/objc).
 
 We're now going to walk through the most important parts of the sample code.
 
 ### Get camera input
 
 The app's main view is represented by the `ViewController` class in
-[`ViewController.swift`](https://github.com/tensorflow/examples/tree/master/lite/examples/image_classification/ios/ImageClassification/ViewControllers/ViewController.swift),
+[`ViewController.swift`](https://github.com/uve/examples/tree/master/lite/examples/image_classification/ios/ImageClassification/ViewControllers/ViewController.swift),
 which we extend with functionality from the `CameraFeedManagerDelegate` protocol
 to process frames from a camera feed. To run inference on a given frame, we
 implement the `didOutput` method, which is called whenever a frame is available
@@ -59,9 +59,9 @@ extension ViewController: CameraFeedManagerDelegate {
 ### ModelDataHandler
 
 The Swift class `ModelDataHandler`, defined in
-[`ModelDataHandler.swift`](https://github.com/tensorflow/examples/tree/master/lite/examples/image_classification/ios/ImageClassification/ModelDataHandler/ModelDataHandler.swift),
+[`ModelDataHandler.swift`](https://github.com/uve/examples/tree/master/lite/examples/image_classification/ios/ImageClassification/ModelDataHandler/ModelDataHandler.swift),
 handles all data preprocessing and makes calls to run inference on a given frame
-using the TensorFlow Lite [`Interpreter`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/swift/Sources/Interpreter.swift).
+using the TensorFlow Lite [`Interpreter`](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/experimental/swift/Sources/Interpreter.swift).
 It then formats the inferences obtained from invoking the `Interpreter` and
 returns the top N results for a successful inference.
 
@@ -147,7 +147,7 @@ private func rgbDataFromBuffer(
 
 Here's the code for getting the `RGB` data representation of the pixel buffer,
 copying that data to the input
-[`Tensor`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/experimental/swift/Sources/Tensor.swift),
+[`Tensor`](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/experimental/swift/Sources/Tensor.swift),
 and running inference by invoking the `Interpreter`:
 
 ```swift
@@ -220,5 +220,5 @@ let topNInferences = sortedResults.map { result in Inference(confidence: result.
 ### Display results
 
 The file
-[`InferenceViewController.swift`](https://github.com/tensorflow/examples/tree/master/lite/examples/image_classification/ios/ImageClassification/ViewControllers/InferenceViewController.swift)
+[`InferenceViewController.swift`](https://github.com/uve/examples/tree/master/lite/examples/image_classification/ios/ImageClassification/ViewControllers/InferenceViewController.swift)
 defines the app's UI. A `UITableView` is used to display the results.

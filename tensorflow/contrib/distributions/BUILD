@@ -19,7 +19,7 @@ py_library(
     srcs = glob(["python/ops/bijectors/*.py"]),
     deprecation = ("TensorFlow Distributions has migrated to " +
                    "TensorFlow Probability " +
-                   "(https://github.com/tensorflow/probability). " +
+                   "(https://github.com/uve/probability). " +
                    "Deprecated copies remaining in tf.contrib.distributions " +
                    "are unmaintained, unsupported, and will be removed by " +
                    "late 2018. You should update all usage of " +
@@ -51,7 +51,7 @@ py_library(
     srcs = ["__init__.py"] + glob(["python/ops/*.py"]),
     deprecation = ("TensorFlow Distributions has migrated to " +
                    "TensorFlow Probability " +
-                   "(https://github.com/tensorflow/probability). " +
+                   "(https://github.com/uve/probability). " +
                    "Deprecated copies remaining in tf.contrib.distributions " +
                    "are unmaintained, unsupported, and will be removed by " +
                    "late 2018. You should update all usage of " +

@@ -66,7 +66,7 @@ class RNNV2Test(keras_parameterized.TestCase):
 
   @parameterized.parameters([rnn_v2.LSTM, rnn_v2.GRU])
   def test_reset_dropout_mask_between_batch(self, layer):
-    # See https://github.com/tensorflow/tensorflow/issues/29187 for more details
+    # See https://github.com/uve/tensorflow/issues/29187 for more details
     batch_size = 8
     timestep = 12
     embedding_dim = 10
@@ -93,7 +93,7 @@ class RNNV2Test(keras_parameterized.TestCase):
 
   @parameterized.parameters([rnn_v2.LSTM, rnn_v2.GRU])
   def test_recurrent_dropout_with_stateful_RNN(self, layer):
-    # See https://github.com/tensorflow/tensorflow/issues/27829 for details.
+    # See https://github.com/uve/tensorflow/issues/27829 for details.
     # The issue was caused by using inplace mul for a variable, which was a
     # warning for RefVariable, but an error for ResourceVariable in 2.0
     keras.models.Sequential([

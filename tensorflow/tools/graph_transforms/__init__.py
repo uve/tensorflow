@@ -28,7 +28,7 @@ def TransformGraph(input_graph_def, inputs, outputs, transforms):
   """Python wrapper for the Graph Transform Tool.
 
   Gives access to all graph transforms available through the command line tool.
-  See documentation at https://github.com/tensorflow/tensorflow/blob/master/tensorflow/tools/graph_transforms/README.md
+  See documentation at https://github.com/uve/tensorflow/blob/master/tensorflow/tools/graph_transforms/README.md
   for full details of the options available.
 
   Args:

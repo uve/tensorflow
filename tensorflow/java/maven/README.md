@@ -54,11 +54,11 @@ There are seven artifacts and thus `pom.xml`s involved in this release:
     shared by all of the above.
 
 8. `hadoop`: The TensorFlow TFRecord InputFormat/OutputFormat for Apache Hadoop.
-    The source code for this package is available in the [TensorFlow Ecosystem](https://github.com/tensorflow/ecosystem/tree/master/hadoop)
+    The source code for this package is available in the [TensorFlow Ecosystem](https://github.com/uve/ecosystem/tree/master/hadoop)
 
 9. `spark-connector`: A Scala library for loading and storing TensorFlow TFRecord
     using Apache Spark DataFrames. The source code for this package is available
-    in the [TensorFlow Ecosystem](https://github.com/tensorflow/ecosystem/tree/master/spark/spark-tensorflow-connector)
+    in the [TensorFlow Ecosystem](https://github.com/uve/ecosystem/tree/master/spark/spark-tensorflow-connector)
 
 ## Updating the release
 

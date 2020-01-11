@@ -12,7 +12,7 @@ starter model</a>
 
 Android and iOS end-to-end tutorials are coming soon. In the meantime, if you
 want to experiment this on a web browser, check out the
-<a href="https://github.com/tensorflow/tfjs-models/tree/master/posenet">TensorFlow.js
+<a href="https://github.com/uve/tfjs-models/tree/master/posenet">TensorFlow.js
 GitHub repository</a>.
 
 ### Example applications and guides
@@ -20,7 +20,7 @@ GitHub repository</a>.
 There is a TensorFlow Lite sample application that demonstrates the PoseNet
 model on Android.
 
-<a class="button button-primary" href="https://github.com/tensorflow/examples/tree/master/lite/examples/posenet/android">
+<a class="button button-primary" href="https://github.com/uve/examples/tree/master/lite/examples/posenet/android">
 Android example</a>.
 
 ## How it works
@@ -145,7 +145,7 @@ is faster but results in lower accuracy.
 
 <ul>
   <li><a href="https://medium.com/tensorflow/real-time-human-pose-estimation-in-the-browser-with-tensorflow-js-7dd0bc881cd5">Blog post: Real-time Human Pose Estimation in the Browser with TensorFlow.js</a></li>
-  <li><a href="https://github.com/tensorflow/tfjs-models/tree/master/posenet">TF.js GitHub: Pose Detection in the Browser: PoseNet Model</a></li>
+  <li><a href="https://github.com/uve/tfjs-models/tree/master/posenet">TF.js GitHub: Pose Detection in the Browser: PoseNet Model</a></li>
 </ul>
 
 ### Use cases

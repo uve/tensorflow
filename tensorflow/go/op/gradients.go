@@ -19,7 +19,7 @@ package op
 import (
 	"fmt"
 
-	tf "github.com/tensorflow/tensorflow/tensorflow/go"
+	tf "github.com/uve/tensorflow/tensorflow/go"
 )
 
 // Gradients adds gradients computation ops to the graph according to scope.

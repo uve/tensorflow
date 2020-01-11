@@ -20,10 +20,10 @@ The following is a summary of the features in SavedModel:
 * Support for `SignatureDefs`
     * Graphs that are used for inference tasks typically have a set of inputs
       and outputs. This is called a `Signature`.
-    * SavedModel uses [SignatureDefs](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/protobuf/meta_graph.proto)
+    * SavedModel uses [SignatureDefs](https://github.com/uve/tensorflow/blob/master/tensorflow/core/protobuf/meta_graph.proto)
       to allow generic support for signatures that may need to be saved with the graphs.
     * For commonly used SignatureDefs in the context of TensorFlow Serving,
-      please see documentation [here](https://github.com/tensorflow/serving/blob/master/tensorflow_serving/g3doc/signature_defs.md).
+      please see documentation [here](https://github.com/uve/serving/blob/master/tensorflow_serving/g3doc/signature_defs.md).
 * Support for `Assets`.
     * For cases where ops depend on external files for initialization, such as
       vocabularies, SavedModel supports this via `assets`.
@@ -40,9 +40,9 @@ Higher-level frameworks and tools that use SavedModel may provide these.
 
 ## Background
 SavedModel manages and builds upon existing TensorFlow primitives such as
-`TensorFlow Saver` and `MetaGraphDef`. Specifically, SavedModel wraps a [TensorFlow Saver](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/python/training/saver.py).
+`TensorFlow Saver` and `MetaGraphDef`. Specifically, SavedModel wraps a [TensorFlow Saver](https://github.com/uve/tensorflow/tree/master/tensorflow/python/training/saver.py).
 The Saver is primarily used to generate the variable checkpoints. SavedModel
-will replace the existing [TensorFlow Inference Model Format](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/session_bundle/README.md)
+will replace the existing [TensorFlow Inference Model Format](https://github.com/uve/tensorflow/blob/master/tensorflow/contrib/session_bundle/README.md)
 as the canonical way to export TensorFlow graphs for serving.
 
 ## Components
@@ -69,7 +69,7 @@ saved_model.pb
     * This subfolder is not managed by the SavedModel libraries.
 * Variables
     * Subfolder called `variables`.
-    * Includes output from the [TensorFlow Saver](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/python/training/saver.py).
+    * Includes output from the [TensorFlow Saver](https://github.com/uve/tensorflow/tree/master/tensorflow/python/training/saver.py).
         * `variables.data-?????-of-?????`
         * `variables.index`
 
@@ -77,7 +77,7 @@ saved_model.pb
 The APIs for building and loading a SavedModel are described in this section.
 
 ### Builder
-The SavedModel [builder](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/saved_model/builder.py)
+The SavedModel [builder](https://github.com/uve/tensorflow/blob/master/tensorflow/python/saved_model/builder.py)
 is implemented in Python.
 
 The `SavedModelBuilder` class provides functionality to save multiple meta graph
@@ -157,7 +157,7 @@ to `True` while using `SavedModelBuilder.add_meta_graph_and_variables` and
 The SavedModel loader is implemented in C++ and Python.
 
 #### Python
-The Python version of the SavedModel [loader](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/saved_model/loader.py)
+The Python version of the SavedModel [loader](https://github.com/uve/tensorflow/blob/master/tensorflow/python/saved_model/loader.py)
 provides load and restore capability for a SavedModel. The `load` operation
 requires the session in which to restore the graph definition and variables, the
 tags used to identify the meta graph def to load and the location of the
@@ -173,7 +173,7 @@ with tf.Session(graph=tf.Graph()) as sess:
 ~~~
 
 #### C++
-The C++ version of the SavedModel [loader](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/cc/saved_model/loader.h)
+The C++ version of the SavedModel [loader](https://github.com/uve/tensorflow/blob/master/tensorflow/cc/saved_model/loader.h)
 provides an API to load a SavedModel from a path, while allowing
 `SessionOptions` and `RunOptions`. Similar to the Python version, the C++
 version requires the tags associated with the graph to be loaded, to be
@@ -198,14 +198,14 @@ reuse and share across tools consistently.
 Sets of tags can be used to uniquely identify a `MetaGraphDef` saved in a
 SavedModel. A subset of commonly used tags is specified in:
 
-* [Python](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/saved_model/tag_constants.py)
-* [C++](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/cc/saved_model/tag_constants.h).
+* [Python](https://github.com/uve/tensorflow/blob/master/tensorflow/python/saved_model/tag_constants.py)
+* [C++](https://github.com/uve/tensorflow/blob/master/tensorflow/cc/saved_model/tag_constants.h).
 
 #### Signature constants
 SignatureDefs are used to define the signature of a computation supported in a
 TensorFlow graph. Commonly used input keys, output keys and method names are
 defined in:
 
-* [Python](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/saved_model/signature_constants.py)
-* [C++](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/cc/saved_model/signature_constants.h).
+* [Python](https://github.com/uve/tensorflow/blob/master/tensorflow/python/saved_model/signature_constants.py)
+* [C++](https://github.com/uve/tensorflow/blob/master/tensorflow/cc/saved_model/signature_constants.h).
 

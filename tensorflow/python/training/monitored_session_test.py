@@ -1856,7 +1856,7 @@ class MonitoredSessionTest(test.TestCase):
 
   @test_util.run_deprecated_v1
   def test_with_statement_and_close(self):
-    # Test case for https://github.com/tensorflow/tensorflow/issues/12224
+    # Test case for https://github.com/uve/tensorflow/issues/12224
     # where close() inside the with should have a better error message.
     with self.assertRaisesRegexp(RuntimeError, 'Session is already closed'):
       with monitored_session.MonitoredSession() as session:

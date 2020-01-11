@@ -163,9 +163,9 @@ float* output = interpreter->typed_output_tensor<float>(0);
 ```
 
 For more example code, see [`minimal.cc`](
-https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/examples/minimal/minimal.cc)
+https://github.com/uve/tensorflow/blob/master/tensorflow/lite/examples/minimal/minimal.cc)
 and [`label_image.cc`](
-https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/examples/label_image/label_image.cc).
+https://github.com/uve/tensorflow/blob/master/tensorflow/lite/examples/label_image/label_image.cc).
 
 
 ## Load and run a model in Java
@@ -238,7 +238,7 @@ interpreter.close();
 ```
 
 For an example project with Java, see the [Android image classification sample](
-https://github.com/tensorflow/examples/tree/master/lite/examples/image_classification/android).
+https://github.com/uve/examples/tree/master/lite/examples/image_classification/android).
 
 ### Supported data types (in Java)
 
@@ -345,7 +345,7 @@ interpreter.allocate_tensors()
 ```
 
 For more Python sample code, see [`label_image.py`](
-https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/examples/python/label_image.py).
+https://github.com/uve/tensorflow/blob/master/tensorflow/lite/examples/python/label_image.py).
 
 Tip: Run `help(tf.lite.Interpreter)` in the Python terminal to get detailed
 documentation about the interpreter.

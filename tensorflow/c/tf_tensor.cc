@@ -332,7 +332,7 @@ TF_Tensor* TF_TensorFromTensor(const tensorflow::Tensor& src,
                       "Unexpected non-scalar DT_RESOURCE tensor seen (shape: ",
                       src.shape().DebugString(),
                       "). Please file a bug at "
-                      "https://github.com/tensorflow/tensorflow/issues/new, "
+                      "https://github.com/uve/tensorflow/issues/new, "
                       "ideally with a "
                       "short code snippet that reproduces this error."));
       return nullptr;

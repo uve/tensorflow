@@ -36,7 +36,7 @@ __all__ = [
     "2018-10-01",
     "The TensorFlow Distributions library has moved to "
     "TensorFlow Probability "
-    "(https://github.com/tensorflow/probability). You "
+    "(https://github.com/uve/probability). You "
     "should update all references to use `tfp.distributions` "
     "instead of `tf.contrib.distributions`.",
     warn_once=True)
@@ -48,7 +48,7 @@ def _use_static_shape(input_tensor, ndims):
     "2018-10-01",
     "The TensorFlow Distributions library has moved to "
     "TensorFlow Probability "
-    "(https://github.com/tensorflow/probability). You "
+    "(https://github.com/uve/probability). You "
     "should update all references to use `tfp.distributions` "
     "instead of `tf.contrib.distributions`.",
     warn_once=True)
@@ -163,7 +163,7 @@ class Chain(bijector.Bijector):
       "2018-10-01",
       "The TensorFlow Distributions library has moved to "
       "TensorFlow Probability "
-      "(https://github.com/tensorflow/probability). You "
+      "(https://github.com/uve/probability). You "
       "should update all references to use `tfp.distributions` "
       "instead of `tf.contrib.distributions`.",
       warn_once=True)

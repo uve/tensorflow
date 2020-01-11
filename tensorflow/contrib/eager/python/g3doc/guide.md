@@ -7,7 +7,7 @@ graph that is executed later.
 A user guide is available: https://www.tensorflow.org/guide/eager
 ([source file](../../../../docs_src/guide/eager.md))
 
-We welcome feedback through [GitHub issues](https://github.com/tensorflow/tensorflow/labels/comp:eager).
+We welcome feedback through [GitHub issues](https://github.com/uve/tensorflow/labels/comp:eager).
 
 Sample code is available, including benchmarks for some:
 

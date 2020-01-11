@@ -15,7 +15,7 @@
 """Penn Treebank RNN model definition compatible with eager execution.
 
 Model similar to
-https://github.com/tensorflow/models/tree/master/tutorials/rnn/ptb
+https://github.com/uve/models/tree/master/tutorials/rnn/ptb
 
 Usage: python ./rnn_ptb.py --data-path=<path_to_dataset>
 
@@ -104,7 +104,7 @@ class PTBModel(tf.keras.Model):
   http://arxiv.org/abs/1409.2329
 
   See also:
-  https://github.com/tensorflow/models/tree/master/tutorials/rnn/ptb
+  https://github.com/uve/models/tree/master/tutorials/rnn/ptb
   """
 
   def __init__(self,

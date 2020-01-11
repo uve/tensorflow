@@ -67,7 +67,7 @@ def _labeled_to_unlabeled_features(features):
     shape = [ax.size for ax in labeled_feature.axes]
     if any(size is None for size in shape):
       # This should be caught on the TensorFlow side, but it isn't yet:
-      # https://github.com/tensorflow/tensorflow/issues/2874
+      # https://github.com/uve/tensorflow/issues/2874
       raise ValueError('axes with unknown size are not supported')
     dtype = labeled_feature.dtype
     default_value = labeled_feature.default_value

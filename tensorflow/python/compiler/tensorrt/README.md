@@ -23,7 +23,7 @@ Installation instructions for compatibility with TensorFlow are provided on the
 ## Examples
 
 You can find example scripts for running inference on deep learning models in
-this repository: https://github.com/tensorflow/tensorrt
+this repository: https://github.com/uve/tensorrt
 
 We have used these examples to verify the accuracy and performance of TF-TRT.
 For more information see

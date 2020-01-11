@@ -2,9 +2,9 @@
 
 This example shows how you can load a pre-trained TensorFlow network and use it
 to recognize objects in images in C++. For Java see the [Java
-README](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/java),
+README](https://github.com/uve/tensorflow/tree/master/tensorflow/java),
 and for Go see the [godoc
-example](https://godoc.org/github.com/tensorflow/tensorflow/tensorflow/go#ex-package).
+example](https://godoc.org/github.com/uve/tensorflow/tensorflow/go#ex-package).
 
 ## Description
 

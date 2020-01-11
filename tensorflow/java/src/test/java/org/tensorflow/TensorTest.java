@@ -561,7 +561,7 @@ public class TensorTest {
 
   @Test
   public void gracefullyFailCreationFromNullArrayForStringTensor() {
-    // Motivated by: https://github.com/tensorflow/tensorflow/issues/17130
+    // Motivated by: https://github.com/uve/tensorflow/issues/17130
     byte[][] array = new byte[1][];
     try {
       Tensors.create(array);

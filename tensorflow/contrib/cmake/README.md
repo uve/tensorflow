@@ -375,7 +375,7 @@ Here we assume that you have basic knowledge on gathering dependency with
     build:
 
     ```
-    D:\temp> git clone https://github.com/tensorflow/tensorflow.git
+    D:\temp> git clone https://github.com/uve/tensorflow.git
     D:\temp> cd tensorflow\tensorflow\contrib\cmake
     D:\temp\tensorflow\tensorflow\contrib\cmake> mkdir build
     D:\temp\tensorflow\tensorflow\contrib\cmake> cd build
@@ -438,7 +438,7 @@ Here we assume that you have basic knowledge on gathering dependency with
 
     *   `-Dtensorflow_BUILD_CC_EXAMPLE=(ON|OFF)`. Defaults to `ON`. Generate
         project files for a simple C++
-        [example training program](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/cc/tutorials/example_trainer.cc).
+        [example training program](https://github.com/uve/tensorflow/blob/master/tensorflow/cc/tutorials/example_trainer.cc).
 
     *   `-Dtensorflow_BUILD_PYTHON_BINDINGS=(ON|OFF)`. Defaults to `ON`.
         Generate project files for building a PIP package containing the
@@ -514,7 +514,7 @@ This build requires [Docker](https://www.docker.com/) to be installed on the
 local machine.
 
 ```bash
-$ git clone --recursive https://github.com/tensorflow/tensorflow.git
+$ git clone --recursive https://github.com/uve/tensorflow.git
 $ cd tensorflow
 $ tensorflow/tools/ci_build/ci_build.sh CMAKE tensorflow/tools/ci_build/builds/cmake.sh
 ```

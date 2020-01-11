@@ -234,7 +234,7 @@ class ReparameterizationType(object):
       "2019-01-01",
       "The TensorFlow Distributions library has moved to "
       "TensorFlow Probability "
-      "(https://github.com/tensorflow/probability). You "
+      "(https://github.com/uve/probability). You "
       "should update all references to use `tfp.distributions` "
       "instead of `tf.distributions`.",
       warn_once=True)
@@ -379,7 +379,7 @@ class Distribution(_BaseDistribution):
 
   For detailed usage examples of TensorFlow Distributions shapes, see
   [this tutorial](
-  https://github.com/tensorflow/probability/blob/master/tensorflow_probability/examples/jupyter_notebooks/Understanding_TensorFlow_Distributions_Shapes.ipynb)
+  https://github.com/uve/probability/blob/master/tensorflow_probability/examples/jupyter_notebooks/Understanding_TensorFlow_Distributions_Shapes.ipynb)
 
   #### Parameter values leading to undefined statistics or distributions.
 
@@ -418,7 +418,7 @@ class Distribution(_BaseDistribution):
       "2019-01-01",
       "The TensorFlow Distributions library has moved to "
       "TensorFlow Probability "
-      "(https://github.com/tensorflow/probability). You "
+      "(https://github.com/uve/probability). You "
       "should update all references to use `tfp.distributions` "
       "instead of `tf.distributions`.",
       warn_once=True)

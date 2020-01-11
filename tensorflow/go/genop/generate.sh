@@ -26,7 +26,7 @@ fi
 
 cd $(dirname $0)
 for g in $(echo "${GOPATH//:/ }"); do
-    TF_DIR="${g}/src/github.com/tensorflow/tensorflow"
+    TF_DIR="${g}/src/github.com/uve/tensorflow"
     PROTOC="${TF_DIR}/bazel-out/host/bin/external/protobuf/protoc"
     if [ -x "${PROTOC}" ]; then
         break

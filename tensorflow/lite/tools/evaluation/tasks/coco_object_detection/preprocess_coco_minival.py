@@ -18,7 +18,7 @@ The 2014 validation images & annotations can be downloaded from:
 http://cocodataset.org/#download
 The minival image ID whitelist, a subset of the 2014 validation set, can be
 found here:
-https://github.com/tensorflow/models/blob/master/research/object_detection/data/mscoco_minival_ids.txt.
+https://github.com/uve/models/blob/master/research/object_detection/data/mscoco_minival_ids.txt.
 
 This script takes in the original images folder, instances JSON file and
 image ID whitelist and produces the following in the specified output folder:

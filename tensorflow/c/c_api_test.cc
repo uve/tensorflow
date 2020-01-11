@@ -147,7 +147,7 @@ TEST(CAPI, Tensor) {
 void NoOpDeallocator(void* data, size_t, void*) {}
 
 TEST(CAPI, MalformedTensor) {
-  // See https://github.com/tensorflow/tensorflow/issues/7394
+  // See https://github.com/uve/tensorflow/issues/7394
   // num_dims = 0 implies a scalar, so should be backed by at least 4 bytes of
   // data.
   TF_Tensor* t =

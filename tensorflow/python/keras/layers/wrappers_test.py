@@ -571,7 +571,7 @@ class BidirectionalTest(test.TestCase, parameterized.TestCase):
       model.predict(inputs)
 
   def test_Bidirectional_state_reuse_with_np_input(self):
-    # See https://github.com/tensorflow/tensorflow/issues/28761 for more detail.
+    # See https://github.com/uve/tensorflow/issues/28761 for more detail.
     rnn = keras.layers.LSTM
     samples = 2
     dim = 5
@@ -982,7 +982,7 @@ class BidirectionalTest(test.TestCase, parameterized.TestCase):
 
   @tf_test_util.run_v2_only
   def test_wrapped_rnn_cell(self):
-    # See https://github.com/tensorflow/tensorflow/issues/26581.
+    # See https://github.com/uve/tensorflow/issues/26581.
     batch = 20
     dim = 5
     timesteps = 3

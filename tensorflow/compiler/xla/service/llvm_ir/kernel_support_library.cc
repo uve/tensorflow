@@ -117,7 +117,7 @@ void KernelSupportLibrary::EmitAndCallOutlinedKernel(
     std::vector<llvm::Value*> arg_values;
     /*
      * clang on OSX doesn't like std::transform or range for loop here.
-     * See https://github.com/tensorflow/tensorflow/issues/15196
+     * See https://github.com/uve/tensorflow/issues/15196
      */
     for (llvm::Function::arg_iterator arg = function->arg_begin(),
                                       arg_e = function->arg_end();

@@ -11,7 +11,7 @@ py_library(
     ),
     deprecation = ("TensorFlow Distributions has migrated to " +
                    "TensorFlow Probability " +
-                   "(https://github.com/tensorflow/probability). " +
+                   "(https://github.com/uve/probability). " +
                    "Deprecated copies remaining in tf.distributions " +
                    "will not receive new features, and will be removed by " +
                    "early 2019. You should update all usage of " +

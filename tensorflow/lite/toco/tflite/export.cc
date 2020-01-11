@@ -450,7 +450,7 @@ void ParseControlFlowErrors(std::set<string>* custom_ops,
         absl::StrJoin(unsupported_control_flow_ops, ", "), ".",
         " We are working on supporting control flow ops, please see github "
         "issue at "
-        "https://github.com/tensorflow/tensorflow/issues/28485."));
+        "https://github.com/uve/tensorflow/issues/28485."));
   }
   // Remove control flow ops from `custom_ops` set so that they won't be
   // reported again in later messages.
@@ -534,7 +534,7 @@ tensorflow::Status Export(
                "TensorFlow Lite for more ops. It would be helpful if you could "
                "inform us of how this conversion went by opening a github "
                "issue at "
-               "https://github.com/tensorflow/tensorflow/issues/new?template="
+               "https://github.com/uve/tensorflow/issues/new?template="
                "40-tflite-op-request.md\n and pasting the following:\n\n";
       };
 

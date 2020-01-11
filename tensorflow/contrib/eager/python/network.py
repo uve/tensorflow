@@ -499,13 +499,13 @@ class Network(base.Layer):
                    constraint=None):
     raise RuntimeError(
         "add_variable not supported in Network class yet. Please file an issue "
-        "at https://github.com/tensorflow/tensorflow/issues/new if this is "
+        "at https://github.com/uve/tensorflow/issues/new if this is "
         "important to you")
 
   def add_loss(self, losses, inputs=None):
     raise RuntimeError(
         "add_loss is not supported in Network class yet. Please file an issue "
-        "at https://github.com/tensorflow/tensorflow/issues/new if this is "
+        "at https://github.com/uve/tensorflow/issues/new if this is "
         "important to you")
 
   @property

@@ -80,18 +80,18 @@ The two call functions may be accessed through:
 Keras Layers use a helper abstract class and an attribute validator class to
 define and standardize the serialization implementation:
 
-- [`SerializationImpl`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/keras/saving/saved_model/base_serialization.py):
+- [`SerializationImpl`](https://github.com/uve/tensorflow/blob/master/tensorflow/python/keras/saving/saved_model/base_serialization.py):
 Ensures that layer python properties are saved as a serialized JSON string in
 the metadata field, and gathers all attributes to save with the Keras object.
 Please see the docstrings in each of the abstract methods/properties to see what
 is required.
-- [`SerializedAttributes`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/keras/saving/saved_model/serialized_attributes.py?):
+- [`SerializedAttributes`](https://github.com/uve/tensorflow/blob/master/tensorflow/python/keras/saving/saved_model/serialized_attributes.py?):
 Tracks all of the attributes that must be saved with a Keras object. Objects and
 functions may be specified to be "keras_only", meaning that they will only
 appear in the `keras_api` attribute.
 
 The base `Layer` serialization is defined in
-[`layer_serialization.py`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/keras/saving/saved_model/layer_serialization.py).
+[`layer_serialization.py`](https://github.com/uve/tensorflow/blob/master/tensorflow/python/keras/saving/saved_model/layer_serialization.py).
 See `LayerAttributes` and `LayerSerializationImpl`.
 
 **Adding a new attribute to base Layer SavedModel**
@@ -118,9 +118,9 @@ Unless you are modifying the loader (see section below on loading), please keep
 the `object_identifier` the same.
 
 These instructions also carry over for modifying
-[Model](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/keras/saving/saved_model/model_serialization.py)
+[Model](https://github.com/uve/tensorflow/blob/master/tensorflow/python/keras/saving/saved_model/model_serialization.py)
 and
-[Network](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/keras/saving/saved_model/network_serialization.py)
+[Network](https://github.com/uve/tensorflow/blob/master/tensorflow/python/keras/saving/saved_model/network_serialization.py)
 serialization.
 
 

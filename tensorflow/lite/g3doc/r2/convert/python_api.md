@@ -170,7 +170,7 @@ for tf_result, tflite_result in zip(tf_results, tflite_results):
 
 The following section summarizes the changes in the Python API from 1.X to 2.0.
 If any of the changes raise concerns, please file a
-[GitHub issue](https://github.com/tensorflow/tensorflow/issues).
+[GitHub issue](https://github.com/uve/tensorflow/issues).
 
 ### Formats supported by `TFLiteConverter`
 
@@ -182,7 +182,7 @@ TensorFlow Lite should use `tf.compat.v1.TFLiteConverter`.
 ### Quantization-aware training
 
 The following attributes and methods associated with
-[quantization-aware training](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/quantize)
+[quantization-aware training](https://github.com/uve/tensorflow/tree/master/tensorflow/contrib/quantize)
 have been removed from `TFLiteConverter` in TensorFlow 2.0:
 
 *   `inference_type`
@@ -213,7 +213,7 @@ Additionally, the following attributes have been removed:
     supported by TFLite so it is always `True`.
 *   _Graph visualization_ - The recommended approach for visualizing a
     TensorFlow Lite graph in TensorFlow 2.0 will be to use
-    [visualize.py](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/lite/tools/visualize.py).
+    [visualize.py](https://github.com/uve/tensorflow/blob/master/tensorflow/lite/tools/visualize.py).
     Unlike GraphViz, it enables users to visualize the graph after post training
     quantization has occurred. The following attributes related to graph
     visualization will be removed:

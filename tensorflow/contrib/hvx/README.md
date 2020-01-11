@@ -8,7 +8,7 @@ This README explain how to build and use the TensorFlow runtime with HVX Acceler
 * [Android NDK](https://developer.android.com/ndk/index.html). Save the path in `${NDK_ROOT}`.
 * A rooted Qualcomm-based Android device connected to the computer (preferably, a [Snapdragon Development Board](https://developer.qualcomm.com/hardware/additional-snapdragon), but it could be a rooted phone with a Qualcomm SoC, albeit this guide may not work with it). The device needs to be rooted for development and testing purposes, and shouldn't be needed in production. See [Behold, The Snapdragon MDP](https://developer.qualcomm.com/blog/behold-snapdragon-mdp) for more information.
 * [Hexagon SDK v3.0](https://developer.qualcomm.com/software/hexagon-dsp-sdk/tools). Save the path in `${QUALCOMM_SDK}`.
-* The current directory should be TensorFlow source code (`git clone https://github.com/tensorflow/tensorflow.git && cd tensorflow`), and saved into `${TF_ROOT_DIR}`.
+* The current directory should be TensorFlow source code (`git clone https://github.com/uve/tensorflow.git && cd tensorflow`), and saved into `${TF_ROOT_DIR}`.
 
 You may also need to add a test signature in the device to run HVX-based binaries. Follow the instructions in `${QUALCOMM_SDK}/docs/Tools_Signing.html`, using Python 2.
 
@@ -125,7 +125,7 @@ If you're using the Open-Q 820 Snapdragon Development Kit, you may run into an i
 
 If the lack of a `testsig` library is your problem, you will see errors of the type:
 `vendor/qcom/proprietary/adsprpc/src/fastrpc_apps_user.c:169::error: -1: 0 == (nErr = remotectl_open(name, (int*)ph, dlerrstr, sizeof(dlerrstr), &dlerr))`
-appearing in `adb logcat` or ["Expected: (version) >= (1), actual: 0 vs 1" while running a binary from adb](https://github.com/tensorflow/tensorflow/issues/11210).
+appearing in `adb logcat` or ["Expected: (version) >= (1), actual: 0 vs 1" while running a binary from adb](https://github.com/uve/tensorflow/issues/11210).
 
 You need to add a test signature, as described at the beginning of this README. After rebooting your device, you should be able to run the sample application.
 

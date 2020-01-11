@@ -1,7 +1,7 @@
 <!-- TODO(acotter): Add usage example of non-convex optimization and stochastic classification. -->
 
 **NOTE: As tensorflow.contrib is being
-[deprecated](https://github.com/tensorflow/community/pull/18), TFCO is moving to
+[deprecated](https://github.com/uve/community/pull/18), TFCO is moving to
 its own repository on
 [github](https://github.com/google-research/tensorflow_constrained_optimization).**
 

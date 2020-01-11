@@ -1429,7 +1429,7 @@ def tf_kernel_library(
 
     # Override EIGEN_STRONG_INLINE to inline when
     # --define=override_eigen_strong_inline=true to avoid long compiling time.
-    # See https://github.com/tensorflow/tensorflow/issues/10521
+    # See https://github.com/uve/tensorflow/issues/10521
     copts = copts + if_override_eigen_strong_inline(["/DEIGEN_STRONG_INLINE=inline"])
     if prefix:
         if native.glob([prefix + "*.cu.cc"], exclude = ["*test*"]):
@@ -1778,7 +1778,7 @@ def tf_custom_op_library(name, srcs = [], gpu_srcs = [], deps = [], linkopts = [
 
     # Override EIGEN_STRONG_INLINE to inline when
     # --define=override_eigen_strong_inline=true to avoid long compiling time.
-    # See https://github.com/tensorflow/tensorflow/issues/10521
+    # See https://github.com/uve/tensorflow/issues/10521
     copts = copts + if_override_eigen_strong_inline(["/DEIGEN_STRONG_INLINE=inline"])
 
     if gpu_srcs:
@@ -2044,7 +2044,7 @@ register_extension_info(
 
 # Similar to py_test above, this macro is used to exclude dependencies for some py_binary
 # targets in order to reduce the size of //tensorflow/tools/pip_package:simple_console_windows.
-# See https://github.com/tensorflow/tensorflow/issues/22390
+# See https://github.com/uve/tensorflow/issues/22390
 def py_binary(name, deps = [], **kwargs):
     # Add an extra target for dependencies to avoid nested select statement.
     native.py_library(

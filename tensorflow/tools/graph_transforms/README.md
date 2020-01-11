@@ -69,7 +69,7 @@ checkpoints, and usually has a '.pb' suffix.
 
 If you want to work with the values of your trained parameters, for example to
 quantize weights, you'll need to run
-[tensorflow/python/tools/freeze_graph.py](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/tools/freeze_graph.py)
+[tensorflow/python/tools/freeze_graph.py](https://github.com/uve/tensorflow/blob/master/tensorflow/python/tools/freeze_graph.py)
 to convert the checkpoint values into embedded constants within the graph file
 itself.
 
@@ -107,7 +107,7 @@ output layers of the model are. The best source for these is the model training
 process, where for a classifier the inputs will be the nodes that receive the
 data from the training set, and the output will be the predictions. If you're
 unsure, the
-[`summarize_graph`](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/tools/graph_transforms/summarize_graph_main.cc)
+[`summarize_graph`](https://github.com/uve/tensorflow/blob/master/tensorflow/tools/graph_transforms/summarize_graph_main.cc)
 tool can inspect the model and provide guesses about likely input and output nodes,
 as well as other information that's useful for debugging. Here's an example of
 how to use it on the [Inception V3
@@ -161,9 +161,9 @@ transforms are in there so that both styles are recognized and optimized.
 
 The mobile version of TensorFlow is focused on inference, and so by default the
 list of supported ops (defined in
-[tensorflow/core/kernels/BUILD:android_extended_ops](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/kernels/BUILD)
+[tensorflow/core/kernels/BUILD:android_extended_ops](https://github.com/uve/tensorflow/blob/master/tensorflow/core/kernels/BUILD)
 for Bazel and
-[tensorflow/contrib/makefile/tf_op_files.txt](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/makefile/tf_op_files.txt)
+[tensorflow/contrib/makefile/tf_op_files.txt](https://github.com/uve/tensorflow/blob/master/tensorflow/contrib/makefile/tf_op_files.txt)
 for make builds) doesn't include a lot that are training related. This can cause
 `No OpKernel was registered to support Op` errors when a GraphDef is loaded,
 even if the op isn't going to be executed.
@@ -324,7 +324,7 @@ themselves contain commas (for example shape definitions).
 The --inputs and --outputs are shared across all transforms, since it's common
 to need to know what the ingoing and outgoing nodes in the graph are. You should
 make sure you set these correctly before calling the graph transform tool, and
-if you're in doubt check with the model's author, or use the [`summarize_graph`](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/tools/graph_transforms#inspecting-graphs) tool
+if you're in doubt check with the model's author, or use the [`summarize_graph`](https://github.com/uve/tensorflow/tree/master/tensorflow/tools/graph_transforms#inspecting-graphs) tool
 to examine likely inputs and outputs.
 
 All transforms can be passed the `ignore_errors` flag, with the value set to
@@ -794,7 +794,7 @@ one node in the graph and its connections. You can find more information on the
 format at [this guide to TensorFlow model
 files](https://www.tensorflow.org/versions/master/extend/tool_developers/index.html),
 but for a simple example take a look at
-[tensorflow/tools/graph_transforms/rename_op.cc](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/tools/graph_transforms/rename_op.cc),
+[tensorflow/tools/graph_transforms/rename_op.cc](https://github.com/uve/tensorflow/tree/master/tensorflow/tools/graph_transforms/rename_op.cc),
 which implements the [rename_op](#rename_op) transform:
 
 ```C++

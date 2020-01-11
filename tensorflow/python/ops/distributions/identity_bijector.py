@@ -48,7 +48,7 @@ class Identity(bijector.Bijector):
       "2019-01-01",
       "The TensorFlow Distributions library has moved to "
       "TensorFlow Probability "
-      "(https://github.com/tensorflow/probability). You "
+      "(https://github.com/uve/probability). You "
       "should update all references to use `tfp.distributions` "
       "instead of `tf.distributions`.",
       warn_once=True)

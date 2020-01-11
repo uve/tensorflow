@@ -17,8 +17,8 @@
 
 Warning: The `tf.contrib` module will not be included in TensorFlow 2.0. Many
 of its submodules have been integrated into TensorFlow core, or spun-off into
-other projects like [`tensorflow_io`](https://github.com/tensorflow/io), or
-[`tensorflow_addons`](https://github.com/tensorflow/addons). For instructions
+other projects like [`tensorflow_io`](https://github.com/uve/io), or
+[`tensorflow_addons`](https://github.com/uve/addons). For instructions
 on how to upgrade see the
 [Migration guide](https://www.tensorflow.org/beta/guide/migration_guide).
 """

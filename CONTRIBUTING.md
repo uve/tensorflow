@@ -7,9 +7,9 @@ Before sending your pull requests, make sure you followed this list.
 - Read [contributing guidelines](CONTRIBUTING.md).
 - Read [Code of Conduct](CODE_OF_CONDUCT.md).
 - Ensure you have signed the [Contributor License Agreement (CLA)](https://cla.developers.google.com/).
-- Check if my changes are consistent with the [guidelines](https://github.com/tensorflow/tensorflow/blob/master/CONTRIBUTING.md#general-guidelines-and-philosophy-for-contribution).
-- Changes are consistent with the [Coding Style](https://github.com/tensorflow/tensorflow/blob/master/CONTRIBUTING.md#c-coding-style).
-- Run [Unit Tests](https://github.com/tensorflow/tensorflow/blob/master/CONTRIBUTING.md#running-unit-tests).
+- Check if my changes are consistent with the [guidelines](https://github.com/uve/tensorflow/blob/master/CONTRIBUTING.md#general-guidelines-and-philosophy-for-contribution).
+- Changes are consistent with the [Coding Style](https://github.com/uve/tensorflow/blob/master/CONTRIBUTING.md#c-coding-style).
+- Run [Unit Tests](https://github.com/uve/tensorflow/blob/master/CONTRIBUTING.md#running-unit-tests).
 
 ## How to become a contributor and submit your own code
 
@@ -41,12 +41,12 @@ automatically on GitHub.
 
 If you want to contribute, start working through the TensorFlow codebase,
 navigate to the
-[Github "issues" tab](https://github.com/tensorflow/tensorflow/issues) and start
+[Github "issues" tab](https://github.com/uve/tensorflow/issues) and start
 looking through interesting issues. If you are not sure of where to start, then
 start by trying one of the smaller/easier issues here i.e.
-[issues with the "good first issue" label](https://github.com/tensorflow/tensorflow/labels/good%20first%20issue)
+[issues with the "good first issue" label](https://github.com/uve/tensorflow/labels/good%20first%20issue)
 and then take a look at the
-[issues with the "contributions welcome" label](https://github.com/tensorflow/tensorflow/labels/stat%3Acontributions%20welcome).
+[issues with the "contributions welcome" label](https://github.com/uve/tensorflow/labels/stat%3Acontributions%20welcome).
 These are issues that we believe are particularly well suited for outside
 contributions, often because we probably won't get to them right now. If you
 decide to start on an issue, leave a comment so that other people know that
@@ -56,7 +56,7 @@ comment thread to coordinate.
 ### Contribution guidelines and standards
 
 Before sending your pull request for
-[review](https://github.com/tensorflow/tensorflow/pulls),
+[review](https://github.com/uve/tensorflow/pulls),
 make sure your changes are consistent with the guidelines and follow the
 TensorFlow coding style.
 
@@ -69,9 +69,9 @@ TensorFlow coding style.
     usually indicates insufficient test coverage.
 *   Keep API compatibility in mind when you change code in core TensorFlow,
     e.g., code in
-    [tensorflow/core](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/core)
+    [tensorflow/core](https://github.com/uve/tensorflow/tree/master/tensorflow/core)
     and
-    [tensorflow/python](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/python).
+    [tensorflow/python](https://github.com/uve/tensorflow/tree/master/tensorflow/python).
     TensorFlow has reached version 1 and hence cannot make
     non-backward-compatible API changes without a major release. Reviewers of
     your pull request will comment on any API compatibility issues.
@@ -81,7 +81,7 @@ TensorFlow coding style.
     feature.
 *   Full new features (e.g., a new op implementing a cutting-edge algorithm)
     typically will live in
-    [tensorflow/addons](https://github.com/tensorflow/addons) to get some
+    [tensorflow/addons](https://github.com/uve/addons) to get some
     airtime before a decision is made regarding whether they are to be migrated
     to the core.
 
@@ -89,16 +89,16 @@ TensorFlow coding style.
 
 Include a license at the top of new files.
 
-* [C/C++ license example](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/framework/op.cc#L1)
-* [Python license example](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/ops/nn.py#L1)
-* [Java license example](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/java/src/main/java/org/tensorflow/Graph.java#L1)
-* [Go license example](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/go/operation.go#L1)
-* [Bash license example](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/tools/ci_build/ci_sanity.sh#L2)
-* [HTML license example](https://github.com/tensorflow/tensorboard/blob/master/tensorboard/components/tf_backend/tf-backend.html#L2)
-* [JavaScript/TypeScript license example](https://github.com/tensorflow/tensorboard/blob/master/tensorboard/components/tf_backend/backend.ts#L1)
+* [C/C++ license example](https://github.com/uve/tensorflow/blob/master/tensorflow/core/framework/op.cc#L1)
+* [Python license example](https://github.com/uve/tensorflow/blob/master/tensorflow/python/ops/nn.py#L1)
+* [Java license example](https://github.com/uve/tensorflow/blob/master/tensorflow/java/src/main/java/org/tensorflow/Graph.java#L1)
+* [Go license example](https://github.com/uve/tensorflow/blob/master/tensorflow/go/operation.go#L1)
+* [Bash license example](https://github.com/uve/tensorflow/blob/master/tensorflow/tools/ci_build/ci_sanity.sh#L2)
+* [HTML license example](https://github.com/uve/tensorboard/blob/master/tensorboard/components/tf_backend/tf-backend.html#L2)
+* [JavaScript/TypeScript license example](https://github.com/uve/tensorboard/blob/master/tensorboard/components/tf_backend/backend.ts#L1)
 
 Bazel BUILD files also need to include a license section, e.g.,
-[BUILD example](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/BUILD#L61).
+[BUILD example](https://github.com/uve/tensorflow/blob/master/tensorflow/core/BUILD#L61).
 
 #### C++ coding style
 
@@ -164,9 +164,9 @@ There are two ways to run TensorFlow unit tests.
 1.  Using tools and libraries installed directly on your system.
 
     Refer to the
-    [CPU-only developer Dockerfile](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/tools/dockerfiles/dockerfiles/devel-cpu.Dockerfile)
+    [CPU-only developer Dockerfile](https://github.com/uve/tensorflow/blob/master/tensorflow/tools/dockerfiles/dockerfiles/devel-cpu.Dockerfile)
     and
-    [GPU developer Dockerfile](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/tools/dockerfiles/dockerfiles/devel-gpu.Dockerfile)
+    [GPU developer Dockerfile](https://github.com/uve/tensorflow/blob/master/tensorflow/tools/dockerfiles/dockerfiles/devel-gpu.Dockerfile)
     for the required packages. Alternatively, use the said
     [Docker images](https://hub.docker.com/r/tensorflow/tensorflow/tags/), e.g.,
     `tensorflow/tensorflow:devel` and `tensorflow/tensorflow:devel-gpu` for
@@ -201,5 +201,5 @@ There are two ways to run TensorFlow unit tests.
     ```
 
     See
-    [TensorFlow Builds](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/tools/ci_build)
+    [TensorFlow Builds](https://github.com/uve/tensorflow/tree/master/tensorflow/tools/ci_build)
     for details.

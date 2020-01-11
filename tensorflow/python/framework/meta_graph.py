@@ -538,7 +538,7 @@ def create_meta_graph_def(meta_info_def=None,
         extraneous Save/Restore ops should have been removed already, as needed.
     strip_default_attrs: Boolean. If `True`, default-valued attributes will be
         removed from the NodeDefs. For a detailed guide, see
-        [Stripping Default-Valued Attributes](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/python/saved_model/README.md#stripping-default-valued-attributes).
+        [Stripping Default-Valued Attributes](https://github.com/uve/tensorflow/blob/master/tensorflow/python/saved_model/README.md#stripping-default-valued-attributes).
 
   Returns:
     MetaGraphDef protocol buffer.

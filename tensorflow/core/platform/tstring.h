@@ -37,7 +37,7 @@ namespace tensorflow {
 // The underlying implementation of tstring will be replaced with the one
 // defined in [1] once the migration in tensorflow/ is complete.
 //
-// [1] https://github.com/tensorflow/community/pull/91
+// [1] https://github.com/uve/community/pull/91
 class tstring {
   std::string str_;
 

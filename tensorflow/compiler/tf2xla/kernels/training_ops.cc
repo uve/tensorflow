@@ -155,7 +155,7 @@ class ResourceApplyMomentum : public XlaOpKernel {
 
     accum = accum * momentum + grad;
     if (use_nesterov_) {
-      // See https://github.com/tensorflow/tensorflow/pull/2798 for an
+      // See https://github.com/uve/tensorflow/pull/2798 for an
       // explanation of the reparameterization used here.
       var = var - (grad * lr + accum * momentum * lr);
     } else {
@@ -213,7 +213,7 @@ class ResourceApplyKerasMomentum : public XlaOpKernel {
 
     accum = accum * momentum - grad * lr;
     if (use_nesterov_) {
-      // See https://github.com/tensorflow/tensorflow/pull/2798 for an
+      // See https://github.com/uve/tensorflow/pull/2798 for an
       // explanation of the reparameterization used here.
       var = var + accum * momentum - grad * lr;
     } else {

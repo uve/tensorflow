@@ -51,7 +51,7 @@ Try out the following snippet in a script or Jupyter notebook:
 ## Adding a custom op
 
 LabeledTensor has wrappers for [quite a
-few](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/contrib/labeled_tensor/__init__.py)
+few](https://github.com/uve/tensorflow/blob/master/tensorflow/contrib/labeled_tensor/__init__.py)
 TensorFlow ops.
 
 To easily add your own, you can use the `define_unary_op`, `define_binary_op`

@@ -1500,7 +1500,7 @@ class KerasTPUModel(models.Model):
             'Taking a Dataset directly is not yet supported. Please '
             'wrap your dataset construction code in a function and '
             'pass that to fit instead. For examples, see: '
-            'https://github.com/tensorflow/tpu/tree/master/models/experimental'
+            'https://github.com/uve/tpu/tree/master/models/experimental'
             '/keras')
       if callable(x):
         with ops.device(
@@ -1526,7 +1526,7 @@ class KerasTPUModel(models.Model):
             'Taking a Dataset directly is not yet supported. Please '
             'wrap your dataset construction code in a function and '
             'pass that to fit instead. For examples, see: '
-            'https://github.com/tensorflow/tpu/tree/master/models/experimental'
+            'https://github.com/uve/tpu/tree/master/models/experimental'
             '/keras')
       if callable(validation_data):
         dataset = validation_data()
@@ -1585,7 +1585,7 @@ class KerasTPUModel(models.Model):
             'Taking a Dataset directly is not yet supported. Please '
             'wrap your dataset construction code in a function and '
             'pass that to fit instead. For examples, see: '
-            'https://github.com/tensorflow/tpu/tree/master/models/experimental'
+            'https://github.com/uve/tpu/tree/master/models/experimental'
             '/keras')
       if callable(x):
         dataset = x()
